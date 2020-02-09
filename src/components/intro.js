@@ -1,10 +1,94 @@
 import React from 'react';
+import portrait from '../img/portrait.jpg'
+import portraitnull from '../img/portraitnull.png'
+import github from '../img/github.png'
+import githubinv from '../img/githubinv.png'
+import linkedin from '../img/linkedin.png'
+import linkedininv from '../img/linkedininv.png'
+import { Button, ButtonGroup, makeStyles } from '@material-ui/core';
 
 export default function Intro() {
+
+  const useStyles = makeStyles({
+    navigation: {
+      color: "white",
+      padding: "2px 20px 1px 20px",
+      border: '2px solid grey',
+      backgroundColor: "rgb(25, 25, 25)",
+      "&:hover": {
+        backgroundColor: "rgb(35, 35, 35)"
+      }
+    },
+    socials: {
+      color: "white",
+      padding: '5px 15px 5px 15px',
+      border: '1px solid white',
+      backgroundColor: "rgb(25, 25, 25)",
+      "&:hover": {
+        backgroundColor: "rgb(35, 35, 35)"
+      }
+    }
+  });
+  const classes = useStyles();
+
   return (
     <>
       <div id='intro-section' className="intro-section">
-        <h1>just create more sections like this</h1>
+        <div className="one">
+          <div className="one-card">
+            <div className="one-head">
+              <h1>I'm Kyle Caprio</h1>
+            </div>
+            <div className="one-body">
+              <p>A software developer based in Tempe, AZ</p>
+            </div>
+            <div className="one-foot">
+              <ButtonGroup size="small" aria-label="small outlined button group">
+                <Button className={classes.navigation}
+                  href="#tech-section"
+                >
+                  <div className="one-foot-text">
+                    Knowledge
+                  </div>
+                </Button>
+                <Button className={classes.navigation}
+                  href="#projects-section"
+                >
+                  <div className="one-foot-text">
+                    Endeavors
+                  </div>
+                </Button>
+              </ButtonGroup>
+            </div>
+          </div>
+        </div>
+        <div className="border"></div>
+        <div className="two">
+          <div className="two-card">
+            <div className="two-head">
+              <img src={portrait} alt="" />
+            </div>
+            <div className="two-body">
+              <h1>Explore Further</h1>
+            </div>
+            <div className="two-foot">
+              <ButtonGroup size="small" aria-label="small outlined button group">
+                <Button
+                  className={classes.socials}
+                  href="https://github.com/capriok"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <img src={githubinv} alt="" /></Button>
+                <Button className="two-link"
+                  className={classes.socials}
+                  href="https://www.linkedin.com/in/kyle-caprio-568808111"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <img src={linkedininv} alt="" /></Button>
+              </ButtonGroup>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
