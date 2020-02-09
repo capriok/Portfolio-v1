@@ -5,6 +5,8 @@ import Navbar from "./components/navbar";
 import Banner from "./components/banner";
 import Footer from "./components/footer";
 import Intro from './components/intro';
+import TechSection from './components/tech';
+import ProjectsSection from './components/projects';
 
 export default function App() {
   return (
@@ -13,6 +15,8 @@ export default function App() {
         <Banner />
         <Navbar />
         <Intro />
+        <TechSection />
+        <ProjectsSection />
         <Footer />
       </div>
     </div>
