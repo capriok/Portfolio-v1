@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap");
+
+:root {
+  --main-bg: rgb(17, 17, 17);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: rgb(196, 196, 196);
+}
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1.1rem;
+}
+span {
+  font-size: 1.2rem;
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.section-title {
+  font-family: "Alex Brush", cursive;
+  font-size: calc(3rem + 2vw);
+  margin: 50px;
+}
+
+/* APP */
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #cecaaa; */
+  background-color: var(--main-bg);
+}
+.Main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  min-width: 200px;
+  box-shadow: 0px 10px 10px black;
+  background-color: white;
+}
+
+/* APP END */
+
+@media (max-width:1000px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  span {
+    font-size: 1.2rem;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .section-title {
+    font-size: calc(3rem + 2vw);
+    margin: 30px;
+  }
+}
