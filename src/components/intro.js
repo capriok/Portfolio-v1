@@ -34,44 +34,36 @@ export default function Intro() {
   return (
     <>
       <div id='intro-section' className="intro-section">
-        <div className="one">
+        <div className="intro-one">
           <div className="one-card">
-            <div className="one-head">
-              <h1>I'm Kyle Caprio</h1>
-            </div>
-            <div className="one-body">
-              <p>A software developer based in Tempe, AZ</p>
-            </div>
-            <div className="one-foot">
-              <ButtonGroup size="small" aria-label="small outlined button group">
-                <Button className={classes.navigation}
-                  href="#tech-section"
-                >
-                  <div className="one-foot-text">
-                    Knowledge
+            <h1>I'm Kyle Caprio</h1>
+            <p>A software developer based in Tempe, AZ</p>
+            <div className="one-border"></div>
+            <h1 className="intro-hook">Explore Further</h1>
+            <ButtonGroup size="small" aria-label="small outlined button group">
+              <Button className={classes.navigation} href="#tech-section">
+                <div className="one-foot-text">
+                  Knowledge
                   </div>
-                </Button>
-                <Button className={classes.navigation}
-                  href="#projects-section"
-                >
-                  <div className="one-foot-text">
-                    Endeavors
+              </Button>
+              <Button className={classes.navigation} href="#projects-section">
+                <div className="one-foot-text">
+                  Endeavors
                   </div>
-                </Button>
-              </ButtonGroup>
-            </div>
+              </Button>
+            </ButtonGroup>
           </div>
         </div>
-        <div className="border"></div>
-        <div className="two">
+        <div className="intro-border"></div>
+        <div className="intro-two">
           <div className="two-card">
             <div className="two-head">
               <img src={portrait} alt="" />
+              <h1>Get in touch</h1>
             </div>
             <div className="two-body">
-              <h1>Explore Further</h1>
             </div>
-            <div className="two-foot">
+            <div className="two-btns">
               <ButtonGroup size="small" aria-label="small outlined button group">
                 <Button
                   className={classes.socials}

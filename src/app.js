@@ -1,6 +1,6 @@
 import React from "react";
-import "./index.css";
-import "../src/components/components.css";
+import "./index.scss";
+import "../src/components/components.scss";
 import Navbar from "./components/navbar";
 import Banner from "./components/banner";
 import Footer from "./components/footer";
@@ -12,10 +12,12 @@ export default function App() {
   return (
     <div className="App">
       <div className="Main">
-        <Banner />
+        {/* <Banner /> */}
         {/* <Navbar /> */}
         <Intro />
+        <div className="border"></div>
         <TechSection />
+        <div className="border"></div>
         <ProjectsSection />
         <Footer />
       </div>
