@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,500&display=swap');
 :root {
   --main-bg: rgb(17, 17, 17);
@@ -9,13 +8,13 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  font-weight:200;
   font-size: 1.0rem;
 }
 
 body {
   margin: 0;
   line-height: 1.5rem;
-  font-family: "Open Sans", sans-serif;
   color: white;
   background-color: rgb(196, 196, 196);
 }
@@ -23,12 +22,14 @@ html {
   scroll-behavior: smooth;
 }
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-weight: 300;
+  letter-spacing: 1px;
 }
 p {
   font-size: 1.0rem;
+  color: rgb(181, 181, 181);
 }
 span {
   font-size: 1.2rem;

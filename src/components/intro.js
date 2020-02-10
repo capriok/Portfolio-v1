@@ -42,12 +42,12 @@ export default function Intro() {
             <h1 className="intro-hook">Explore Further</h1>
             <ButtonGroup size="small" aria-label="small outlined button group">
               <Button className={classes.navigation} href="#tech-section">
-                <div className="one-foot-text">
+                <div className="one-btns">
                   Knowledge
                   </div>
               </Button>
               <Button className={classes.navigation} href="#projects-section">
-                <div className="one-foot-text">
+                <div className="one-btns">
                   Endeavors
                   </div>
               </Button>
@@ -71,7 +71,7 @@ export default function Intro() {
                   target="_blank"
                   rel="noopener noreferrer">
                   <img src={githubinv} alt="" /></Button>
-                <Button className="two-link"
+                <Button
                   className={classes.socials}
                   href="https://www.linkedin.com/in/kyle-caprio-568808111"
                   target="_blank"
