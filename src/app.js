@@ -5,8 +5,8 @@ import "../src/components/components.scss";
 // import Banner from "./components/banner";
 import Footer from "./components/footer";
 import Intro from './components/intro';
-import TechSection from './components/tech';
-import ProjectsSection from './components/projects';
+import Tech from './components/tech';
+import Projects from './components/projects';
 
 export default function App() {
   return (
@@ -16,9 +16,9 @@ export default function App() {
         {/* <Navbar /> */}
         <Intro />
         <div className="border"></div>
-        <TechSection />
+        <Tech />
         <div className="border"></div>
-        <ProjectsSection />
+        <Projects />
         <Footer />
       </div>
     </div>

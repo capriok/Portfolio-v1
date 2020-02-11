@@ -21,7 +21,8 @@
   position: relative;
   bottom: 0;
   height: 1px;
-  width: 80%;
+  width: 100%;
+  border-bottom: 1px solid white;
 }
 
 /* BANNER */
@@ -31,44 +32,14 @@
   justify-content: center;
   overflow: hidden;
   width: 100%;
+  .banner-img {
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+  }
 }
-.banner-img {
-  width: 100%;
-  z-index: 1;
-  background-color: rgb(255, 255, 255);
 
-}
 /* BANNER END */
-
-/* NAVBAR */
-
-.navbar {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  user-select: none;
-  overflow: hidden;
-  background-color: var($alt-section-bg);
-  box-shadow: 0px 1px 5px black;
-  z-index: 100;
-}
-.nav-buttons {
-  @include flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.nav-link {
-  padding: 15px;
-  cursor: pointer;
-  font-size: medium;
-  transition: all 1s;
-}
-.nav-link:active {
-  border-bottom: 2px solid black ;
-  transition: all 3s;
-}
-
-/* NAVABR END */
 
 /* INTRO */
 
@@ -100,6 +71,11 @@
       border-bottom: 1px solid white;
     }
   }
+  .intro-separator{
+    border-left:1px solid white;
+    height: 300px;
+    width: 1px;
+  }
   .intro-two{
     @include flex;
     flex: .8;
@@ -120,11 +96,7 @@
     }
   }
 }
-.intro-border{
-  border-left:1px solid white;
-  height: 300px;
-  width: 1px;
-}
+
 /* INTRO END */
 
 /* TECH  */
@@ -136,45 +108,86 @@
   width: 100%;
   height: 80vh;
   background-color: $section-bg;
-}
-.tech-one{
-  @include flex;
-  height: 500px;
-  flex: 1.2;
-  background-color: $alt-section-bg;
-}
-.tech-card{
-  @include flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 75%;
-  width: 80%;
-  padding: 15px;;
-  text-align: left;
-  background-color: $alt-card-bg;
-  h1{padding-bottom: 5px;}
-  p:not(:last-child) {padding-bottom: 10px;}
-}
-.tech-two{
-  @include flex;
-  height: 500px;
-  flex: 1;
-  background-color: $alt-section-bg;
-}
-.tech-area{
-  @include flex;
-  img{
-    width: 300px;
+  .tech-one{
+    @include flex;
+    height: 500px;
+    flex: 1.2;
+    background-color: $alt-section-bg;
+    .tech-card{
+      @include flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      width: 80%;
+      padding: 15px;;
+      text-align: left;
+      background-color: $alt-card-bg;
+      h1{padding-bottom: 5px;}
+      p:not(:last-child) {padding-bottom: 10px;}
+    }
+  }
+  .tech-separator{
+    width: 1px;
+    height: 400px;
+    border-left:1px solid white
+  }
+  .tech-two{
+    @include flex;
+    height: 500px;
+    flex: 1;
+    background-color: $alt-section-bg;
+    .tech-area{
+      @include flex;
+      img{
+        width: 300px;
+      }
+    }
   }
 }
-.tech-border{
-  width: 1px;
-  height: 400px;
-  border-left:1px solid white
-}
+
 
 /* TECH END  */
+
+/* PROJECTS  */
+.projects-section{ 
+  @include flex;
+  padding: 100px;
+  width: 100%;
+  height: 80vh;
+  background-color: $section-bg;
+  .project-card{
+    @include flex;
+    align-items: flex-start;
+    width: 100%;
+    background-color: $alt-section-bg;
+    .project-body{
+      flex:1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+      .tags{
+        .tag-plaque{
+          margin-right: 5px;
+          padding: 5px 10px 5px 10px;
+          border: 1px solid white;
+          border-radius: 5px;
+          font-size: .8rem;
+          cursor: default;
+        }
+      }
+    }
+    .project-thumb{
+      display: flex;
+      justify-content: flex-end;
+      background-color: lightblue;
+      img{width: 175px;}
+    }
+  }
+}
+
+/* PROJECTS END  */
+
 
 /* FOOTER  */
 
@@ -183,40 +196,15 @@
   flex-wrap: wrap;
   width: 100%;
   background-color: $alt-section-bg;
-  padding: 35px 0px 35px 0px;
-}
-.footer-content {
-  @include flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 20px;
-  background-color: $alt-card-bg;
-}
-.footer-title {
-  padding: 10px;
-}
-.footer-paragraph {
-  font-size: 1.3rem;
-  padding: 10px;
-}
-.footer-body {
-  width: 50%;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 7px;
-}
-.footer-body input {
-  width: 60%;
-  padding: 12px;
-  margin-right: 10px;
-  border: 2px solid transparent;
-  outline: none;
-}
-.footer-body button {
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  background-color: white;
+  padding: 20px 0px 20px 0px;
+  .footer-content {
+    width: 100%;
+    padding: 20px;
+    background-color: $alt-card-bg;
+    .buttons, h1, p{padding:5px}
+    .button-text{font-size: .8rem;}
+  }
+  .rights{padding-top:20px;}
 }
 /* FOOTER END */
 

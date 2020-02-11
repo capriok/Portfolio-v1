@@ -57,7 +57,6 @@ a {
   max-width: 1200px;
   min-width: 200px;
   box-shadow: 0px 10px 10px black;
-  background-color: white;
   z-index: 1;
 }
 
@@ -76,9 +75,5 @@ a {
   a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-  }
-  .section-title {
-    font-size: calc(3rem + 2vw);
-    margin: 30px;
   }
 }

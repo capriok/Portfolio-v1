@@ -54,7 +54,7 @@ export default function Intro() {
             </ButtonGroup>
           </div>
         </div>
-        <div className="intro-border"></div>
+        <div className="intro-separator"></div>
         <div className="intro-two">
           <div className="two-card">
             <div className="two-head">
