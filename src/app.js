@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.scss";
 import "../src/components/components.scss";
-import Navbar from "./components/navbar";
-import Banner from "./components/banner";
+// import Navbar from "./components/navbar";
+// import Banner from "./components/banner";
 import Footer from "./components/footer";
 import Intro from './components/intro';
 import TechSection from './components/tech';

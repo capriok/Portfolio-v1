@@ -14,7 +14,7 @@ export default function TechSection() {
             <h1>Storage</h1>
             <p>MongoDB, GraphQL, AWS</p>
             <h1>Tools</h1>
-            <p>Git, Lodash, Webpack, Babel, Regex</p>
+            <p>Git, Lodash, Context, Material-UI, Regex</p>
           </div>
         </div>
         <div className="tech-border"></div>

@@ -4,7 +4,7 @@ export default function ProjectsSection() {
   return (
     <>
       <div id='projects-section' className="intro-section">
-        <h1>section</h1>
+        <h1>projects</h1>
       </div>
     </>
   );

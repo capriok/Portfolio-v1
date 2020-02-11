@@ -1,9 +1,9 @@
 import React from 'react';
 import portrait from '../img/portrait.jpg'
-import portraitnull from '../img/portraitnull.png'
-import github from '../img/github.png'
+// import portraitnull from '../img/portraitnull.png'
+// import github from '../img/github.png'
 import githubinv from '../img/githubinv.png'
-import linkedin from '../img/linkedin.png'
+// import linkedin from '../img/linkedin.png'
 import linkedininv from '../img/linkedininv.png'
 import { Button, ButtonGroup, makeStyles } from '@material-ui/core';
 
