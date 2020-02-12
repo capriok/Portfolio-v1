@@ -3,11 +3,12 @@ import React from 'react'
 export default function Navbar() {
   return (
     <div className='navbar'>
-      <div className="nav-buttons">
-        <a href='#intro-section'><div className="nav-link">Introduction</div></a>
-        <a href='#tech-section'><div className="nav-link">Knowledge</div></a>
-        <a href='#projects-section'><div className="nav-link">Endeavors</div></a>
-        <a href='#intouch-section'><div className="nav-link">Get in Touch</div></a>
+      <div className="title"><h1>Kyle Caprio</h1></div>
+      <div className="buttons">
+        <a href='#intro-section'><p>Introduction</p></a>
+        <a href='#intro-section'><p>Knowledge</p></a>
+        <a href='#intro-section'><p>Endeavors</p></a>
+        <a href='#intro-section'><p>Resume</p></a>
       </div>
     </div>
   )

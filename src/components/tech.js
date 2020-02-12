@@ -17,7 +17,7 @@ export default function Tech() {
             <p>Git, Lodash, Context, Material-UI, Regex</p>
           </div>
         </div>
-        <div className="tech-separator"></div>
+        <div className="separator"><div className="line"></div></div>
         <div className="tech-two">
           <div className="tech-area">
             <img src={logocollage} alt="" />

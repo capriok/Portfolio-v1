@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.scss";
 import "../src/components/components.scss";
-// import Navbar from "./components/navbar";
 // import Banner from "./components/banner";
+import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Intro from './components/intro';
 import Tech from './components/tech';
@@ -13,7 +13,7 @@ export default function App() {
     <div className="App">
       <div className="Main">
         {/* <Banner /> */}
-        {/* <Navbar /> */}
+        <Navbar />
         <Intro />
         <div className="border"></div>
         <Tech />

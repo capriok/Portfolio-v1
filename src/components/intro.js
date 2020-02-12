@@ -54,7 +54,7 @@ export default function Intro() {
             </ButtonGroup>
           </div>
         </div>
-        <div className="intro-separator"></div>
+        <div className="separator"><div className="line"></div></div>
         <div className="intro-two">
           <div className="two-card">
             <div className="two-head">
@@ -79,6 +79,7 @@ export default function Intro() {
                   <img src={linkedininv} alt="" /></Button>
               </ButtonGroup>
             </div>
+            <h2>capriok.dev@yahoo.com</h2>
           </div>
         </div>
       </div>
