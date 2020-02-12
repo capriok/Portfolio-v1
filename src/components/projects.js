@@ -27,7 +27,7 @@ export default function Projects() {
   return (
     <>
       <div id='projects-section' className="projects-section">
-        {/* ------------------------------------------------------------- */}
+        {/* --------------------------------------------------MyTube Music */}
         <div className="project-card">
           <div className="project-body">
             <h1>MyTube Music</h1>
@@ -64,7 +64,7 @@ export default function Projects() {
             <img src={portrait} alt="" />
           </div>
         </div>
-        {/* ------------------------------------------------------------- */}
+        {/* --------------------------------------------------Portfolio */}
         <div className="project-card">
           <div className="project-body">
             <h1>Portfolio</h1>
@@ -85,7 +85,7 @@ export default function Projects() {
                   </div>
                   </Button>
                   <Button className={classes.navigation}
-                    href="#projects-section"
+                    href="https://github.com/capriok/Portfolio"
                     target="_blank"
                     rel="noopener noreferrer">
                     <div className="button-text">
@@ -100,12 +100,12 @@ export default function Projects() {
             <img src={portrait} alt="" />
           </div>
         </div>
-        {/* ------------------------------------------------------------- */}
+        {/* --------------------------------------------------Arte Bella Engraving */}
         <div className="divider"></div>
         <div className="project-card">
           <div className="project-body">
             <h1>Arte Bella Engraving</h1>
-            <p>Small business client, single page website for freelance </p>
+            <p>Small business client, single page website</p>
             <div className="foot">
               <div className="tags">
                 <span>#</span>
@@ -122,7 +122,7 @@ export default function Projects() {
                   </div>
                   </Button>
                   <Button className={classes.navigation}
-                    href="#projects-section"
+                    href="https://github.com/capriok/Arte-Bella"
                     target="_blank"
                     rel="noopener noreferrer">
                     <div className="button-text">
@@ -137,7 +137,7 @@ export default function Projects() {
             <img src={portrait} alt="" />
           </div>
         </div>
-        {/* ------------------------------------------------------------- */}
+        {/* --------------------------------------------------E-commerce */}
         <div className="divider"></div>
         <div className="project-card">
           <div className="project-body">
@@ -175,7 +175,7 @@ export default function Projects() {
             <img src={portrait} alt="" />
           </div>
         </div>
-        {/* ------------------------------------------------------------- */}
+        {/* --------------------------------------------------TookFeed */}
         <div className="project-card">
           <div className="project-body">
             <h1>TookFeed</h1>
@@ -196,7 +196,7 @@ export default function Projects() {
                   </div>
                   </Button>
                   <Button className={classes.navigation}
-                    href="#projects-section"
+                    href="https://github.com/capriok/TookFeed"
                     target="_blank"
                     rel="noopener noreferrer">
                     <div className="button-text">
@@ -211,7 +211,7 @@ export default function Projects() {
             <img src={portrait} alt="" />
           </div>
         </div>
-        {/* ------------------------------------------------------------- */}
+        {/* --------------------------------------------------Rock Paper Scissors */}
         <div className="project-card">
           <div className="project-body">
             <h1>Rock Paper Scissors</h1>
@@ -247,7 +247,7 @@ export default function Projects() {
             <img src={portrait} alt="" />
           </div>
         </div>
-        {/* ------------------------------------------------------------- */}
+        {/* --------------------------------------------------Theme Template Distribution */}
         <div className="project-card">
           <div className="project-body">
             <h1>Theme Template Distribution</h1>
@@ -283,7 +283,7 @@ export default function Projects() {
             <img src={portrait} alt="" />
           </div>
         </div>
-        {/* ------------------------------------------------------------- */}
+        {/* -------------------------------------------------- */}
       </div>
     </>
   );

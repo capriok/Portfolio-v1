@@ -8,7 +8,7 @@ export default function Navbar() {
         <a href='#intro-section'><p>Introduction</p></a>
         <a href='#tech-section'><p>Knowledge</p></a>
         <a href='#projects-section'><p>Endeavors</p></a>
-        <a href='#'><p>Resume</p></a>
+        <a href='/#'><p>Resume</p></a>
       </div>
     </div>
   )

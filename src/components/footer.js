@@ -27,25 +27,25 @@ export default function Footer() {
     <>
       <div className="footer-section">
         <div className="footer-content">
-          <h1>title</h1>
-          <p>paragraph</p>
+          {/* <h1>title</h1>
+          <p>paragraph</p> */}
           <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
-            <Button className={classes.navigation} href="#tech-section">
+            <Button className={classes.navigation} href="https://github.com/capriok">
               <div className="button-text">
                 Github
               </div>
             </Button>
-            <Button className={classes.navigation} href="#projects-section">
+            <Button className={classes.navigation} href="https://www.linkedin.com/in/kyle-caprio-568808111">
               <div className="button-text">
                 LinkedIn
               </div>
             </Button>
-            <Button className={classes.navigation} href="#projects-section">
+            <Button className={classes.navigation} href="https://codepen.io/capriok">
               <div className="button-text">
                 Codepen
               </div>
             </Button>
-            <Button className={classes.navigation} href="#projects-section">
+            <Button className={classes.navigation} href="/#">
               <div className="button-text">
                 Resume
               </div>

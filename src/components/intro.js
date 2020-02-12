@@ -39,16 +39,16 @@ export default function Intro() {
             <h1>I'm Kyle Caprio</h1>
             <p>A software developer based in Tempe, AZ</p>
             <div className="one-border"></div>
-            <h1 className="intro-hook">Explore Further</h1>
+            <h1>Explore Further</h1>
             <ButtonGroup size="small" aria-label="small outlined button group">
               <Button className={classes.navigation} href="#tech-section">
-                <div className="one-btns">
-                  Knowledge
+                <div className="button-text">
+                  Technologies
                   </div>
               </Button>
               <Button className={classes.navigation} href="#projects-section">
-                <div className="one-btns">
-                  Endeavors
+                <div className="button-text">
+                  Projects
                   </div>
               </Button>
             </ButtonGroup>
