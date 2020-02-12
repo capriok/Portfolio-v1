@@ -27,32 +27,28 @@ export default function Footer() {
     <>
       <div className="footer-section">
         <div className="footer-content">
-          <h1>
-            title
-          </h1>
-          <p>
-            paragraph
-          </p>
+          <h1>title</h1>
+          <p>paragraph</p>
           <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
             <Button className={classes.navigation} href="#tech-section">
               <div className="button-text">
                 Github
-                  </div>
+              </div>
             </Button>
             <Button className={classes.navigation} href="#projects-section">
               <div className="button-text">
                 LinkedIn
-                  </div>
+              </div>
             </Button>
             <Button className={classes.navigation} href="#projects-section">
               <div className="button-text">
                 Codepen
-                  </div>
+              </div>
             </Button>
             <Button className={classes.navigation} href="#projects-section">
               <div className="button-text">
                 Resume
-                  </div>
+              </div>
             </Button>
           </ButtonGroup>
           <p className="rights">© 2020 Kyle Caprio | All rights reserved.</p>
