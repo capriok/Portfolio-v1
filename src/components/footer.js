@@ -55,8 +55,8 @@ export default function Footer() {
                   </div>
             </Button>
           </ButtonGroup>
+          <p className="rights">© 2020 Kyle Caprio | All rights reserved.</p>
         </div>
-        <p className="rights">© 2020 Kyle Caprio | All rights reserved.</p>
       </div>
     </>
   );

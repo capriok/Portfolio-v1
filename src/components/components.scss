@@ -63,16 +63,16 @@
     align-items: center;
     justify-content: flex-end;
   }
-  a:not(:last-child) {padding-right: 25px;}
+  a:not(:last-child) {padding-right: 10px;}
   p {
-    padding: 15px 0px 15px 0px;
+    padding: 15px 10px 15px 10px;
     cursor: pointer;
     font-size: medium;
-    transition: all 1s;
+    transition: all .5s;
   }
-  p:active {
-    border-bottom: 2px solid black ;
-    transition: all 1s;
+  p:hover {
+    background-color: $alt-section-bg;
+    transition: all .3s;
   }
 }
 
@@ -241,16 +241,14 @@
 
 .footer-section {
   @include flex;
+  padding: 20px 0px 20px 0px; 
   flex-wrap: wrap;
   width: 100%;
   background-color: $alt-section-bg;
   .footer-content {
     width: 100%;
-    padding: 20px;
-    .buttons, h1, p{padding:5px}
+    .buttons, h1, p, .rights{padding:5px}
     .button-text{font-size: .8rem;}
-  }
-  .rights{  padding: 20px 0px 20px 0px;
   }
 }
 /* FOOTER END */
