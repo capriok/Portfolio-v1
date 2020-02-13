@@ -9,15 +9,19 @@ import Tech from './components/tech';
 import Projects from './components/projects';
 
 export default function App() {
+
+  console.log('create slight movement of divs for background anim');
+  console.log('create dark/ light mode toggle w context');
+  console.log('');
+
+
   return (
     <div className="App">
       <div className="Main">
         {/* <Banner /> */}
         <Navbar />
         <Intro />
-        <div className="border"></div>
         <Tech />
-        <div className="border"></div>
         <Projects />
         <Footer />
       </div>

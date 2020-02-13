@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,500&display=swap');
-:root {
-  --main-bg: rgb(17, 17, 17);
-}
+
+  $main-bg: rgb(17, 17, 17);
+  $section-bg:rgb(14, 14, 14);
 
 * {
   padding: 0;
@@ -46,7 +46,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-bg);
+  background-color:  $section-bg;
   z-index: -1;
 }
 .Main {

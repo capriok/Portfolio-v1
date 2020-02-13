@@ -1,7 +1,7 @@
 import React from 'react';
 import portrait from '../img/portraitnull.png'
 import { Button, ButtonGroup, makeStyles } from '@material-ui/core';
-
+import worldwide from '../img/worldwide.jpg'
 export default function Projects() {
   const useStyles = makeStyles({
     navigation: {
@@ -26,7 +26,7 @@ export default function Projects() {
   const classes = useStyles();
   return (
     <>
-      <div id='projects-section' className="projects-section">
+      <div id='projects-section' className="projects-section poly2">
         {/* --------------------------------------------------MyTube Music */}
         <div className="project-card">
           <div className="project-body">

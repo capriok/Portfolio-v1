@@ -33,7 +33,7 @@ export default function Intro() {
 
   return (
     <>
-      <div id='intro-section' className="intro-section">
+      <div id='intro-section' className="intro-section poly1">
         <div className="intro-one">
           <div className="one-card">
             <h1>I'm Kyle Caprio</h1>
