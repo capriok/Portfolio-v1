@@ -16,7 +16,7 @@ const ThemeSwitch = withStyles({
     backgroundRepeat: "no-repeat",
   },
   switchBase: {
-    color: "#4ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss24242",
+    color: "#424242",
     "&$checked": {
       color: "#424242",
     },

@@ -1,10 +1,29 @@
 /* COLOR VARS */
+
   $nav-bg: rgb(0, 0, 0);
-  $section-bg:rgb(14, 14, 14);
-  $alt-section-bg:rgb(17, 17, 17);
-  $card-bg:rgb(0, 10, 27);
-  $alt-card-bg:rgb(39, 39, 39);
-  $footer-bg:rgb(255, 255, 255);
+  $inner-section-bg:rgb(20, 20, 20);
+  $section-bg: rgb(204, 204, 204);
+  $poly-bg: rgb(150, 150, 150);
+  
+  $dark-app-bg: rgb(7, 7, 7);
+  $dark-main-bg:rgb(17, 17, 17);
+  $card-bg:rgb(39,39,39);
+  $dark-section-bg: rgb(12, 12, 12);
+
+// Dark Theme
+
+.app-dark{
+  background-color:  $dark-app-bg;
+}
+.main-dark{
+  background-color:  $dark-main-bg;
+}
+.intro-dark{
+  background-color: $dark-section-bg;
+}
+.projects-dark{
+  background-color: $dark-section-bg;
+}
 
 /* MIX INS */
 
@@ -21,8 +40,8 @@
 
 .separator{
   height: 400px;
-  width: 1px;
-  background-color: $alt-section-bg;
+  width: 2px;
+  background-color: $inner-section-bg;
   .line{
     position: relative;
     top:50px;
@@ -36,11 +55,11 @@
 
 .poly1{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-  background-color: rgb(204, 204, 204);
+  background-color: $poly-bg;
 }
 .poly2{
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $poly-bg;
 }
 
 /* BANNER */
@@ -89,7 +108,7 @@
     transition: all .5s;
   }
   p:hover {
-    background-color: $alt-section-bg;
+    background-color: $inner-section-bg;
     transition: all .3s;
   }
 }
@@ -110,7 +129,7 @@
     @include flex;
     flex: 1;
     height: 400px;
-    background-color: $alt-section-bg;
+    background-color: $inner-section-bg;
     .one-card{
       text-align: left;
       margin-left: 20%;
@@ -130,10 +149,10 @@
     @include flex;
     flex: .8;
     height: 400px;
-    background-color: $alt-section-bg;
+    background-color: $inner-section-bg;
     .two-card{
       padding: 15px;
-      background-color: $alt-card-bg;
+      background-color: $card-bg;
     }
     .two-head img{width: 155px;border-radius: 50%;}
     h1{padding-bottom: 10px;}
@@ -160,7 +179,7 @@
     @include flex;
     height: 400px;
     flex: 1.2;
-    background-color: $alt-section-bg;
+    background-color: $inner-section-bg;
     .tech-card{
       @include flex;
       flex-direction: column;
@@ -169,7 +188,7 @@
       width: 80%;
       padding: 15px;;
       text-align: left;
-      background-color: $alt-card-bg;
+      background-color: $card-bg;
       h1{padding-bottom: 5px;}
       p:not(:last-child) {padding-bottom: 10px;}
     }
@@ -178,7 +197,7 @@
     @include flex;
     height: 400px;
     flex: 1;
-    background-color: $alt-section-bg;
+    background-color: $inner-section-bg;
     .tech-area{
       @include flex;
       img{
@@ -205,7 +224,10 @@
     min-width: 100%;
     min-height: 175px;
     margin: 10px;
-    background-color: $alt-section-bg;
+    text-align: left;
+    padding: 5px;
+    border-left: 5px solid rgb(95, 95, 95);
+    background-color: $inner-section-bg;
     .project-body{
       flex:1;
       display: flex;
@@ -267,7 +289,7 @@
   padding: 20px 0px 20px 0px; 
   flex-wrap: wrap;
   width: 100%;
-  background-color: $alt-section-bg;
+  background-color: $inner-section-bg;
   .footer-content {
     width: 100%;
     .buttons, h1, p, .rights{padding:5px}

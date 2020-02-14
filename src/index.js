@@ -6,20 +6,15 @@ import "./index.scss";
 
 export function Index() {
   let initialState = {
-    light: {
-
-    },
-    dark: {
-
-    }
+    darkState: false,
   };
 
   const reducer = (state, action) => {
     switch (action.type) {
-      case "null":
+      case "flip":
         return {
           ...state,
-          null: action.null
+          darkState: action.darkState
         };
       default:
         return state;

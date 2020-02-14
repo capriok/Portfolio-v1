@@ -1,5 +1,6 @@
 import React from 'react';
 import portrait from '../img/portrait.jpg'
+import { useStateValue } from '../state'
 // import portraitnull from '../img/portraitnull.png'
 // import github from '../img/github.png'
 import githubinv from '../img/githubinv.png'
@@ -8,6 +9,7 @@ import linkedininv from '../img/linkedininv.png'
 import { Button, ButtonGroup, makeStyles } from '@material-ui/core';
 
 export default function Intro() {
+  const [{ darkState },] = useStateValue()
 
   const useStyles = makeStyles({
     navigation: {
@@ -33,7 +35,7 @@ export default function Intro() {
 
   return (
     <>
-      <div id='intro-section' className="intro-section poly1">
+      <div id='intro-section' className={darkState ? "intro-section poly1 intro-dark" : "intro-section poly1"}>
         <div className="intro-one">
           <div className="one-card">
             <h1>I'm Kyle Caprio</h1>

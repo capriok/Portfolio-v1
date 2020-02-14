@@ -1,8 +1,10 @@
 import React from 'react';
+import { useStateValue } from '../state'
 import portrait from '../img/portraitnull.png'
 import { Button, ButtonGroup, makeStyles } from '@material-ui/core';
 
 export default function Projects() {
+  const [{ darkState },] = useStateValue()
   const useStyles = makeStyles({
     navigation: {
       color: "white",
@@ -26,12 +28,12 @@ export default function Projects() {
   const classes = useStyles();
   return (
     <>
-      <div id='projects-section' className="projects-section poly2">
+      <div id='projects-section' className={darkState ? "projects-section poly2 projects-dark" : "projects-section poly2"}>
         {/* --------------------------------------------------MyTube Music */}
         <div className="project-card">
           <div className="project-body">
             <h1>MyTube Music</h1>
-            <p>Youtube Data API consumed to create client sided music streaming application wrapped in Electron</p>
+            <p>Youtube Data API consumed to create a client sided music streaming application wrapped in Electron</p>
             <div className="foot">
               <div className="tags">
                 <span>#</span>

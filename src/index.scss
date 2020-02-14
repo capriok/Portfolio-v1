@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,500&display=swap');
 
-  $main-bg: rgb(17, 17, 17);
-  $section-bg:rgb(14, 14, 14);
+  $app-bg: rgb(130, 130, 130);
+  $main-bg: rgb(91, 91, 91);
+
+//Dark Theme
+
 
 * {
   padding: 0;
@@ -41,15 +44,15 @@ a {
 
 /* APP */
 
-.App {
+.app {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:  $section-bg;
+  background-color:  $app-bg;
   z-index: -1;
 }
-.Main {
+.main {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -58,6 +61,7 @@ a {
   min-width: 200px;
   box-shadow: 0px 10px 10px black;
   z-index: 1;
+  background-color:  $main-bg;
 }
 
 /* APP END */

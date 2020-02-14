@@ -1,26 +1,19 @@
-import React, { useEffect } from 'react'
-import { Switch } from '@material-ui/core';
+import React, { useState, useEffect } from 'react'
 import ThemeSwitch from "./themeswitch"
 import { useStateValue } from '../state'
 import _ from 'lodash'
 
 export default function Navbar() {
-  const [{ theme }, dispatch] = useStateValue()
-  const [state, setState] = React.useState({
-    checkedA: true,
-    checkedB: true,
-  });
+  const [{ darkState }, dispatch] = useStateValue()
 
-  const handleChange = name => event => {
-    setState({ ...state, [name]: event.target.checked });
-    var keys = _.keys(_.pickBy(state));
-    console.log(keys[0]);
-
+  const handleChange = () => {
+    dispatch({ type: 'flip', darkState: !darkState })
   };
 
   useEffect((
-
-  ) => { }, [theme])
+  ) => {
+    console.log(darkState);
+  }, [darkState])
 
   return (
     <div className='navbar'>
@@ -32,9 +25,8 @@ export default function Navbar() {
         <a href='/#'><p>Resume</p></a>
       </div>
       <ThemeSwitch
-        checked={state.checkedA}
-        onChange={handleChange('checkedA')}
-        value="checkedA"
+        onClick={handleChange}
+        checked={darkState}
       />
     </div>
   )
