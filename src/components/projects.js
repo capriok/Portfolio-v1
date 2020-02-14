@@ -1,7 +1,7 @@
 import React from 'react';
 import portrait from '../img/portraitnull.png'
 import { Button, ButtonGroup, makeStyles } from '@material-ui/core';
-import worldwide from '../img/worldwide.jpg'
+
 export default function Projects() {
   const useStyles = makeStyles({
     navigation: {

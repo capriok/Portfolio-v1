@@ -6,7 +6,12 @@ import "./index.scss";
 
 export function Index() {
   let initialState = {
-    null: ''
+    light: {
+
+    },
+    dark: {
+
+    }
   };
 
   const reducer = (state, action) => {

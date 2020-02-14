@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.scss";
 import "../src/components/components.scss";
-// import Banner from "./components/banner";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Intro from './components/intro';
@@ -12,8 +11,6 @@ export default function App() {
 
   console.log('create slight movement of divs for background anim');
   console.log('create dark/ light mode toggle w context');
-  console.log('');
-
 
   return (
     <div className="App">

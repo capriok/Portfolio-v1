@@ -153,7 +153,6 @@
 /* TECH  */
 .tech-section{
   @include flex;
-  justify-content: space-evenly;
   flex-direction: row;
   padding: 100px;
   width: 100%;

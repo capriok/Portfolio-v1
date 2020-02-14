@@ -79,7 +79,7 @@ export default function Intro() {
                   <img src={linkedininv} alt="" /></Button>
               </ButtonGroup>
             </div>
-            <h2>capriok.dev@yahoo.com</h2>
+            <h2>capriodev@gmail.com</h2>
           </div>
         </div>
       </div>
