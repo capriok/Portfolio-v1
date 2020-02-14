@@ -9,6 +9,17 @@
   $dark-main-bg:rgb(17, 17, 17);
   $card-bg:rgb(39,39,39);
   $dark-section-bg: rgb(12, 12, 12);
+  
+// Light Theme
+
+.poly1{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  background-color: $poly-bg;
+}
+.poly2{
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+  background-color: $poly-bg;
+}
 
 // Dark Theme
 
@@ -52,15 +63,6 @@
 }
 
 /* SEPARATORS END */
-
-.poly1{
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
-  background-color: $poly-bg;
-}
-.poly2{
-  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
-  background-color: $poly-bg;
-}
 
 /* BANNER */
 
