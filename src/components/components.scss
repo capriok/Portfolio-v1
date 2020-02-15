@@ -3,7 +3,7 @@
   $nav-bg: rgb(0, 0, 0);
   $inner-section-bg:rgb(20, 20, 20);
   $section-bg: rgb(204, 204, 204);
-  $poly-bg: rgb(150, 150, 150);
+  $poly-bg: rgb(59, 96, 132);
   
   $dark-app-bg: rgb(7, 7, 7);
   $dark-main-bg:rgb(17, 17, 17);
@@ -227,7 +227,6 @@
     margin: 10px;
     text-align: left;
     padding: 5px;
-    border-left: 5px solid rgb(95, 95, 95);
     background-color: $inner-section-bg;
     .project-body{
       flex:1;
@@ -311,6 +310,7 @@
     padding: 0px;
     flex-direction: column;
     min-height: 300px;
+    height: 90vh;
     padding-bottom: 60px;
     .intro-one{
       padding: 20px 0px 20px 0px;
@@ -343,6 +343,8 @@
     padding: 0px;
     padding-top: 60px;
     .project-card{
+      margin: 0;
+      margin-bottom: 3px;
     .project-body{
       .foot{
         .tags{
