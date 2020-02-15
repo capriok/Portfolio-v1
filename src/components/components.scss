@@ -3,7 +3,7 @@
   $nav-bg: rgb(0, 0, 0);
   $inner-section-bg:rgb(20, 20, 20);
   $section-bg: rgb(204, 204, 204);
-  $poly-bg: rgb(110, 110, 110);
+  $poly-bg: #6e6e6e;
   
   $dark-app-bg: rgb(7, 7, 7);
   $dark-main-bg: rgb(8, 14, 20);
@@ -20,13 +20,15 @@
 // Dark Theme
 
 .app-dark{
-  background-color:  $dark-app-bg;
+  background-color: $dark-app-bg;
 }
 .main-dark{
-  background-color:  $dark-main-bg;
+  background-color: $dark-main-bg;
+  background: linear-gradient(135deg, rgba(8,14,20,1) 0%, rgba(13,23,33,1) 50%, rgba(8,14,20,1) 100%);
 }
 .tech-dark{
   background-color: $dark-poly-bg;
+  background: linear-gradient(135deg, rgba(17,17,17,1) 0%, rgba(20,20,20,1) 45%, rgba(17,17,17,1) 100%);
 }
 
 /* MIX INS */
