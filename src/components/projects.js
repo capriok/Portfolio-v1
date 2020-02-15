@@ -47,7 +47,7 @@ export default function Projects() {
                 <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
                   <Button className={classes.navigation} href="#tech-section">
                     <div className="button-text">
-                      See More
+                      see in depth
                   </div>
                   </Button>
                   <Button className={classes.navigation}
@@ -83,7 +83,7 @@ export default function Projects() {
                 <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
                   <Button className={classes.navigation} href="#tech-section">
                     <div className="button-text">
-                      See More
+                      see in depth
                   </div>
                   </Button>
                   <Button className={classes.navigation}
@@ -120,7 +120,7 @@ export default function Projects() {
                 <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
                   <Button className={classes.navigation} href="#tech-section">
                     <div className="button-text">
-                      See More
+                      see in depth
                   </div>
                   </Button>
                   <Button className={classes.navigation}
@@ -158,7 +158,7 @@ export default function Projects() {
                 <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
                   <Button className={classes.navigation} href="#tech-section">
                     <div className="button-text">
-                      See More
+                      see in depth
                   </div>
                   </Button>
                   <Button className={classes.navigation}
@@ -194,7 +194,7 @@ export default function Projects() {
                 <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
                   <Button className={classes.navigation} href="#tech-section">
                     <div className="button-text">
-                      See More
+                      see in depth
                   </div>
                   </Button>
                   <Button className={classes.navigation}
@@ -230,7 +230,7 @@ export default function Projects() {
                 <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
                   <Button className={classes.navigation} href="#tech-section">
                     <div className="button-text">
-                      See More
+                      see in depth
                   </div>
                   </Button>
                   <Button className={classes.navigation}
