@@ -15,10 +15,6 @@ export default function App() {
     console.log('create slight movement of divs for background anim');
     console.log('see in depth project button takes you to project route');
     console.log('need to design a project display  page for route');
-    console.log('');
-
-
-
   }, [])
 
   return (
