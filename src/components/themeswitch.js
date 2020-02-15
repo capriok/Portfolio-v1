@@ -26,7 +26,10 @@ const ThemeSwitch = withStyles({
   },
   checked: {},
   track: {},
-  root: {},
+  root: {
+    position: 'relative',
+    marginLeft: 'auto'
+  },
 })(({ classes, ...props }) => {
   return (
     <Switch
