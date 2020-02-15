@@ -362,11 +362,11 @@
       display: none;
     }
   } 
-  .footer-content {
-    width: 100%;
-    .buttons{
-    .button-text{font-size: .6rem;}
-    }
+    .footer-content {
+      width: 100%;
+      .buttons{
+        .button-text{font-size: .6rem;}
+      }
     .rights{font-size: .6rem;}
   }
 }
@@ -374,7 +374,7 @@
 /* MEDIA QUERIES END */
 @media (max-width:650px){
   .navbar {
-    padding:7px;
+    padding:7px 10px 7px 15px;
     .buttons{
       display: none;
     }
