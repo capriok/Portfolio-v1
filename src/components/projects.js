@@ -28,7 +28,7 @@ export default function Projects() {
   const classes = useStyles();
   return (
     <>
-      <div id='projects-section' className={darkState ? "projects-section poly2 projects-dark" : "projects-section poly2"}>
+      <div id='projects-section' className="projects-section">
         {/* --------------------------------------------------MyTube Music */}
         <div className="project-card">
           <div className="project-body">

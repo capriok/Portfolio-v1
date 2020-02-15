@@ -3,22 +3,17 @@
   $nav-bg: rgb(0, 0, 0);
   $inner-section-bg:rgb(20, 20, 20);
   $section-bg: rgb(204, 204, 204);
-  $poly-bg: rgb(59, 96, 132);
+  $poly-bg: rgb(110, 110, 110);
   
   $dark-app-bg: rgb(7, 7, 7);
-  $dark-main-bg:rgb(17, 17, 17);
+  $dark-main-bg: rgb(8, 14, 20);
   $card-bg:rgb(39,39,39);
   $dark-section-bg: rgb(12, 12, 12);
-  $dark-poly-bg: rgb(8, 14, 20);
+  $dark-poly-bg:rgb(17, 17, 17);
   
 // Light Theme
-
-.poly1{
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
-  background-color: $poly-bg;
-}
-.poly2{
-  clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
+.poly{
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
   background-color: $poly-bg;
 }
 
@@ -30,10 +25,7 @@
 .main-dark{
   background-color:  $dark-main-bg;
 }
-.intro-dark{
-  background-color: $dark-poly-bg;
-}
-.projects-dark{
+.tech-dark{
   background-color: $dark-poly-bg;
 }
 
@@ -153,12 +145,12 @@
     width: 100%;
     background-color:$inner-section-bg;
     .two-card{
-      padding: 15px;
+      padding: 10px;
       background-color: $card-bg;
     }
     .two-head img{width: 155px;border-radius: 50%;}
-    h1{padding-bottom: 10px;}
-    h2 {padding-top: 10px;letter-spacing: .5px;}
+      h1{padding-bottom: 10px;}
+      h2 {padding-top: 10px;letter-spacing: .5px;}
       .two-btns{
         @include flex;
         flex-direction: row;
@@ -322,10 +314,11 @@
     }
   } 
   .tech-section{
-    padding: 0px;
+    padding: 60px 0px 60px 0px;
     flex-direction: column;
     min-height: 300px;
     .tech-one{
+      width: 75%;
       padding: 20px 0px 20px 0px;
       background-color: transparent;
       .tech-card{
@@ -368,7 +361,27 @@
       display: none;
     }
   }
-  .intro-section{height: 90vh;}
+  .intro-section{
+    height: 90vh;
+    .intro-one{
+      .one-card{
+      width: 90%;
+      }
+    }
+    .intro-two{
+      .two-card{
+      width: 90%;
+    }
+    }
+  }
+  .tech-section{
+  .tech-one{
+    width: 100%;
+    .tech-card{
+      width: 90%;
+    }
+  }
+  }
   .projects-section{
     padding:0px;
     padding-top: 60px;

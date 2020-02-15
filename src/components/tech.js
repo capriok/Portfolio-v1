@@ -1,10 +1,13 @@
 import React from 'react';
+import { useStateValue } from '../state'
 import logocollage from '../img/logo-collage.png'
 
 export default function Tech() {
+  const [{ darkState },] = useStateValue()
   return (
     <>
-      <div id='tech-section' className="tech-section">
+      <div id='tech-section' className={darkState ? "tech-section poly tech-dark" : "tech-section poly"}>
+        {/* <div id='tech-section' className={"tech-section poly"}> */}
         <div className="tech-one">
           <div className="tech-card">
             <h1>Languages</h1>

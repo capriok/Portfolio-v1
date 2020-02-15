@@ -32,7 +32,7 @@ export default function Intro() {
 
   return (
     <>
-      <div id='intro-section' className={darkState ? "intro-section poly1 intro-dark" : "intro-section poly1"}>
+      <div id='intro-section' className="intro-section">
         <div className="intro-one">
           <div className="one-card">
             <h1>I'm Kyle</h1>
