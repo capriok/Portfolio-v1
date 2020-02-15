@@ -13,11 +13,11 @@
 // Light Theme
 
 .poly1{
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
   background-color: $poly-bg;
 }
 .poly2{
-  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
   background-color: $poly-bg;
 }
 
@@ -267,7 +267,6 @@
           }
         }
         .buttons{
-          margin-left: auto;
           position: relative;
           bottom: 0px;
           .button-text{font-size: .7rem;}
@@ -278,7 +277,6 @@
   .project-thumb{
   display: flex;
   justify-content: flex-end;
-  background-color: lightblue;
   img{width: 175px;}
   }
 }
@@ -315,30 +313,61 @@
     padding: 0px;
     flex-direction: column;
     min-height: 300px;
+    padding-bottom: 60px;
+
     .intro-one{
       padding: 20px 0px 20px 0px;
       background-color: transparent;
+      .one-card{
+        margin:0px;
+      .button-text{font-size: .8rem;}
+      }
     } 
     .intro-two{
       background-color: transparent;
     }
   } 
-  .banner-main {
-    max-height: 30vh;
-  }
-  .greeting-section {
+  .tech-section{
+    padding: 0px;
     flex-direction: column;
-    width: 90%;
-  }
-  .one img {
-    max-width: 95%;
-  }
-  .two-content {
-    padding: 10px;
+    min-height: 300px;
+    .tech-one{
+      padding: 20px 0px 20px 0px;
+      background-color: transparent;
+      .tech-card{
+        margin:0px;
+      }
+    } 
+    .tech-two{
+      background-color: transparent;
+    }
+  } 
+  .projects-section{
+    .poly2{display:none}
+    padding: 0px;
     width: 100%;
-  }
-  .footer-body {
+    padding-top: 60px;
+    .project-card{flex-direction: column;}
+    .project-body{
+      .foot{
+        .tags{
+          display: none;
+        }
+      }
+    }
+    .project-thumb{
+      display: flex;
+      justify-content: center;
+      img{width: 175px;}
+      display: none;
+    }
+  } 
+  .footer-content {
     width: 100%;
+    .buttons{
+    .button-text{font-size: .6rem;}
+    }
+    .rights{font-size: .6rem;}
   }
 }
 

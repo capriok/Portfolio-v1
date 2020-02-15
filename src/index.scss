@@ -49,6 +49,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   background-color:  $app-bg;
   z-index: -1;
 }
@@ -68,10 +69,10 @@ a {
 
 @media (max-width:1000px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   p {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
   }
   span {
     font-size: 1.2rem;

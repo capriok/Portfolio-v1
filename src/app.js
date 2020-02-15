@@ -18,7 +18,6 @@ export default function App() {
   return (
     <div className={darkState ? "app app-dark" : "app"}>
       <div className={darkState ? "main main-dark" : "main"}>
-        {/* <Banner /> */}
         <Navbar />
         <Intro />
         <Tech />

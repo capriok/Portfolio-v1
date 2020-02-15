@@ -213,42 +213,6 @@ export default function Projects() {
             <img src={portrait} alt="" />
           </div>
         </div>
-        {/* --------------------------------------------------Rock Paper Scissors */}
-        <div className="project-card">
-          <div className="project-body">
-            <h1>Rock Paper Scissors</h1>
-            <p>Early testimate to javascript skill</p>
-            <div className="foot">
-              <div className="tags">
-                <span>#</span>
-                <span className="tag-plaque">Javascript</span>
-                <span className="tag-plaque">HTML</span>
-                <span className="tag-plaque">CSS</span>
-                <span className="tag-plaque">2018</span>
-              </div>
-              <div className="buttons">
-                <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
-                  <Button className={classes.navigation} href="#tech-section">
-                    <div className="button-text">
-                      See More
-                  </div>
-                  </Button>
-                  <Button className={classes.navigation}
-                    href="#projects-section"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <div className="button-text">
-                      Source
-                  </div>
-                  </Button>
-                </ButtonGroup>
-              </div>
-            </div>
-          </div>
-          <div className="project-thumb">
-            <img src={portrait} alt="" />
-          </div>
-        </div>
         {/* --------------------------------------------------Theme Template Distribution */}
         <div className="project-card">
           <div className="project-body">
