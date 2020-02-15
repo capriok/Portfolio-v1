@@ -12,10 +12,6 @@ export default function App() {
   const [{ darkState }, dispatch] = useStateValue()
 
   useEffect(() => {
-
-  }, [])
-
-  useEffect(() => {
     console.log('create slight movement of divs for background anim');
     console.log('finish theme x localStorage');
   }, [])

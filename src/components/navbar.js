@@ -8,7 +8,9 @@ export default function Navbar() {
 
   const handleChange = () => {
     dispatch({ type: 'flip', darkState: !darkState })
+    localStorage.setItem('theme', !darkState)
   }
+
   return (
     <div className='navbar'>
       <div className="title"><a href="/"><h1>Kyle Caprio</h1></a></div>

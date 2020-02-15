@@ -5,8 +5,10 @@ import App from "./app";
 import "./index.scss";
 
 export function Index() {
+  const trueDarkState = localStorage.getItem('theme') === 'true'
+
   let initialState = {
-    darkState: false,
+    darkState: trueDarkState,
   };
 
   const reducer = (state, action) => {
