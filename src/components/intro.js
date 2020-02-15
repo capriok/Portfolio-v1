@@ -35,7 +35,7 @@ export default function Intro() {
       <div id='intro-section' className={darkState ? "intro-section poly1 intro-dark" : "intro-section poly1"}>
         <div className="intro-one">
           <div className="one-card">
-            <h1>I'm Kyle Caprio</h1>
+            <h1>I'm Kyle</h1>
             <p>A software developer based in Tempe, AZ</p>
             <div className="one-border"></div>
             <h1>Explore Further</h1>
