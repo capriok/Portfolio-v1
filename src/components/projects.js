@@ -181,7 +181,7 @@ export default function Projects() {
         <div className="project-card">
           <div className="project-body">
             <h1>TookFeed</h1>
-            <p>Harnessing the power or News API to stay up to date on global or local news</p>
+            <p>Harnessing the power of News API to stay up to date on global or local news</p>
             <div className="foot">
               <div className="tags">
                 <span>#</span>
