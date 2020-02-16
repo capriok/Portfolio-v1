@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import ThemeSwitch from "./themeswitch"
 import { useStateValue } from '../state'
-import _ from 'lodash'
 
 export default function Navbar() {
   const [{ darkState }, dispatch] = useStateValue()

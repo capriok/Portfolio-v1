@@ -1,10 +1,9 @@
 import React from 'react';
-import { useStateValue } from '../state'
 import portrait from '../img/portraitnull.png'
 import { Button, ButtonGroup, makeStyles } from '@material-ui/core';
 
-export default function Projects() {
-  const [{ darkState },] = useStateValue()
+export default function Projects({ setOpen }) {
+
   const useStyles = makeStyles({
     navigation: {
       color: "white",
@@ -26,230 +25,94 @@ export default function Projects() {
     }
   });
   const classes = useStyles();
+
+  const projects = [
+    {
+      title: 'MyTube Music',
+      snippet: 'Youtube Data API consumed to create a client sided music streaming application wrapped in Electron',
+      tags: ['Javascript', 'React', 'Electron', 'CSS', '2020'],
+      thumb: portrait,
+      link: 'https://github.com/capriok/MyTube'
+    },
+    {
+      title: 'Portfolio',
+      snippet: 'My first solftware developer tailored portfolio',
+      tags: ['Javascript', 'React', 'SCSS', '2020'],
+      thumb: portrait,
+      link: 'https://github.com/capriok/Portfolio'
+    },
+    {
+      title: 'Arte Bella Engraving',
+      snippet: 'Small business client, single page website',
+      tags: ['Javascript', 'React', 'SCSS', '2019'],
+      thumb: portrait,
+      link: 'https://github.com/capriok/Arte-Bella'
+    },
+    {
+      title: 'E-Commerce',
+      snippet: 'High end fashion website inspired by Polo Ralph Lauren site',
+      tags: ['Javascript', 'React', 'Electron', 'CSS', '2019'],
+      thumb: portrait,
+      link: 'https://github.com/capriok'
+    },
+    {
+      title: 'TookFeed',
+      snippet: 'Harnessing the power of News API to stay up to date on global or local news',
+      tags: ['Javascript', 'React', 'Electron', 'CSS', '2019'],
+      thumb: portrait,
+      link: 'https://github.com/capriok/TookFeed'
+    },
+    {
+      title: 'Theme Template Distribution',
+      snippet: 'Combining aesthetics with user customizable theme templates',
+      tags: ['HTML', 'CSS', 'Jquery', '2014'],
+      thumb: portrait,
+      link: 'https://themesfromkyle.tumblr.com/'
+    }
+  ]
   return (
     <>
       <div id='projects-section' className="projects-section">
         {/* --------------------------------------------------MyTube Music */}
-        <div className="project-card">
-          <div className="project-body">
-            <h1>MyTube Music</h1>
-            <p>Youtube Data API consumed to create a client sided music streaming application wrapped in Electron</p>
-            <div className="foot">
-              <div className="tags">
-                <span>#</span>
-                <span className="tag-plaque">Javascript</span>
-                <span className="tag-plaque">React</span>
-                <span className="tag-plaque">Electron</span>
-                <span className="tag-plaque">CSS</span>
-                <span className="tag-plaque">2020</span>
+
+        {projects.map((item, i) => (
+          <>
+            <div className="project-card" >
+              <div className="project-body" key={i}>
+                <h1>{item.title}</h1>
+                <p>{item.snippet}</p>
+                <div className="foot">
+                  <div className="tags">
+                    <span>#</span>
+                    {item.tags.map((item, i) => (
+                      <span key={i}>{item}</span>
+                    ))}
+                  </div>
+                  <div className="buttons">
+                    <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
+                      <Button className={classes.navigation} onClick={() => setOpen(true)}>
+                        <div className="button-text">
+                          see in depth
+                        </div>
+                      </Button>
+                      <Button className={classes.navigation}
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <div className="button-text">
+                          Source
+                        </div>
+                      </Button>
+                    </ButtonGroup>
+                  </div>
+                </div>
               </div>
-              <div className="buttons">
-                <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
-                  <Button className={classes.navigation} href="#tech-section">
-                    <div className="button-text">
-                      see in depth
-                  </div>
-                  </Button>
-                  <Button className={classes.navigation}
-                    href="https://github.com/capriok/MyTube"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <div className="button-text">
-                      Source
-                  </div>
-                  </Button>
-                </ButtonGroup>
-              </div>
-            </div>
-          </div>
-          <div className="project-thumb">
-            <img src={portrait} alt="" />
-          </div>
-        </div>
-        {/* --------------------------------------------------Portfolio */}
-        <div className="project-card">
-          <div className="project-body">
-            <h1>Portfolio</h1>
-            <p>My first solftware developer tailored portfolio</p>
-            <div className="foot">
-              <div className="tags">
-                <span>#</span>
-                <span className="tag-plaque">Javascript</span>
-                <span className="tag-plaque">React</span>
-                <span className="tag-plaque">SCSS</span>
-                <span className="tag-plaque">2020</span>
-              </div>
-              <div className="buttons">
-                <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
-                  <Button className={classes.navigation} href="#tech-section">
-                    <div className="button-text">
-                      see in depth
-                  </div>
-                  </Button>
-                  <Button className={classes.navigation}
-                    href="https://github.com/capriok/Portfolio"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <div className="button-text">
-                      Source
-                  </div>
-                  </Button>
-                </ButtonGroup>
+              <div className="project-thumb">
+                <img src={item.thumb} alt="" />
               </div>
             </div>
-          </div>
-          <div className="project-thumb">
-            <img src={portrait} alt="" />
-          </div>
-        </div>
-        {/* --------------------------------------------------Arte Bella Engraving */}
-        <div className="divider"></div>
-        <div className="project-card">
-          <div className="project-body">
-            <h1>Arte Bella Engraving</h1>
-            <p>Small business client, single page website</p>
-            <div className="foot">
-              <div className="tags">
-                <span>#</span>
-                <span className="tag-plaque">Javascript</span>
-                <span className="tag-plaque">React</span>
-                <span className="tag-plaque">SCSS</span>
-                <span className="tag-plaque">2019</span>
-              </div>
-              <div className="buttons">
-                <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
-                  <Button className={classes.navigation} href="#tech-section">
-                    <div className="button-text">
-                      see in depth
-                  </div>
-                  </Button>
-                  <Button className={classes.navigation}
-                    href="https://github.com/capriok/Arte-Bella"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <div className="button-text">
-                      Source
-                  </div>
-                  </Button>
-                </ButtonGroup>
-              </div>
-            </div>
-          </div>
-          <div className="project-thumb">
-            <img src={portrait} alt="" />
-          </div>
-        </div>
-        {/* --------------------------------------------------E-commerce */}
-        <div className="divider"></div>
-        <div className="project-card">
-          <div className="project-body">
-            <h1>E-commerce</h1>
-            <p>High end fashion website inspired by Polo Ralph Lauren site</p>
-            <div className="foot">
-              <div className="tags">
-                <span>#</span>
-                <span className="tag-plaque">Javascript</span>
-                <span className="tag-plaque">React</span>
-                <span className="tag-plaque">GrapohQL</span>
-                <span className="tag-plaque">CSS</span>
-                <span className="tag-plaque">2019</span>
-              </div>
-              <div className="buttons">
-                <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
-                  <Button className={classes.navigation} href="#tech-section">
-                    <div className="button-text">
-                      see in depth
-                  </div>
-                  </Button>
-                  <Button className={classes.navigation}
-                    href="#projects-section"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <div className="button-text">
-                      Source
-                  </div>
-                  </Button>
-                </ButtonGroup>
-              </div>
-            </div>
-          </div>
-          <div className="project-thumb">
-            <img src={portrait} alt="" />
-          </div>
-        </div>
-        {/* --------------------------------------------------TookFeed */}
-        <div className="project-card">
-          <div className="project-body">
-            <h1>TookFeed</h1>
-            <p>Harnessing the power of News API to stay up to date on global or local news</p>
-            <div className="foot">
-              <div className="tags">
-                <span>#</span>
-                <span className="tag-plaque">Javascript</span>
-                <span className="tag-plaque">React</span>
-                <span className="tag-plaque">CSS</span>
-                <span className="tag-plaque">2019</span>
-              </div>
-              <div className="buttons">
-                <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
-                  <Button className={classes.navigation} href="#tech-section">
-                    <div className="button-text">
-                      see in depth
-                  </div>
-                  </Button>
-                  <Button className={classes.navigation}
-                    href="https://github.com/capriok/TookFeed"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <div className="button-text">
-                      Source
-                  </div>
-                  </Button>
-                </ButtonGroup>
-              </div>
-            </div>
-          </div>
-          <div className="project-thumb">
-            <img src={portrait} alt="" />
-          </div>
-        </div>
-        {/* --------------------------------------------------Theme Template Distribution */}
-        <div className="project-card">
-          <div className="project-body">
-            <h1>Theme Template Distribution</h1>
-            <p>Combining aesthetics with user customizable theme templates</p>
-            <div className="foot">
-              <div className="tags">
-                <span>#</span>
-                <span className="tag-plaque">Jquery</span>
-                <span className="tag-plaque">HTML</span>
-                <span className="tag-plaque">CSS</span>
-                <span className="tag-plaque">2014</span>
-              </div>
-              <div className="buttons">
-                <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
-                  <Button className={classes.navigation} href="#tech-section">
-                    <div className="button-text">
-                      see in depth
-                  </div>
-                  </Button>
-                  <Button className={classes.navigation}
-                    href="#projects-section"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    <div className="button-text">
-                      Source
-                  </div>
-                  </Button>
-                </ButtonGroup>
-              </div>
-            </div>
-          </div>
-          <div className="project-thumb">
-            <img src={portrait} alt="" />
-          </div>
-        </div>
-        {/* -------------------------------------------------- */}
+          </>
+        ))}
       </div>
     </>
   );

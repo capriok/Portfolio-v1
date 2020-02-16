@@ -1,5 +1,6 @@
 /* COLOR VARS */
 
+$modal-bg: rgb(148, 148, 148);
   $nav-bg: rgb(0, 0, 0);
   $inner-section-bg:rgb(20, 20, 20);
   $section-bg: rgb(204, 204, 204);
@@ -112,6 +113,34 @@
 
 /* NAVABR END */
 
+/* MODAL */
+.modal-clickout{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+    z-index: 500;
+    .project-modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vh;
+    height: 50vh;
+    background-color: $modal-bg;
+    h1{
+      
+    }
+    p{
+      
+    }
+    span{
+      
+    }
+  }
+}
+
+/* MODAL END */
 
 /* INTRO */
 
@@ -246,9 +275,11 @@
           span:nth-child(1){
             font-size: .8rem;
             padding-right: 15px;
-            color:lighten(black, 30%)
+            color:lighten(black, 30%);
+            border: 0px solid ;
+            border-radius: 0px;
           }
-          .tag-plaque{
+          span{
             margin-right: 5px;
             padding: 5px 10px 5px 10px;
             color:lighten(black, 70%);
