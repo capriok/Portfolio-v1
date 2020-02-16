@@ -1,12 +1,10 @@
 import React from 'react';
 import portrait from '../img/portrait.jpg'
-import { useStateValue } from '../state'
 import githubinv from '../img/githubinv.png'
 import linkedininv from '../img/linkedininv.png'
 import { Button, ButtonGroup, makeStyles } from '@material-ui/core';
 
 export default function Intro() {
-  const [{ darkState },] = useStateValue()
 
   const useStyles = makeStyles({
     navigation: {

@@ -37,7 +37,6 @@ const ThemeSwitch = withStyles({
       classes={{
         root: classes.root,
         switchBase: classes.switchBase,
-        thumb: classes.thumb,
         track: classes.track,
         checked: classes.checked,
         thumb: props.checked ? classes.thumbChecked : classes.thumbUnchecked,

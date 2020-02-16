@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useStateValue } from './state'
 import "./index.scss";
 import "../src/components/components.scss";
@@ -7,9 +7,11 @@ import Footer from "./components/footer";
 import Intro from './components/intro';
 import Tech from './components/tech';
 import Projects from './components/projects';
+import ProjectModal from './components/projectmodal';
 
 export default function App() {
-  const [{ darkState }, dispatch] = useStateValue()
+  const [{ darkState },] = useStateValue()
+  const [modalOpen, setOpen] = useState(false)
 
   useEffect(() => {
     console.log('create slight movement of divs for background anim');
@@ -18,14 +20,17 @@ export default function App() {
   }, [])
 
   return (
-    <div className={darkState ? "app app-dark" : "app"}>
-      <div className={darkState ? "main main-dark" : "main"}>
-        <Navbar />
-        <Intro />
-        <Tech />
-        <Projects />
-        <Footer />
+    <>
+      <div className={darkState ? "app app-dark" : "app"}>
+        <div className={darkState ? "main main-dark" : "main"}>
+          {modalOpen && <ProjectModal setOpen={setOpen} />}
+          <Navbar />
+          <Intro />
+          <Tech />
+          <Projects setOpen={setOpen} />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
