@@ -79,9 +79,10 @@
   width: 80vw;
   height: 80vh;
   max-width: 1000px ;
+  min-width: 400px ;
   max-height: 1000px ;
   overflow: hidden;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
   z-index: 501;
   background-color:$modal-bg;
@@ -91,8 +92,6 @@
    rgba(213,213,213,1) 20%, 
    rgba(213,213,213,1) 80%, 
    rgba(150,171,190,0.8) 100%);
-
-
   h1{
     font-size: 2.8rem;
     padding-bottom: 30px;
@@ -103,6 +102,8 @@
     background-color: transparent;
   }
   .tags{
+    position: relative;
+    top:10px;
     margin-top: auto;
     span:not(:first-child){background-color: $card-bg;}
     span{
@@ -137,7 +138,7 @@
   overflow: hidden;
   background-color: $nav-bg;
   box-shadow: 0px 1px 5px black;
-  z-index: 100;
+  z-index: 1000;
   .buttons {
     flex: 1;
     display: flex;
@@ -415,7 +416,14 @@
 
 /* MEDIA QUERIES END */
 @media (max-width:650px){
+  .project-modal{
+    h1{font-size: 2rem;}
+    body{overflow: scroll;}
+    p{font-size: .8rem;}
+    .tags{span{font-size: .7rem;}}
+  }
   .navbar {
+    z-index: 100;
     padding:7px 10px 7px 15px;
     .buttons{
       display: none;

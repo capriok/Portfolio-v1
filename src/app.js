@@ -32,8 +32,8 @@ export default function App() {
     <>
       <div className={darkState ? "app app-dark" : "app"}>
         <div className={darkState ? "main main-dark" : "main"}>
-          {modalOpen && <ProjectModal openModal={openModal} modalContent={modalContent} />}
           <Navbar />
+          {modalOpen && <ProjectModal openModal={openModal} modalContent={modalContent} />}
           <Intro />
           <Tech />
           <Projects openModal={openModal} setContent={setContent} />
