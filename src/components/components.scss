@@ -117,7 +117,8 @@
   }
   .tags{
     position: relative;
-    top:10px;
+    text-align: left;
+    top: 10px;
     margin-top: auto;
     span:not(:first-child){background-color: $card-bg;}
     span{
@@ -431,15 +432,12 @@
 /* MEDIA QUERIES END */
 @media (max-width:650px){
   .project-modal{
-    height: 90vh;
-    top:unset;
-    bottom: 0%;
-    transform: translate(-50%);
-    padding:10px 5px 20px 10px;
+    height: 85vh;
     h1{font-size: 2rem;padding-bottom: 20px;}
     body{overflow: scroll;}
     p{font-size: .9rem;}
-    .tags{span{font-size: .7rem;}}
+    .tags{span{font-size: .6rem; padding: 3px 8px 3px 8px;
+    }}
   }
   .navbar {
     z-index: 100;
