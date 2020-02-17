@@ -451,8 +451,13 @@
     h1{font-size: 2rem;padding-bottom: 20px;}
     .body{overflow: scroll;margin: 0px -15px 0px -15px;}
     p{font-size: .9rem;}
-    .tags{span{font-size: .6rem; padding: 3px 8px 3px 8px;
-    }}
+    .tags{span{font-size: .7rem; padding: 3px 8px 3px 8px;}}
+    .mobile-close{
+      position: absolute;
+      right: 20px;
+      bottom: 12.5px;
+      img{width: 20px;}
+    }
   }
   .navbar {
     z-index: 100;

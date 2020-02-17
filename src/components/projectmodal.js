@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStateValue } from '../state'
 import Slider from './slideshow/slideshow'
+import close from '../img/close.png'
 
 
 export default function ProjectModal({ openModal, modalContent }) {
@@ -65,6 +66,7 @@ export default function ProjectModal({ openModal, modalContent }) {
             <span key={i}>{item}</span>
           ))}
         </div>
+        <div className="mobile-close"><img src={close} alt="" onClick={() => openModal(false)} /></div>
       </div>
     </>
   );
