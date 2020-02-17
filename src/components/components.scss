@@ -78,9 +78,9 @@
   transform: translate(-50%, -50%);
   width: 80vw;
   height: 80vh;
-  max-width: 1000px ;
-  min-width: 400px ;
-  max-height: 1000px ;
+  min-width: 400px;
+  max-width: 1000px;
+  max-height: 1000px;
   overflow: hidden;
   padding: 20px;
   border-radius: 10px;
@@ -100,6 +100,20 @@
     padding: 10px;
     text-align: left;
     background-color: transparent;
+    h1{
+      font-size: 1.1rem;
+      font-weight: 300;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      border-bottom: 1px solid  grey;
+    }
+  }
+  p:first-child{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid  grey;
   }
   .tags{
     position: relative;
@@ -417,9 +431,14 @@
 /* MEDIA QUERIES END */
 @media (max-width:650px){
   .project-modal{
-    h1{font-size: 2rem;}
+    height: 90vh;
+    top:unset;
+    bottom: 0%;
+    transform: translate(-50%);
+    padding:10px 5px 20px 10px;
+    h1{font-size: 2rem;padding-bottom: 20px;}
     body{overflow: scroll;}
-    p{font-size: .8rem;}
+    p{font-size: .9rem;}
     .tags{span{font-size: .7rem;}}
   }
   .navbar {

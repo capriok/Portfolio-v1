@@ -106,7 +106,10 @@
 // =========================
 
 .slider {
-  --slide-size: 35vmin;
+  --slide-size: 350px;
+  @media(max-width:650px){
+  --slide-size: 185px;
+  }
   --slide-margin: 2vmin;
   
   height: var(--slide-size);
@@ -133,8 +136,8 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  height: var(--slide-size);
   justify-content: center;
+  height: var(--slide-size);
   margin: 0 var(--slide-margin);
   opacity: 0.25;
   position: relative;

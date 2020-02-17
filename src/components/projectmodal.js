@@ -40,7 +40,7 @@ export default function ProjectModal({ openModal, modalContent }) {
           <Slider heading="Project" slides={slideData} />
         </div>
         <body>
-          <p>{modalContent.snippet}</p>
+          <h1>{modalContent.snippet}</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.autem
             ipsam voluptatum?  Dolorum eaque,earum rem autem numquam pariatur
             dolor sit amet consectetur adipisicing elit Omnis minus
