@@ -36,7 +36,7 @@ export default function Projects({ openModal, setContent }) {
     },
     {
       title: 'Portfolio',
-      snippet: 'My first solftware developer tailored portfolio',
+      snippet: 'Sofware developer tailored portfolio',
       tags: ['Javascript', 'React', 'SCSS', '2020'],
       thumb: portrait,
       link: 'https://github.com/capriok/Portfolio'

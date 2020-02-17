@@ -98,6 +98,7 @@
     margin-top:10px;
     padding: 30px 20px 30px 20px;
     text-align: left;
+    overflow: scroll;
     background-color: $card-bg;
     h1{
       font-size: 1.1rem;
@@ -126,7 +127,13 @@
       font-size: .9rem;
       border: 1px solid black;
     }
-}
+    .mobile-close{
+      position: absolute;
+      right: 20px;
+      bottom: 12.5px;
+      img{width: 20px;}
+    }
+  }
   .slideshow{
     width: 100%;
     padding-bottom: 30px;
@@ -444,19 +451,19 @@
 }
 
 @media (max-width:650px){
-  .project-modal{
+.project-modal{
     height: 90vh;
     top: 0%;
     transform: translate(-50%, 0);
     h1{font-size: 2rem;padding-bottom: 20px;}
-    .body{overflow: scroll;margin: 0px -15px 0px -15px;}
+    .body{margin: 0px -15px 0px -15px;}
     p{font-size: .9rem;}
     .tags{span{font-size: .7rem; padding: 3px 8px 3px 8px;}}
     .mobile-close{
       position: absolute;
-      right: 20px;
-      bottom: 12.5px;
-      img{width: 20px;}
+      right: 25px;
+      bottom: 10px;
+      img{width: 25px;}
     }
   }
   .navbar {
