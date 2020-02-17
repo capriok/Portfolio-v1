@@ -39,8 +39,8 @@ export default function ProjectModal({ openModal, modalContent }) {
         <div className="slideshow">
           <Slider heading="Project" slides={slideData} />
         </div>
-        <body>
-          <h1>{modalContent.snippet}</h1>
+        <div className="body poly">
+          <p>{modalContent.snippet}</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.autem
             ipsam voluptatum?  Dolorum eaque,earum rem autem numquam pariatur
             dolor sit amet consectetur adipisicing elit Omnis minus
@@ -58,9 +58,9 @@ export default function ProjectModal({ openModal, modalContent }) {
         dolor sit amet consectetur adipisicing elit Omnis minus
         placeat adipisicing elit.eos.dolor sit amet consectetur adipisicing
           elit Error quaerat similique amet sed minima?</p>
-        </body>
+        </div>
         <div className="tags">
-          <span>#</span>
+          <span style={{ color: 'white' }}>#</span>
           {modalContent.tags.map((item, i) => (
             <span key={i}>{item}</span>
           ))}

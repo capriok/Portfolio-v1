@@ -1,6 +1,7 @@
 /* COLOR VARS */
 
   $modal-bg: rgb(148, 148, 148);
+  $main-bg: rgb(59, 96, 132);
   $nav-bg: rgb(0, 0, 0);
   $inner-section-bg:rgb(20, 20, 20);
   $section-bg: rgb(204, 204, 204);
@@ -69,7 +70,7 @@
   z-index: 500;
 }
 .project-modal{
-  *{color:black;}
+  *{color:white;}
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -85,24 +86,21 @@
   padding: 20px;
   border-radius: 10px;
   z-index: 501;
-  background-color:$modal-bg;
-  background-color: white;
-  background: linear-gradient(117deg, 
-   rgba(150,171,190,0.8) 0%,
-   rgba(213,213,213,1) 20%, 
-   rgba(213,213,213,1) 80%, 
-   rgba(150,171,190,0.8) 100%);
+  box-shadow: -3px 3px 10px -3px black;
+  background-color: $main-bg;
+  background: linear-gradient(135deg, rgba(58,94,130,1) 0%, rgba(36,68,98,1) 50%, rgba(58,94,130,1) 100%);
   h1{
     font-size: 2.8rem;
     padding-bottom: 30px;
   }
-  body{
-    padding: 10px;
+  .body{
+    max-height: 450px;
+    margin-top:10px;
+    padding: 30px 20px 30px 20px;
     text-align: left;
-    background-color: transparent;
+    background-color: $card-bg;
     h1{
       font-size: 1.1rem;
-      font-weight: 300;
       padding-bottom: 10px;
       margin-bottom: 10px;
       width: 100%;
@@ -111,7 +109,8 @@
   }
   p:first-child{
     padding-bottom: 10px;
-    margin-bottom: 10px;
+      font-weight: bold;
+      margin-bottom: 10px;
     width: 100%;
     border-bottom: 1px solid  grey;
   }
@@ -119,6 +118,7 @@
     position: relative;
     text-align: left;
     top: 10px;
+    bottom: 0;
     margin-top: auto;
     span:not(:first-child){background-color: $card-bg;}
     span{
@@ -152,7 +152,7 @@
   user-select: none;
   overflow: hidden;
   background-color: $nav-bg;
-  box-shadow: 0px 1px 5px black;
+  box-shadow: 0px 3px 15px -5px black;
   z-index: 1000;
   .buttons {
     flex: 1;
@@ -277,6 +277,7 @@
 
 /* TECH END  */
 .tags{
+  padding-bottom: 7px;
   span:nth-child(1){
     font-size: .8rem;
     padding-right: 15px;
@@ -332,7 +333,6 @@
         flex-wrap: wrap;
         margin-top: auto;
         width: 100%;
-        
         .buttons{
           margin-left: auto;
           .button-text{font-size: .7rem;}
@@ -367,9 +367,6 @@
 /* FOOTER END */
 
 /* MEDIA QUERIES */
-
-@media (min-width:1000px){
-}
 @media (max-width: 1000px) {
   .separator{display: none;}
   .intro-section{
@@ -387,6 +384,9 @@
     } 
     .intro-two{
       background-color: transparent;
+      .two-card{
+        box-shadow: -3px 3px 10px -3px black;
+      }
     }
   } 
   .tech-section{
@@ -399,6 +399,7 @@
       background-color: transparent;
       .tech-card{
         margin:0px;
+        box-shadow: -3px 3px 10px -3px black;
       }
     } 
     .tech-two{
@@ -411,30 +412,44 @@
     .project-card{
       margin: 0;
       margin-bottom: 3px;
-    .project-body{
-      .foot{
-        .tags{
-          display: none;
+      .project-body{
+        .foot{
+          .tags{
+            // display: none;
+          }
         }
       }
     }
-  }
-} 
-    .footer-content {
+  } 
+  .footer-content {
       width: 100%;
-      .buttons{
-        .button-text{font-size: .6rem;}
-      }
-    .rights{font-size: .6rem;}
+      .buttons{.button-text{font-size: .6rem;}}
+      .rights{font-size: .6rem;}
   }
 }
 
-/* MEDIA QUERIES END */
+
+@media (max-width:700px){
+  .projects-section{
+    .project-card{
+      .project-body{
+        .foot{
+          .tags{
+            display: none;
+          }
+        }
+      }
+    }
+  } 
+}
+
 @media (max-width:650px){
   .project-modal{
-    height: 85vh;
+    height: 80vh;
+    top: 0%;
+    transform: translate(-50%, 0);
     h1{font-size: 2rem;padding-bottom: 20px;}
-    body{overflow: scroll;}
+    .body{overflow: scroll;margin: 0px -15px 0px -15px;}
     p{font-size: .9rem;}
     .tags{span{font-size: .6rem; padding: 3px 8px 3px 8px;
     }}

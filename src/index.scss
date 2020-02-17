@@ -12,11 +12,11 @@
  }
 
  ::-webkit-scrollbar-track{
-  background-color: $app-bg;
+  background-color: darken($app-bg, 25%);
 }
  
  ::-webkit-scrollbar-thumb{
-    background-color: darken($app-bg, 35%);
+    background-color: darken($app-bg, 40%);
     border-radius: 5px;
  }
 
