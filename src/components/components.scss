@@ -1,6 +1,6 @@
 /* COLOR VARS */
 
-$modal-bg: rgb(148, 148, 148);
+  $modal-bg: rgb(148, 148, 148);
   $nav-bg: rgb(0, 0, 0);
   $inner-section-bg:rgb(20, 20, 20);
   $section-bg: rgb(204, 204, 204);
@@ -60,21 +60,68 @@ $modal-bg: rgb(148, 148, 148);
 
 /* SEPARATORS END */
 
-/* BANNER */
-
-.banner-main {
+/* MODAL */
+.modal-clickout{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 500;
+}
+.project-modal{
+  *{color:black;}
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 80vh;
+  max-width: 1000px ;
+  max-height: 1000px ;
   overflow: hidden;
-  width: 100%;
-  .banner-img {
+  padding: 30px;
+  border-radius: 10px;
+  z-index: 501;
+  background-color:$modal-bg;
+  background-color: white;
+  background: linear-gradient(117deg, 
+   rgba(150,171,190,0.8) 0%,
+   rgba(213,213,213,1) 20%, 
+   rgba(213,213,213,1) 80%, 
+   rgba(150,171,190,0.8) 100%);
+
+
+  h1{
+    font-size: 2.8rem;
+    padding-bottom: 30px;
+  }
+  body{
+    padding: 10px;
+    text-align: left;
+    background-color: transparent;
+  }
+  .tags{
+    margin-top: auto;
+    span:not(:first-child){background-color: $card-bg;}
+    span{
+      color: white;
+      font-size: .9rem;
+      border: 1px solid black;
+    }
+}
+  .slideshow{
     width: 100%;
-    z-index: 1;
-    background-color: rgb(255, 255, 255);
+    padding-bottom: 30px;
   }
 }
+.project-modal-dark *{color:white;}
+.project-modal-dark {
+  background: linear-gradient(135deg, rgba(8,14,20,1) 0%, rgba(13,23,33,1) 50%, rgba(8,14,20,1) 100%);
+}
 
-/* BANNER END */
+/* MODAL END */
 
 /* NAVBAR */
 
@@ -113,35 +160,6 @@ $modal-bg: rgb(148, 148, 148);
 
 /* NAVABR END */
 
-/* MODAL */
-.modal-clickout{
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
-    z-index: 500;
-    .project-modal{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 50vh;
-    height: 50vh;
-    background-color: $modal-bg;
-    h1{
-      
-    }
-    p{
-      
-    }
-    span{
-      
-    }
-  }
-}
-
-/* MODAL END */
-
 /* INTRO */
 
 .intro-section {
@@ -155,6 +173,8 @@ $modal-bg: rgb(148, 148, 148);
     flex: 1;
     width: 100%;
     height: 400px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     background-color: $inner-section-bg;
     .one-card{
       text-align: left;
@@ -174,6 +194,8 @@ $modal-bg: rgb(148, 148, 148);
     flex: .8;
     height: 400px;
     width: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     background-color:$inner-section-bg;
     .two-card{
       padding: 10px;
@@ -204,6 +226,8 @@ $modal-bg: rgb(148, 148, 148);
     @include flex;
     height: 400px;
     flex: 1.2;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     background-color: $inner-section-bg;
     .tech-card{
       @include flex;
@@ -222,6 +246,8 @@ $modal-bg: rgb(148, 148, 148);
     @include flex;
     height: 400px;
     flex: 1;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     background-color: $inner-section-bg;
     .tech-area{
       @include flex;
@@ -234,7 +260,25 @@ $modal-bg: rgb(148, 148, 148);
 
 
 /* TECH END  */
-
+.tags{
+  span:nth-child(1){
+    font-size: .8rem;
+    padding-right: 15px;
+    color:lighten(black, 30%);
+    border: 0px solid ;
+    border-radius: 0px;
+  }
+  span{
+    margin-right: 5px;
+    padding: 5px 10px 5px 10px;
+    color:lighten(black, 70%);
+    border: 1px solid lighten(black, 30%);
+    border-radius: 5px;
+    font-size: .8rem;
+    user-select: none;
+    cursor: default;
+  }
+}
 /* PROJECTS  */
 
 .projects-section{
@@ -251,6 +295,7 @@ $modal-bg: rgb(148, 148, 148);
     margin: 10px;
     text-align: left;
     padding: 5px;
+    border-radius: 5px;
     background-color: $inner-section-bg;
     .project-body{
       flex:1;
@@ -271,25 +316,7 @@ $modal-bg: rgb(148, 148, 148);
         flex-wrap: wrap;
         margin-top: auto;
         width: 100%;
-        .tags{
-          span:nth-child(1){
-            font-size: .8rem;
-            padding-right: 15px;
-            color:lighten(black, 30%);
-            border: 0px solid ;
-            border-radius: 0px;
-          }
-          span{
-            margin-right: 5px;
-            padding: 5px 10px 5px 10px;
-            color:lighten(black, 70%);
-            border: 1px solid lighten(black, 30%);
-            border-radius: 5px;
-            font-size: .8rem;
-            user-select: none;
-            cursor: default;
-          }
-        }
+        
         .buttons{
           margin-left: auto;
           .button-text{font-size: .7rem;}

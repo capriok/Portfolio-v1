@@ -9,9 +9,18 @@ import Tech from './components/tech';
 import Projects from './components/projects';
 import ProjectModal from './components/projectmodal';
 
+import portrait from './img/portraitnull.png'
+
 export default function App() {
   const [{ darkState },] = useStateValue()
-  const [modalOpen, setOpen] = useState(false)
+  const [modalOpen, openModal] = useState(true)
+  const [modalContent, setContent] = useState({
+    title: 'MyTube Music',
+    snippet: 'Youtube Data API consumed to create a client sided music streaming application wrapped in Electron',
+    tags: ['Javascript', 'React', 'Electron', 'CSS', '2020'],
+    thumb: portrait,
+    link: 'https://github.com/capriok/MyTube'
+  })
 
   useEffect(() => {
     console.log('create slight movement of divs for background anim');
@@ -23,11 +32,11 @@ export default function App() {
     <>
       <div className={darkState ? "app app-dark" : "app"}>
         <div className={darkState ? "main main-dark" : "main"}>
-          {modalOpen && <ProjectModal setOpen={setOpen} />}
+          {modalOpen && <ProjectModal openModal={openModal} modalContent={modalContent} />}
           <Navbar />
           <Intro />
           <Tech />
-          <Projects setOpen={setOpen} />
+          <Projects openModal={openModal} setContent={setContent} />
           <Footer />
         </div>
       </div>

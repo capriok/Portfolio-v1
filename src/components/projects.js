@@ -2,7 +2,7 @@ import React from 'react';
 import portrait from '../img/portraitnull.png'
 import { Button, ButtonGroup, makeStyles } from '@material-ui/core';
 
-export default function Projects({ setOpen }) {
+export default function Projects({ openModal, setContent }) {
 
   const useStyles = makeStyles({
     navigation: {
@@ -90,7 +90,10 @@ export default function Projects({ setOpen }) {
                   </div>
                   <div className="buttons">
                     <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
-                      <Button className={classes.navigation} onClick={() => setOpen(true)}>
+                      <Button className={classes.navigation} onClick={() => {
+                        openModal(true)
+                        setContent(item)
+                      }}>
                         <div className="button-text">
                           see in depth
                         </div>
