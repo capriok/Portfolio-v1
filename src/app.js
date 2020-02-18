@@ -13,7 +13,7 @@ import portrait from './img/portraitnull.png'
 
 export default function App() {
   const [{ darkState },] = useStateValue()
-  const [modalOpen, openModal] = useState(true)
+  const [modalOpen, openModal] = useState(false)
   const [modalContent, setContent] = useState({
     title: 'MyTube Music',
     snippet: 'Youtube Data API consumed to create a client sided music streaming application wrapped in Electron',
