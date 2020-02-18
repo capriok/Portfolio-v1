@@ -7,21 +7,7 @@ import useLockBodyScroll from './hooks/uselockbodyscroll';
 
 export default function ProjectModal({ openModal, modalContent }) {
   const [{ darkState },] = useStateValue()
-  const [width, setWidth] = useState(window.innerWidth)
-  const [isMobile, setMobile] = useState(false)
-
   useLockBodyScroll()
-
-  useEffect(() => {
-    setWidth(window.innerWidth)
-    console.log(width);
-    if (width > 650) {
-      return
-    } else {
-      setMobile(true)
-    }
-    console.log(isMobile);
-  }, [isMobile])
 
   const slideData = [
     {
@@ -88,7 +74,7 @@ export default function ProjectModal({ openModal, modalContent }) {
             <span key={i}>{item}</span>
           ))}
         </div>
-        {isMobile && <div className="mobile-close"><img src={close} alt="" onClick={() => openModal(false)} /></div>}
+        <div className="mobile-close"><img src={close} alt="" onClick={() => openModal(false)} /></div>
       </div>
     </>
   );

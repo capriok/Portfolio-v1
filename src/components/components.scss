@@ -127,13 +127,14 @@
       font-size: .9rem;
       border: 1px solid black;
     }
-    .mobile-close{
+  }
+  .mobile-close{
+      display: none;
       position: absolute;
       right: 20px;
       bottom: 12.5px;
       img{width: 20px;}
     }
-  }
   .slideshow{
     width: 100%;
     padding-bottom: 30px;
@@ -460,6 +461,7 @@
     p{font-size: .9rem;}
     .tags{span{font-size: .7rem; padding: 3px 8px 3px 8px;}}
     .mobile-close{
+      display: block;
       position: absolute;
       right: 25px;
       bottom: 10px;
