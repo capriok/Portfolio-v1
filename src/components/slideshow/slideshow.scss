@@ -66,40 +66,6 @@
 }
 
 
-// =========================
-// Slider controls
-// =========================
-
-.slider__controls {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: calc(100% + 1rem);
-  width: 100%;
-  
-  .btn {
-    --size: 3rem;
-    
-    align-items: center;
-    background-color: transparent;
-    border: 3px solid transparent;
-    border-radius: 100%;
-    display: flex;
-    height: var(--size);
-    padding: 0;
-    width: var(--size);
-    
-    &:focus {
-      border-color: var(--color-focus);
-      outline: none;
-    }
-        
-    &--previous > * {
-      transform: rotate(180deg);
-    }
-  }
-}
-
 
 // =========================
 // Slider
@@ -108,14 +74,13 @@
 .slider {
   --slide-size: 350px;
   @media(max-width:650px){
-  --slide-size: 175px;
+  --slide-size: 150px;
   }
   --slide-margin: 2vmin;
-  
-  height: var(--slide-size);
-  margin: 0 auto;
   position: relative;
+  height: var(--slide-size);
   width: var(--slide-size);
+  margin: 0 auto;
 }
 
 .slider__wrapper {
@@ -123,6 +88,42 @@
   margin: 0 calc(var(--slide-margin) * -1);
   position: absolute;
   transition: transform var(--base-duration) cubic-bezier(0.25, 1, 0.35, 1);
+}
+
+
+// =========================
+// Slider controls
+// =========================
+
+.slider__controls {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top:calc(var(--slide-size) + 10px);;
+  width: 100%;
+  
+  .btn {
+    --size: 2.5rem;
+    @media(max-width:650px){
+    --size: 2.0rem;
+    }
+
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    padding: 0px;
+    height: var(--size);
+    width: var(--size);
+    border: 2px solid transparent;
+    background-color: transparent;
+    &:focus {
+      border-color: var(--color-focus);
+      outline: none;
+    }
+    &--previous > * {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 

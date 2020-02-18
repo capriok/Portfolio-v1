@@ -1,4 +1,5 @@
 import React from 'react'
+import arrow from '../../img/arrow.png'
 import './slideshow.scss'
 
 // =========================
@@ -37,7 +38,7 @@ class Slide extends React.Component {
   }
 
   render() {
-    const { src, button, headline, index } = this.props.slide
+    const { src, index } = this.props.slide
     const current = this.props.current
     let classNames = 'slide'
 
@@ -58,6 +59,7 @@ class Slide extends React.Component {
             className="slide__image"
             // alt={headline}
             src={src}
+            alt=''
             onLoad={this.imageLoaded}
           />
         </div>
@@ -79,11 +81,9 @@ class Slide extends React.Component {
 const SliderControl = ({ type, title, handleClick }) => {
   return (
     <>
-      {/* <button className={`btn btn--${type}`} title={title} onClick={handleClick}>
-      <svg className="icon" viewBox="0 0 24 24">
-        <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-      </svg>
-    </button> */}
+      <button className={`btn btn--${type}`} title={title} onClick={handleClick}>
+        <img src={arrow} className='icon' alt="" />
+      </button>
     </>
   )
 }
@@ -132,8 +132,8 @@ export default class Slider extends React.Component {
   }
 
   render() {
-    const { current, direction } = this.state
-    const { slides, heading } = this.props
+    const { current } = this.state
+    const { slides } = this.props
     const wrapperTransform = {
       'transform': `translateX(-${current * (100 / slides.length)}%)`
     }

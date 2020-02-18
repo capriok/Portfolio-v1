@@ -25,7 +25,6 @@ export default function Projects({ openModal, setContent }) {
     }
   });
   const classes = useStyles();
-
   const projects = [
     {
       title: 'MyTube Music',

@@ -95,7 +95,7 @@
   }
   .body{
     max-height: 450px;
-    margin-top:10px;
+    margin-top:30px;
     padding: 30px 20px 30px 20px;
     text-align: left;
     overflow: scroll;
@@ -453,20 +453,24 @@
 
 @media (max-width:650px){
 .project-modal{
-    height: 85vh;
+    height: 87vh;
+    width: 100vw;
     top: 0%;
     transform: translate(-50%, 0);
     h1{font-size: 2rem;padding-bottom: 20px;}
-    .body{margin: 0px -15px 0px -15px;}
+    .body{margin: 20px -15px 0px -15px;}
     p{font-size: .9rem;}
     .tags{span{font-size: .7rem; padding: 3px 8px 3px 8px;}}
     .mobile-close{
       display: block;
       position: absolute;
-      right: 25px;
-      bottom: 10px;
-      img{width: 25px;}
+      right: 27px;
+      bottom:5px;
+      img{width: 23px;}
     }
+  }
+  .tags{
+  padding-bottom: 0px;
   }
   .navbar {
     z-index: 100;
