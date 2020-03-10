@@ -1,30 +1,42 @@
 import React from 'react';
 import { useStateValue } from '../state'
-import logocollage from '../img/logo-collage.png'
 
 export default function Tech() {
-  const [{ darkState },] = useStateValue()
+  const [{ theTheme },] = useStateValue()
+
+  const technologies = [
+    {
+      type: 'Languages',
+      list: ['Javascript', 'HTML5', 'CSS', 'SCSS']
+    },
+    {
+      type: 'Frameworks',
+      list: ['Node', 'React', 'Redux', 'Express']
+    },
+    {
+      type: 'Storage',
+      list: ['MongoDB', 'GrapohQL', 'AWS']
+    },
+    {
+      type: 'Tools',
+      list: ['React Context', 'Material-UI', 'Lodash', 'Regex']
+    },
+  ]
+
   return (
     <>
-      <div id='tech-section' className={darkState ? "tech-section poly tech-dark" : "tech-section poly"}>
-        {/* <div id='tech-section' className={"tech-section poly"}> */}
-        <div className="tech-one">
-          <div className="tech-card">
-            <h1>Languages</h1>
-            <p>Javascript, JSX, HTML5, CSS, SCSS, Sass</p>
-            <h1>Frameworks</h1>
-            <p>Node, React, Redux, Express</p>
-            <h1>Storage</h1>
-            <p>MongoDB, GraphQL, AWS</p>
-            <h1>Tools</h1>
-            <p>Git, Lodash, Context, Material-UI, Regex</p>
-          </div>
-        </div>
-        <div className="separator"><div className="line"></div></div>
-        <div className="tech-two">
-          <div className="tech-area">
-            <img src={logocollage} alt="" />
-          </div>
+      <div id='tech-section' className="tech-section poly" style={theTheme.poly}>
+        <div className="tech-max">
+          {technologies.map((tech, i) => (
+            <div key={i} className="card">
+              <h1 style={theTheme.accent}>{tech.type}</h1>
+              {tech.list.map((item, i) => (
+                <div key={i}>
+                  <p>{item}</p>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </>

@@ -1,10 +1,13 @@
 import React from 'react';
-import portrait from '../img/portrait.jpg'
-import githubinv from '../img/githubinv.png'
-import linkedininv from '../img/linkedininv.png'
+import { useStateValue } from '../state'
 import { Button, ButtonGroup, makeStyles } from '@material-ui/core';
+import github from '../gallery/github.png'
+import linkedin from '../gallery/linkedin.png'
+import portrait from '../gallery/portrait.jpg'
 
 export default function Intro() {
+  const [{ darkState, theTheme },] = useStateValue()
+
 
   const useStyles = makeStyles({
     navigation: {
@@ -27,39 +30,36 @@ export default function Intro() {
     }
   });
   const classes = useStyles();
-
   return (
     <>
       <div id='intro-section' className="intro-section">
-        <div className="intro-one">
-          <div className="one-card">
-            <h1>I'm Kyle</h1>
-            <p>A software developer based in Tempe, AZ</p>
-            <div className="one-border"></div>
-            <h1>Explore Further</h1>
-            <ButtonGroup size="small" aria-label="small outlined button group">
-              <Button className={classes.navigation} href="#tech-section">
-                <div className="button-text">
-                  Technologies
+        <section>
+          <div className="float">
+            <div className="greeting" style={theTheme.whiteFont}>
+              <h1>I'm Kyle</h1>
+              <p>A software developer based in Tempe, AZ</p>
+              <div className="border" style={darkState ? { borderBottom: '1px solid white' } : {}}></div>
+              <h1>Explore Further</h1>
+              <ButtonGroup size="small" aria-label="small outlined button group">
+                <Button className={classes.navigation} href="#tech-section">
+                  <div className="button-text">
+                    Technologies
                   </div>
-              </Button>
-              <Button className={classes.navigation} href="#projects-section">
-                <div className="button-text">
-                  Projects
+                </Button>
+                <Button className={classes.navigation} href="#projects-section">
+                  <div className="button-text">
+                    Projects
                   </div>
-              </Button>
-            </ButtonGroup>
+                </Button>
+              </ButtonGroup>
+            </div>
           </div>
-        </div>
-        <div className="separator"><div className="line"></div></div>
-        <div className="intro-two">
-          <div className="two-card">
-            <div className="two-head">
+          <div className="card" style={theTheme.accent}>
+            <div className="head">
               <img src={portrait} alt="" />
               <h1>Get in touch</h1>
             </div>
-            <div className="two-body">
-            </div>
+            <div className="two-body"></div>
             <div className="two-btns">
               <ButtonGroup size="small" aria-label="small outlined button group">
                 <Button
@@ -67,18 +67,18 @@ export default function Intro() {
                   href="https://github.com/capriok"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <img src={githubinv} alt="" /></Button>
+                  <img src={github} alt="" /></Button>
                 <Button
                   className={classes.socials}
                   href="https://www.linkedin.com/in/kyle-caprio-568808111"
                   target="_blank"
                   rel="noopener noreferrer">
-                  <img src={linkedininv} alt="" /></Button>
+                  <img src={linkedin} alt="" /></Button>
               </ButtonGroup>
             </div>
-            <h2>capriodev@gmail.com</h2>
+            <p>capriodev@gmail.com</p>
           </div>
-        </div>
+        </section>
       </div>
     </>
   );

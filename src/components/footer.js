@@ -3,19 +3,10 @@ import { Button, ButtonGroup, makeStyles } from '@material-ui/core';
 
 export default function Footer() {
   const useStyles = makeStyles({
-    navigation: {
+    btn: {
       color: "white",
       padding: "2px 20px 1px 20px",
       border: '2px solid grey',
-      backgroundColor: "rgb(25, 25, 25)",
-      "&:hover": {
-        backgroundColor: "rgb(35, 35, 35)"
-      }
-    },
-    socials: {
-      color: "white",
-      padding: '5px 15px 5px 15px',
-      border: '1px solid white',
       backgroundColor: "rgb(25, 25, 25)",
       "&:hover": {
         backgroundColor: "rgb(35, 35, 35)"
@@ -27,25 +18,23 @@ export default function Footer() {
     <>
       <div className="footer-section">
         <div className="footer-content">
-          {/* <h1>title</h1>
-          <p>paragraph</p> */}
           <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
-            <Button className={classes.navigation} href="https://github.com/capriok">
+            <Button className={classes.btn} href="https://github.com/capriok">
               <div className="button-text">
                 Github
               </div>
             </Button>
-            <Button className={classes.navigation} href="https://www.linkedin.com/in/kyle-caprio-568808111">
+            <Button className={classes.btn} href="https://www.linkedin.com/in/kyle-caprio-568808111">
               <div className="button-text">
                 LinkedIn
               </div>
             </Button>
-            <Button className={classes.navigation} href="https://codepen.io/capriok">
+            <Button className={classes.btn} href="https://codepen.io/capriok">
               <div className="button-text">
                 Codepen
               </div>
             </Button>
-            <Button className={classes.navigation} href="/#">
+            <Button className={classes.btn} href="/#">
               <div className="button-text">
                 Resume
               </div>
