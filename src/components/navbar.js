@@ -6,7 +6,7 @@ import NavDrop from './navdrop';
 
 export default function Navbar() {
   const [navDrop, setDrop] = useState(false)
-  const [{ darkState, theTheme }, dispatch] = useStateValue()
+  const [{ darkState }, dispatch] = useStateValue()
 
   const handleChange = () => {
     dispatch({ type: 'flip', darkState: !darkState })
@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <>
       <div className="navbar">
-        <div className="title"><a href="/"><h1>Kyle Caprio</h1></a></div>
+        <a href="/"><h1>Kyle Caprio</h1></a>
         <div className="buttons">
           <Link to='/about'><p>Introduction</p></Link>
           <Link to='/projects'><p>Projects</p></Link>
