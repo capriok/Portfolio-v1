@@ -15,7 +15,7 @@ export default function Tech() {
     },
     {
       type: 'Storage',
-      list: ['MongoDB', 'GrapohQL', 'AWS']
+      list: ['MongoDB', 'GraphQL', 'SQL']
     },
     {
       type: 'Tools',

@@ -28,6 +28,21 @@ export function Index() {
     theTheme: {},
     projects: [
       {
+        title: 'Godspeed',
+        snippet: 'React UI Component and toolkit library',
+        p1: `He sat across from her trying to imagine it was the first time. It wasn't. Had it been a hundred? 
+        It quite possibly could have been. Two hundred? Probably not. His mind wandered until he caught himself and 
+        again tried to imagine it was the first time.`,
+        p2: `Your friends are holding you back and bringing you down." But
+        she didn't because she knew his friends were all that he had and even if that It seemed that it fell to earth
+        about one hundred miles east of him.`,
+        tags: ['Javascript', 'React', 'Styled-Components', '2020'],
+        thumb: NULL,
+        slides: [NULL, NULL, NULL],
+        link: 'https://github.com/capriok/Godspeed',
+        route: '/disarray'
+      },
+      {
         title: 'DisArray',
         snippet: 'Tile game challenging your strategic and critical thinking skills with an engouraged competitive aspect',
         p1: `He sat across from her trying to imagine it was the first time. It wasn't. Had it been a hundred? 
@@ -112,7 +127,7 @@ export function Index() {
         p2: `Then came the night of the first falling star. It was seen early in the morning, rushing over 
         Winchester eastward, a line of flame high in the atmosphere. Hundreds must have seen it and taken it for
         an ordinary falling star. It seemed that it fell to earth about one hundred miles east of him.`,
-        tags: ['Javascript', 'React', 'Electron', 'CSS', '2019'],
+        tags: ['Javascript', 'HTML', 'CSS', '2019'],
         thumb: NULL,
         slides: [NULL, NULL, NULL],
         link: 'https://github.com/capriok',
