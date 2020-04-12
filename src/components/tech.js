@@ -11,7 +11,7 @@ export default function Tech() {
     },
     {
       type: 'Frameworks',
-      list: ['Node', 'React', 'Redux', 'Express']
+      list: ['Node', 'React', 'Gatsby', 'Express']
     },
     {
       type: 'Storage',

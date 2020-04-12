@@ -176,8 +176,8 @@
       border-bottom: 1px solid grey;
     }
   .tags{
-    position: relative;
     text-align: left;
+    width: 100%;
     padding-top:20px;
     padding-left:20px;
     margin-top: auto;
@@ -189,6 +189,9 @@
       color: white;
       font-size: .9rem;
     }
+  }
+  .tags{
+    *{font-size: .9rem;}
   }
   .slideshow{
     width: 100%;
@@ -449,6 +452,7 @@
     width: 100%;
     .buttons, h1, p, .rights{padding:5px}
     .button-text{font-size: .8rem;}
+    .rights{font-size: .9rem;padding-top: 10px;}
   }
 }
 
@@ -525,6 +529,12 @@
       text-align: center;
       padding: 0px;
       span{
+        font-size: .7rem;
+      }
+    }
+    .tags{
+      padding-top: 10px;
+      *{
         font-size: .7rem;
       }
     }
@@ -626,6 +636,6 @@
   .footer-content {
       width: 100%;
       .buttons{.button-text{font-size: .6rem;}}
-      .rights{font-size: .6rem;}
+      .rights{font-size: .65rem;}
   }
 }

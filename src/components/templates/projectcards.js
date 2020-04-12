@@ -60,11 +60,11 @@ export default function Projects({ openModal, setContent }) {
                           }
                         </Button>
                         <Button className={classes.btn}
-                          href={item.link}
+                          href={item.demo}
                           target="_blank"
                           rel="noopener noreferrer">
                           <div className="button-text">
-                            Source
+                            Demo
                         </div>
                         </Button>
                       </ButtonGroup>

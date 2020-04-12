@@ -4,7 +4,6 @@ import Slider from '../image-slides/image-slides'
 
 export const ProjectDisplay = ({ item }) => {
   const [{ theTheme },] = useStateValue()
-  let indent = ''
   return (
     <div className="lone-project-template">
       <h6 style={theTheme.whiteFont}>{item.title}</h6>
@@ -23,6 +22,7 @@ export const ProjectDisplay = ({ item }) => {
           <span key={i}>{item}</span>
         ))}
       </div>
+      <div className="tags"><span><a href={item.link}>Source Code</a></span></div>
     </div >
   )
 }

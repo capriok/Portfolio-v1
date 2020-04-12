@@ -3,21 +3,34 @@ import ReactDOM from "react-dom";
 import { StateProvider } from "./state";
 import App from "./app";
 import NULL from './gallery/projects/404.png'
-import PORTFOLIO_GIF1 from './gallery/projects/PORTFOLIOV1-GIF1.gif'
-import PORTFOLIO_1 from './gallery/projects/PORTFOLIOV1-1.PNG'
-import PORTFOLIO_2 from './gallery/projects/PORTFOLIOV1-2.PNG'
-import PORTFOLIO_3 from './gallery/projects/PORTFOLIOV1-3.PNG'
-import DISARRAY_GIF1 from './gallery/projects/DISARRAY-GIF1.gif'
+import SNEKKEL_UI from './gallery/projects/SNEKKEL-UI.gif'
+import SNEKKEL_FEAT from './gallery/projects/SNEKKEL-FEAT.gif'
+import SNEKKEL_1 from './gallery/projects/SNEKKEL-1.PNG'
+import SNEKKEL_2 from './gallery/projects/SNEKKEL-2.PNG'
+import GODSPEED_1 from './gallery/projects/GODSPEED-1.PNG'
+import DISARRAY_UI from './gallery/projects/DISARRAY-UI.gif'
 import DISARRAY_1 from './gallery/projects/DISARRAY-1.PNG'
 import DISARRAY_2 from './gallery/projects/DISARRAY-2.PNG'
 import DISARRAY_3 from './gallery/projects/DISARRAY-3.PNG'
-import TF_GIF1 from './gallery/projects/TF-GIF1.gif'
+import NEETCHAT_1 from './gallery/projects/NEETCHAT-1.PNG'
+import NEETCHAT_2 from './gallery/projects/NEETCHAT-2.PNG'
+import PORTFOLIO_UI from './gallery/projects/PORTFOLIOV1-UI.gif'
+import PORTFOLIO_1 from './gallery/projects/PORTFOLIOV1-1.PNG'
+import PORTFOLIO_2 from './gallery/projects/PORTFOLIOV1-2.PNG'
+import PORTFOLIO_3 from './gallery/projects/PORTFOLIOV1-3.PNG'
+import YTM_LOGIN from './gallery/projects/YTM-LOGIN.gif'
+import YTM_UI from './gallery/projects/YTM-UI.gif'
+import YTM_SEARCH from './gallery/projects/YTM-SEARCH.gif'
+import YTM_QUEUE from './gallery/projects/YTM-QUEUE.gif'
+import ARTE_BELLA_UI from './gallery/projects/ARTE-BELLA-UI.gif'
+import ARTE_BELLA_1 from './gallery/projects/ARTE-BELLA-1.PNG'
+import TF_UI from './gallery/projects/TF-UI.gif'
 import TF_FILTERS from './gallery/projects/TF-FILTERS.gif'
 import TF_PROFILE from './gallery/projects/TF-PROFILE.gif'
 import TF_ACC_DELETE from './gallery/projects/TF-ACC-DELETE.gif'
-import TFKGIF1 from './gallery/projects/TFK-GIF1.gif'
-import TFK1 from './gallery/projects/TFK1.PNG'
-import TFK2 from './gallery/projects/TFK2.PNG'
+import TFK_UI from './gallery/projects/TFK-UI.gif'
+import TFK_1 from './gallery/projects/TFK-1.PNG'
+import TFK_2 from './gallery/projects/TFK-2.PNG'
 import "./index.scss";
 
 export function Index() {
@@ -28,6 +41,22 @@ export function Index() {
     theTheme: {},
     projects: [
       {
+        title: 'Snekkel',
+        snippet: 'Snake game with directional sprites and difficulty settings',
+        p1: `He sat across from her trying to imagine it was the first time. It wasn't. Had it been a hundred? 
+        It quite possibly could have been. Two hundred? Probably not. His mind wandered until he caught himself and 
+        again tried to imagine it was the first time.`,
+        p2: `Your friends are holding you back and bringing you down." But
+        she didn't because she knew his friends were all that he had and even if that It seemed that it fell to earth
+        about one hundred miles east of him.`,
+        tags: ['Javascript', 'React', '2020'],
+        thumb: SNEKKEL_UI,
+        slides: [SNEKKEL_UI, SNEKKEL_FEAT, SNEKKEL_1, SNEKKEL_2],
+        link: 'https://github.com/capriok/Snekkel',
+        demo: 'https://snekkel.kylecaprio.dev',
+        route: '/snekkel'
+      },
+      {
         title: 'Godspeed',
         snippet: 'React UI Component and toolkit library',
         p1: `He sat across from her trying to imagine it was the first time. It wasn't. Had it been a hundred? 
@@ -36,11 +65,12 @@ export function Index() {
         p2: `Your friends are holding you back and bringing you down." But
         she didn't because she knew his friends were all that he had and even if that It seemed that it fell to earth
         about one hundred miles east of him.`,
-        tags: ['Javascript', 'React', 'Styled-Components', '2020'],
-        thumb: NULL,
-        slides: [NULL, NULL, NULL],
-        link: 'https://github.com/capriok/Godspeed',
-        route: '/disarray'
+        tags: ['Gatsby', 'React', 'Javascript', '2020'],
+        thumb: GODSPEED_1,
+        slides: [GODSPEED_1, NULL, NULL],
+        link: 'https://github.com/capriok/Godspeed-Docs',
+        demo: 'https://godspeed.netlify.com',
+        route: '/godspeed-docs'
       },
       {
         title: 'DisArray',
@@ -52,14 +82,15 @@ export function Index() {
         she didn't because she knew his friends were all that he had and even if that It seemed that it fell to earth
         about one hundred miles east of him.`,
         tags: ['Javascript', 'React', 'SCSS', '2020'],
-        thumb: DISARRAY_GIF1,
+        thumb: DISARRAY_UI,
         slides: [DISARRAY_1, DISARRAY_2, DISARRAY_3],
         link: 'https://github.com/capriok/DisArray',
+        demo: 'https://disarray.kylecaprio.dev',
         route: '/disarray'
       },
       {
-        title: 'MyTube Music',
-        snippet: 'Youtube Data API consumed to create a client sided music streaming application wrapped in Electron',
+        title: 'NeetChat',
+        snippet: 'Harnessing the power of socket.io to create a chatroom application. Fully functional with induvidual rooms, private messages and plenty more.',
         p1: `He sat across from her trying to imagine it was the first time. It wasn't. Had it been a hundred? 
         It quite possibly could have been. Two hundred? Probably not. His mind wandered until he caught himself and 
         again tried to imagine it was the first time.`,
@@ -67,9 +98,10 @@ export function Index() {
         she didn't because she knew his friends were all that he had and even if that It seemed that it fell to earth
         about one hundred miles east of him.`,
         tags: ['Javascript', 'React', 'Electron', 'CSS', '2020'],
-        thumb: NULL,
-        slides: [NULL, NULL, NULL],
+        thumb: NEETCHAT_1,
+        slides: [NEETCHAT_1, NEETCHAT_2, NULL],
         link: 'https://github.com/capriok/MyTube',
+        demo: 'https://mytube-music.kylecaprio.dev',
         route: '/mytube-music'
       },
       {
@@ -82,10 +114,27 @@ export function Index() {
         Winchester eastward, a line of flame high in the atmosphere. Hundreds must have seen it and taken it for
         an ordinary falling star. It seemed that it fell to earth about one hundred miles east of him.`,
         tags: ['Javascript', 'React', 'SCSS', '2020'],
-        thumb: PORTFOLIO_GIF1,
+        thumb: PORTFOLIO_UI,
         slides: [PORTFOLIO_1, PORTFOLIO_2, PORTFOLIO_3],
         link: 'https://github.com/capriok/Portfolio',
+        demo: 'https://kylecaprio.dev',
         route: '/portfolio'
+      },
+      {
+        title: 'MyTube Music',
+        snippet: 'Youtube Data API consumed to create a client sided music streaming application wrapped in Electron',
+        p1: `He sat across from her trying to imagine it was the first time. It wasn't. Had it been a hundred? 
+        It quite possibly could have been. Two hundred? Probably not. His mind wandered until he caught himself and 
+        again tried to imagine it was the first time.`,
+        p2: `Your friends are holding you back and bringing you down." But
+        she didn't because she knew his friends were all that he had and even if that It seemed that it fell to earth
+        about one hundred miles east of him.`,
+        tags: ['Javascript', 'React', 'Electron', 'CSS', '2020'],
+        thumb: YTM_UI,
+        slides: [YTM_LOGIN, YTM_SEARCH, YTM_QUEUE],
+        link: 'https://github.com/capriok/MyTube',
+        demo: 'https://mytube-music.kylecaprio.dev',
+        route: '/mytube-music'
       },
       {
         title: 'Arte Bella Engraving',
@@ -97,9 +146,10 @@ export function Index() {
         Winchester eastward, a line of flame high in the atmosphere. Hundreds must have seen it and taken it for
         an ordinary falling star. It seemed that it fell to earth about one hundred miles east of him.`,
         tags: ['Javascript', 'React', 'SCSS', '2019'],
-        thumb: NULL,
-        slides: [NULL, NULL, NULL],
+        thumb: ARTE_BELLA_UI,
+        slides: [ARTE_BELLA_1, NULL, NULL],
         link: 'https://github.com/capriok/Arte-Bella',
+        demo: 'https://artebellaengraving.com',
         route: '/arte-bella-engraving'
       },
       {
@@ -113,25 +163,11 @@ export function Index() {
         Winchester eastward, a line of flame high in the atmosphere. Hundreds must have seen it and taken it for
         an ordinary falling star. It seemed that it fell to earth about one hundred miles east of him.`,
         tags: ['Javascript', 'React', 'Electron', 'CSS', '2019'],
-        thumb: TF_GIF1,
+        thumb: TF_UI,
         slides: [TF_FILTERS, TF_PROFILE, TF_ACC_DELETE],
         link: 'https://github.com/capriok/TookFeed',
+        demo: 'https://tookfeed.kylecaprio.dev',
         route: '/tookfeed'
-      },
-      {
-        title: 'E-Commerce',
-        snippet: 'High end fashion website inspired by Polo Ralph Lauren site',
-        p1: `Where do they get a random paragraph?" he wondered as he clicked the generate button. Do they 
-        just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph
-        and realized it was about random paragraphs and his world would never be the same.`,
-        p2: `Then came the night of the first falling star. It was seen early in the morning, rushing over 
-        Winchester eastward, a line of flame high in the atmosphere. Hundreds must have seen it and taken it for
-        an ordinary falling star. It seemed that it fell to earth about one hundred miles east of him.`,
-        tags: ['Javascript', 'HTML', 'CSS', '2019'],
-        thumb: NULL,
-        slides: [NULL, NULL, NULL],
-        link: 'https://github.com/capriok',
-        route: '/e-commerce'
       },
       {
         title: 'Theme Template Distribution',
@@ -145,9 +181,10 @@ export function Index() {
         she didn't because she knew his friends were all that he had and even if that meant a life of misery,
         he would never give them up.`,
         tags: ['HTML', 'CSS', 'Jquery', '2014'],
-        thumb: TFKGIF1,
-        slides: [TFKGIF1, TFK1, TFK2],
+        thumb: TFK_UI,
+        slides: [TFK_1, TFK_2],
         link: 'https://themesfromkyle.tumblr.com/',
+        demo: 'https://themesfromkyle.tumblr.com',
         route: '/theme-template-distribution'
       }
     ]

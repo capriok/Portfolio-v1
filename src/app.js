@@ -43,22 +43,6 @@ export default function App() {
       : dispatch({ type: 'theme', theTheme: {} })
   }, [darkState])
 
-  ////////// NOTES
-
-  // subtle background animations movement
-  // see more on tech cards
-
-  // theme logic: DONE!
-  //  create darkTheme obj that holds any element on the dom that reacts to themeSwtich
-  //  eg. const daktheme = obj > elements > style attributes > values
-  //  import darkTheme to context provider, useEffect to apply theme on one condition
-  //  darkState context boolean to determine if darkTheme obj is passed to the style artibute
-  //  theTheme context obj, default empty, to await true darkState boolean 
-  //  if darkState true, point theTheme to darkState so that components may resolve theme change
-  //  set style atribute of all components to corresponding theTheme properties to await themeSwitch to flip darkState 
-
-  //////////
-
   return (
     <>
       <div className="main" style={theTheme.main}>
