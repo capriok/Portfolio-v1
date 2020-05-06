@@ -26,7 +26,3 @@ export const darkTheme = {
   title: { backgroundColor: 'rgba($color: $accent, $alpha: .3)' },
   whiteFont: { color: 'white' },
 }
-
-//nav dark p:hover 'background-color:rgb(14, 33, 50)'
-//card dark h1
-//navbar dark p:active/hover 'background-color:rgb(14, 33, 50)'

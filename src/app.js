@@ -7,7 +7,7 @@ import { ProjectDisplay } from './components/templates/projectdisplay';
 import Navbar from "./components/navbar";
 import Intro from './components/intro';
 import Tech from './components/tech';
-import ProjcetCards from './components/templates/projectcards';
+import ProjectCards from './components/templates/projectcards';
 import Footer from "./components/footer";
 import projectsBanner from './gallery/projects.svg'
 import "../src/components/components.scss";
@@ -54,7 +54,7 @@ export default function App() {
             <>
               <div className="modal-clickout" onClick={() => openModal(false)} />
               <div className="project-modal" style={theTheme.main}>
-                <ProjectDisplay item={modalContent} />
+                <ProjectDisplay item={modalContent} modalOpen={modalOpen} />
               </div>
             </>
           }
@@ -64,7 +64,7 @@ export default function App() {
               <Intro />
               <Tech />
               <div id='projects-section' className="projects-section">
-                <ProjcetCards openModal={openModal} setContent={setContent} />
+                <ProjectCards openModal={openModal} setContent={setContent} />
               </div>
               <Button className={classes.btn} onClick={() => { window.scrollTo(0, 0) }}>
                 <h1 className="button-text">Get in touch</h1>
@@ -92,7 +92,7 @@ export default function App() {
               </div>
               <div className="body">
                 <h1 className="title" style={theTheme.whiteFont}>—— Projects ——</h1>
-                <ProjcetCards openModal={openModal} setContent={setContent} />
+                <ProjectCards openModal={openModal} setContent={setContent} />
               </div>
             </div>
           )}></Route>

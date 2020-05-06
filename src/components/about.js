@@ -12,7 +12,7 @@ export default function AboutRoute() {
             <img src={about} alt="" />
           </div>
           <div className="body" style={theTheme.whiteFont}>
-            <h1>—— About Me ——</h1>
+            <h1>— About Me —</h1>
             <p className="indent">
               My name is Kyle Caprio. I'm a self taught software engineer based in Tempe, Arizona.
               I found my passion for learning computer sciences at the age of 16 and have been programming ever since.
@@ -24,15 +24,16 @@ export default function AboutRoute() {
               In free my time, I immerse myself in learning new programming technologies and how to better myself as a programmer
               but also find joy with meditaion, music, hiking, and spending time under the sun.
             </p>
-            <h1>—— Technical Skills ——</h1>
+            <h1>— Technical Skills —</h1>
             <ul>
-              <li><p>HTML, CSS, SASS,  (Front End Development)</p></li>
-              <li><p>React.js, Node.js, Express (Javascript)</p></li>
-              <li><p>Relational databases: GraphQl, SQL</p></li>
-              <li><p>Non-Relational databases: MongoDB</p></li>
-              <li><p>Library use: Gatsby, NEXT.js, Material-UI</p></li>
+              <li><span className="type">Javascript:</span><span> React.js, Node.js, Express</span></li>
+              <li><span className="type">Front End:</span><span> HTML, CSS, SASS, HTML Canvas</span></li>
+              <li><span className="type">Relational databases:</span><span> SQL, GraphQL</span></li>
+              <li><span className="type">Non-Relational databases:</span><span> MongoDB, NoSQL</span></li>
+              <li><span className="type">Library use:</span><span> Gatsby, NEXT.js, Material-UI, Formik</span></li>
+              <li><span className="type">Miscellaneous:</span><span> Git, NPM, AWS ( RDS, EC2 ), Webpack, Babel</span></li>
             </ul>
-            <h1>—— Proffesional Experience ——</h1>
+            <h1>— Proffesional Experience —</h1>
             <ul>
               <li><p>Freelance website design and deployment projects for 2 small business clients</p></li>
               <li><p>&lt; 1 year consulting on an open source user authentication application</p></li>

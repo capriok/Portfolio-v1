@@ -7,19 +7,19 @@ export default function Tech() {
   const technologies = [
     {
       type: 'Languages',
-      list: ['Javascript', 'HTML5', 'CSS', 'SCSS']
+      list: ['JavaScript', 'HTML5', 'SCSS', 'CSS']
     },
     {
       type: 'Frameworks',
-      list: ['Node', 'React', 'Gatsby', 'Express']
+      list: ['Node', 'React', 'Express', 'Gatsby']
     },
     {
       type: 'Storage',
-      list: ['MongoDB', 'GraphQL', 'SQL']
+      list: ['MongoDB', 'Postgres', 'SQL', 'MySQL']
     },
     {
       type: 'Tools',
-      list: ['React Context', 'Material-UI', 'Lodash', 'Regex']
+      list: ['React Redux/Context', 'Material-UI', 'Lodash', 'Regex']
     },
   ]
 

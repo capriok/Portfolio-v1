@@ -46,26 +46,21 @@ export default function Projects({ openModal, setContent }) {
                       <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
                         <Button className={classes.btn} onClick={async () => {
                           setContent(item)
-                          if (!isMobile) openModal(true)
-                        }}>
-                          {isMobile
-                            ? <Link to={item.route}>
-                              <div className="button-text">
-                                see in depth
-                                  </div>
-                            </Link>
-                            : <div className="button-text">
-                              see in depth
-                              </div>
+                          if (isMobile) {
+                            window.location.href = `${item.route}`
+                          } else if (!isMobile && window.location.pathname === '/') {
+                            openModal(true)
+                          } else {
+                            window.location.href = `${item.route}`
                           }
+                        }}>
+                          <div className="button-text">see in depth</div>
                         </Button>
                         <Button className={classes.btn}
                           href={item.demo}
                           target="_blank"
                           rel="noopener noreferrer">
-                          <div className="button-text">
-                            Demo
-                        </div>
+                          <div className="button-text">Demo</div>
                         </Button>
                       </ButtonGroup>
                     </div>
@@ -78,7 +73,8 @@ export default function Projects({ openModal, setContent }) {
             </div>
           </>
         </ScrollAnimation>
-      ))}
+      ))
+      }
     </>
   );
 }

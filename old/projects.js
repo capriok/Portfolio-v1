@@ -72,8 +72,6 @@ export default function Projects({ openModal, setContent }) {
   return (
     <>
       <div id='projects-section' className="projects-section">
-        {/* --------------------------------------------------MyTube Music */}
-
         {projects.map((item, i) => (
           <>
             <div className="project-card" >
