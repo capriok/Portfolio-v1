@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import { useStateValue } from '../../state'
 import { Button, ButtonGroup, makeStyles } from '@material-ui/core';
 import ScrollAnimation from 'react-animate-on-scroll';

@@ -1,7 +1,5 @@
 import React, { useState, useRef } from 'react'
 import arrow from '../../gallery/arrow-right.png'
-import darkArrow from '../../gallery/arrow-right-dark.png'
-import { useStateValue } from '../../state'
 import './image-slides.scss'
 
 function Slide({ slide, index, current, handleSlideClick }) {
@@ -54,7 +52,6 @@ function Slide({ slide, index, current, handleSlideClick }) {
 
 
 export const SliderControl = ({ type, title, handleClick }) => {
-  const [{ darkState },] = useStateValue()
   return (
     <>
       <button className={`btn btn--${type}`} title={title} onClick={handleClick}>

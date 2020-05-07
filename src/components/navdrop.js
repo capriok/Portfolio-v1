@@ -1,9 +1,7 @@
 import React from 'react';
-import { useStateValue } from '../state'
 import useLockBodyScroll from './hooks/uselockbodyscroll'
 
 export default function NavDrop({ navDrop, setDrop }) {
-  const [{ darkState },] = useStateValue()
   useLockBodyScroll()
 
   return (

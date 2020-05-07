@@ -149,7 +149,7 @@
   max-height: 200px;
   img{
     width: 350px;
-    max-width: 350px;
+    max-width: 380px;
   }
 }
 
@@ -532,6 +532,7 @@
     padding: 0;
     margin: 0;
     margin: 3px 6px;
+    margin-bottom: 20px;
     border-radius: 0px;
       .body{
         min-width: unset;
@@ -680,17 +681,16 @@
     padding-top: 50px;
   }
   .thumb{
-    padding-bottom: 5px;
     justify-content: center;
     overflow: hidden;
     max-height: 200px;
-    margin-bottom: 5px;
+    width: 100%;
   img{
       position: relative;
       top: 0px;
       width: 100%;
       height: 100%;
-      padding: 10px 0px;
+      padding: 0px;
     }
   }
   .footer-content {

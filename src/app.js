@@ -14,8 +14,6 @@ import "../src/components/components.scss";
 import "./index.scss";
 import { darkTheme as dark } from './theme'
 
-// import { BaseNavbar } from 'godspeed'
-
 export default function App() {
   const [{ darkState, theTheme, projects }, dispatch] = useStateValue()
   const [modalOpen, openModal] = useState(false)
