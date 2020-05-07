@@ -29,11 +29,6 @@ export default function Footer() {
                 LinkedIn
               </div>
             </Button>
-            <Button className={classes.btn} href="https://codepen.io/capriok">
-              <div className="button-text">
-                Codepen
-              </div>
-            </Button>
             <Button className={classes.btn} href="/#">
               <div className="button-text">
                 Resume

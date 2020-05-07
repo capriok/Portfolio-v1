@@ -27,7 +27,7 @@ export default function AboutRoute() {
             <h1>— Technical Skills —</h1>
             <ul>
               <li><span className="type">Javascript:</span><span> React.js, Node.js, Express</span></li>
-              <li><span className="type">Front End:</span><span> HTML, CSS, SASS, HTML Canvas</span></li>
+              <li><span className="type">Front End:</span><span> HTML, CSS, SASS</span></li>
               <li><span className="type">Relational databases:</span><span> SQL, GraphQL</span></li>
               <li><span className="type">Non-Relational databases:</span><span> MongoDB, NoSQL</span></li>
               <li><span className="type">Library use:</span><span> Gatsby, NEXT.js, Material-UI, Formik</span></li>

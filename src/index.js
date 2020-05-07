@@ -35,7 +35,6 @@ import "./index.scss";
 
 export function Index() {
   const trueDarkState = localStorage.getItem('theme') === 'true'
-  const Jordan = "<a href='https://github.com/jriley15'>Jordan Riley</a>"
 
   let initialState = {
     darkState: trueDarkState,
@@ -61,9 +60,20 @@ export function Index() {
         title: 'Godspeed',
         snippet: 'React UI Component and toolkit library',
         writing: {
-          objective: `Writing in progress`,
+          objective: `With my earliest experiences working in React, I found component design to be the most intersting. 
+          This led me to utilization of Material-UI, which I love. Using the library accelerated the process of building 
+          great looking components. However, when it came easy customizability, which is important to me, the complexity 
+          and amount of code needed was detrimental to the process. Every developer knows styling components can be very 
+          tedious, so I set out to make my own styled component library. I used Styled-Components as the foundation of my 
+          components because of how lightweight and functional the library is. After making my first buttons, and inputs 
+          I established a very high level of satisfaction. Then came the process of cleaning up code and creating a more 
+          professional base for my soon to be NPM package. This quickly became, and still remains to this day, one of my 
+          favorite and most prized endeavors to work on.`,
           conclusion: [
-            'Writing in progress',
+            'Expanded my knowledge about the inner workings of which NPM packages are made',
+            'Developed a comfort with working inside complex enterprise tailored code bases',
+            'Learned alot about proptypes and error handling to make sure the package was used correctly',
+            'Learned Gatsby.js to make the documention website.'
           ],
         },
         tags: ['Gatsby', 'React', 'Javascript', '2020'],
@@ -75,16 +85,24 @@ export function Index() {
       },
       {
         title: 'DisArray',
-        snippet: 'Tile game challenging your strategic and critical thinking skills with an engouraged competitive aspect',
+        snippet: 'Tile puzzle game challenging your strategic and critical thinking skills with an engouraged competitive aspect',
         writing: {
-          objective: `Writing in progress`,
+          objective: `The #100DaysOfCode challenge all across social media inspired me to build a JavaScript game. 
+          I Immediately had the perfect game in mind, a 16-tile sorting puzzle I had in my youth but could never truely 
+          solve. Planning the code structure came to me rather quickly, which made me more excited to build this game. 
+          The main challenge hit when it was time to write the tile movement and checking for wins. Once that was all 
+          sorted out it was time to introduce the competitive aspect. This entailed writing a timer to track the current 
+          game length, as well as writing the leaderboards server code to keep track of user wins and times.`,
           conclusion: [
-            'Writing in progress',
+            'Extensively imporved array and object maniputlation skills',
+            'Developed more fluent iterative and recursive techniques',
+            'Learned more about lambda functions for deployment for server',
+            'Familiarized myself with serverless HTTP API use',
           ],
         },
         tags: ['Javascript', 'React', 'SASS', '2020'],
         thumb: DISARRAY_UI,
-        slides: [DISARRAY_1, DISARRAY_2, DISARRAY_3],
+        slides: [DISARRAY_1, DISARRAY_UI, DISARRAY_3],
         link: 'https://github.com/capriok/DisArray',
         demo: 'https://disarray.kylecaprio.dev',
         route: '/disarray'
@@ -93,12 +111,11 @@ export function Index() {
         title: 'Portfolio',
         snippet: 'Version One of my Sofware developer portfolio',
         writing: {
-          objective: `The main goal in mind was to create a space for people to visually see my skills and experience clearly. 
+          objective: `The main goal was to create a space for people to visually see my skills and experience clearly. 
           I strongly believe showcasing personal projects and professional endeavors is key for any software developer. 
-          This is who I am and what I love doing, have a look. After building the website structure it came time to reflect on myself 
-          and really dive deep into writing about what I've learned and accomplished over the years. This portfolio is 
-          something I hold dear to my heart as it is the forefront of what will land me my first job as a developer and 
-          change my life forever.
+          After building the website structure, it came time to reflect on myself and what I've learned and accomplished 
+          over the years. This portfolio is something I hold dear to my heart as it is the forefront of what will land me 
+          my first job as a developer and change my life forever. This is who I am and what I love doing, take a look. 
           `,
           conclusion: [],
         },
@@ -114,17 +131,18 @@ export function Index() {
         snippet: `Harnessing the power of socket.io to create a chatroom application. Fully functional with induvidual rooms, 
         private messages and plenty more`,
         writing: {
-          objective: `This was one of the first complex collaborative projects I have done. Two main contributors being 
-          Jordan Riley and Hunter Foulk. We had a vision in mind to make a modern remake of and old school styled chat room application. 
-          Socket.io and Express in Node were the foundation of this application. Learning about web sockets was extremely intriguing to me 
-          and taught me alot about how countless other web applications work. The most difficult feature was the implementaion of private 
-          messaging. After long sessions of brainstorming, discussion and planning together we realized quite a few key foundations of 
-          code would have to be rewritten. We pushed through and were very thankful in doing so, because the end result of this project 
-          and the chemistry built with eachother was something to be very proud of.`,
+          objective: `This was one of the first complex collaborative projects I have done, two main contributors being 
+          Jordan Riley and Hunter Foulk. We had a vision in mind to make a modern remake of an old school styled chat 
+          room application. Socket.io and Express in Node were the foundation of this application. Learning about web 
+          sockets was extremely intriguing to me and taught me alot about how countless other web applications work. 
+          The most difficult feature was the implementaion of private messaging. After long sessions of brainstorming, 
+          discussing and planning together we realized quite a few key foundations of code would have to be rewritten. 
+          We pushed through and were very thankful in doing so, because the end result of this project and the chemistry 
+          built with eachother was something to be very proud of.`,
           conclusion: [
             'Developed a proficient understanding of web sockets and server applications',
-            'Came out with a chemistry and skills working with others in development',
-            'Stronger server code and theory behind more advanced web applications',
+            'Progessed my teamwork skills working in professional-style environments',
+            'Stronger comprehension of server code and advanced web aplications',
           ],
         },
         tags: ['Javascript', 'Socket.io', 'React', 'SASS', '2019'],
@@ -138,16 +156,16 @@ export function Index() {
         title: 'MyTube Music',
         snippet: 'Youtube Data API consumed to create a client sided music streaming application wrapped in Electron',
         writing: {
-          objective: `I had a vision to develop a music streaming application inspired by YouTube Music. This being the 
-          most complex endeavor of mine I knew keeping a clean code base was the most important aspect of the project. 
-          The Youtube Data API would be the foundation of the application. Core functionality consisted of user authentication, 
-          which led to managing complex user objects. The ability to access the scope of an authenticated user to 
-          read and write user data gave the application a personalized and familiar feel. The amount of user data started 
-          becoming hard to keep track of so I implemented global state management with help of React.js hooks. 
-          Once established this opened my eyes to how powerful React.js actually is. My love for the framework 
-          skyrocketed during the development process of this app.`,
+          objective: `I had a vision to develop a music streaming application inspired by YouTube Music. This being 
+          the most complex endeavor of mine I knew keeping a clean code base was the most important aspect of the 
+          project. The Youtube Data API would be the foundation of the application. Core functionality consisted of 
+          user authentication, which led to managing complex user objects. The ability to access the scope of an 
+          authenticated user to read and write user data gave the application a personalized and familiar feel. The 
+          amount of user data started becoming hard to keep track of so I implemented global state management with 
+          help of React.js hooks. Once established this opened my eyes to how powerful React.js actually is. My love 
+          for the framework skyrocketed during the development process of this app.`,
           conclusion: [
-            'Became confident working with an API ( GET, POST, DELETE )',
+            'Became confident working with an API ( GET, POST, UPDATE, DELETE )',
             'Learned about user authentication and how to effectively use the state of authentication in my application',
             'Familiarized with complex state management with React.js hooks ( useContext, useReducer )',
             'Management of complex core application and component structure',
@@ -164,12 +182,12 @@ export function Index() {
         title: 'Arte Bella Engraving',
         snippet: 'Small business client, single page website',
         writing: {
-          objective: `The clients desires consisted of two main objectives. First the foundation, a simple single page website 
-          that is to the point and easily navigable. The next objective was to optimize the website to be fully responsive 
-          for any device and or screen size. I found that using React.js was perfect for this application. Designing the 
-          skeleton with only dummy content to work with, until the client provided content, allowed me to create a structure 
-          that was extremely dynamic and versatile. When the client was ready to populate the site with the content I 
-          thanked myself for creating such a versatile architecture.`,
+          objective: `The clients desires consisted of two main objectives. First the foundation, a simple single 
+          page website that is to the point and easily navigable. The next objective was to optimize the website 
+          to be fully responsive for any device and or screen size. I found that using React.js was perfect for 
+          this application. Designing the skeleton with only dummy content to work with, until the client provided 
+          content, allowed me to create a structure that was extremely dynamic and versatile. When the client was 
+          ready to populate the site with the content I thanked myself for creating such a versatile architecture.`,
           conclusion: [
             'Built Time management, Self-assurance and Negotiation skills',
             'Learned about domain management, web hosting and application deployment',
@@ -189,10 +207,10 @@ export function Index() {
         snippet: 'Harnessing the power of News API to stay up to date on global or local news',
         writing: {
           objective: `My goal of this project was to create a newsfeed application I could use for myself. 
-          During the development process I greatly improved my Javascript and Web Development skills. 
-          Teaching myself React.js was the big challenge of this project. My lack of knowledge about 
-          state management and lifecycles changed very quickly as I devoted myself to this framework. 
-          I fell in love with react.js and have been using it exclusively ever since.`,
+          During the development process I greatly improved my Javascript and Web Development skills. Teaching 
+          myself React.js was the big challenge of this project. My lack of knowledge about state management and 
+          lifecycles changed very quickly as I devoted myself to this framework. I fell in love with react.js and 
+          have been using it exclusively ever since.`,
           conclusion: [
             'Learned React.js from the ground up.',
             'Developed knowledge about state management, lifecycles, and the virtual DOM',
@@ -210,10 +228,10 @@ export function Index() {
         title: 'Theme Template Distribution',
         snippet: 'Combining aesthetics with user customizability to provide easy to use but unique themes for any user',
         writing: {
-          objective: `My goal for this endeavor was to provide quality Tumblr themes to people who enjoy customization of their 
-          blog without paying top dollar for a template. Combining aesthetics, simplicity, and customizability quickly made me 
-          the go to guy for themes among my peers. This is where I initially found my passion for web development. 
-          Tinkering and teaching myself became the thing I looked forward to most everyday. 
+          objective: `My aspiration for this endeavor was to provide quality Tumblr themes to people who enjoy 
+          customization of their blog without paying top dollar for a template. Combining aesthetics, simplicity, and 
+          customizability quickly made me the go to guy for themes among my peers. This is where I initially found my 
+          passion for web development. Tinkering and teaching myself became the thing I looked forward to most everyday. 
           `,
           conclusion: [
             'Understanding of how the web is structured and manipulated by the browser',
