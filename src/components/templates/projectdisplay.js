@@ -12,16 +12,16 @@ export const ProjectDisplay = ({ modalOpen, item }) => {
       </div>
       <div className={modalOpen ? "body modal" : "body"} style={theTheme.whiteFont}>
         <p>{item.snippet}</p>
-        <p style={{ fontWeight: 600, padding: '10px 0' }}>Objective</p>
-        <p style={{ textIndent: '15px' }}>{item.writing.objective}</p>
+        <p className="writing-title">The Process</p>
+        <p className="indent">{item.writing.process}</p>
 
         {item.writing.conclusion.length > 0 &&
           <>
-            <br /><p style={{ fontWeight: 600, padding: '10px 0' }}>Take Away</p>
+            <br /><p className="writing-title">Take Away</p>
           </>
         }
         {item.writing.conclusion.map((item, i) => (
-          <li key={i} style={{ textIndent: '15px' }}>{item}</li>
+          <li key={i} className="indent">{item}</li>
         ))}
         <br />
         <div className="tags"><span><a href={item.demo}>Demo App</a></span></div>
