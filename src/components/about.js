@@ -35,8 +35,8 @@ export default function AboutRoute() {
             </ul>
             <h1>— Proffesional Experience —</h1>
             <ul>
-              <li><p>Freelance website design and deployment projects for 2 small business clients</p></li>
-              <li><p>&lt; 1 year consulting on an open source user authentication application</p></li>
+              <li><span>Freelance website design and deployment projects for 2 small business clients</span></li>
+              <li><span>&lt; 1 year consulting on an open source user authentication application</span></li>
             </ul>
           </div>
         </div>

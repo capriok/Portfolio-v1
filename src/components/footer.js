@@ -33,8 +33,8 @@ export default function Footer() {
       <div className="footer-section">
         <div className="footer-content">
           <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
-            {buttons.map((b) => (
-              <Button className={classes.btn}
+            {buttons.map((b, i) => (
+              <Button className={classes.btn} key={i}
                 href={b.href}
                 target="_blank"
                 rel="noopener noreferrer">

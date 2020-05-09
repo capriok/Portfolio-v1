@@ -14,7 +14,6 @@ import GODSPEED_4 from './gallery/projects/GODSPEED-4.PNG'
 import DISARRAY_UI from './gallery/projects/DISARRAY-UI.gif'
 import DISARRAY_1 from './gallery/projects/DISARRAY-1.PNG'
 import DISARRAY_2 from './gallery/projects/DISARRAY-2.PNG'
-import DISARRAY_3 from './gallery/projects/DISARRAY-3.PNG'
 import PORTFOLIO_UI from './gallery/projects/PORTFOLIOV1-UI.gif'
 import PORTFOLIO_1 from './gallery/projects/PORTFOLIOV1-1.PNG'
 import PORTFOLIO_2 from './gallery/projects/PORTFOLIOV1-2.PNG'
@@ -34,7 +33,7 @@ import TF_ACC_DELETE from './gallery/projects/TF-ACC-DELETE.gif'
 import TFK_UI from './gallery/projects/TFK-UI.gif'
 import TFK_1 from './gallery/projects/TFK-1.PNG'
 import TFK_2 from './gallery/projects/TFK-2.PNG'
-import "./index.scss";
+import './index.scss'
 
 export function Index() {
   const trueDarkState = localStorage.getItem('theme') === 'true'
@@ -121,7 +120,7 @@ export function Index() {
         },
         tags: ['Javascript', 'React', 'SASS', '2020'],
         thumb: DISARRAY_UI,
-        slides: [DISARRAY_1, DISARRAY_UI, DISARRAY_3],
+        slides: [DISARRAY_1, DISARRAY_UI, DISARRAY_2],
         link: 'https://github.com/capriok/DisArray',
         demo: 'https://disarray.kylecaprio.dev',
         route: '/disarray'

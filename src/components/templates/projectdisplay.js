@@ -1,8 +1,10 @@
 import React from 'react'
 import { useStateValue } from '../../state'
 import Slider from '../image-slides/image-slides'
+import useLockBodyScroll from '../hooks/uselockbodyscroll'
 
 export const ProjectDisplay = ({ modalOpen, item }) => {
+  useLockBodyScroll()
   const [{ theTheme },] = useStateValue()
   return (
     <div className="lone-project-template" style={modalOpen ? {} : { width: '100vw' }}>
@@ -14,10 +16,9 @@ export const ProjectDisplay = ({ modalOpen, item }) => {
         <p>{item.snippet}</p>
         <p className="writing-title">The Process</p>
         <p className="indent">{item.writing.process}</p>
-
         {item.writing.conclusion.length > 0 &&
           <>
-            <br /><p className="writing-title">Take Away</p>
+            <br /><p className="writing-title">Take Aways</p>
           </>
         }
         {item.writing.conclusion.map((item, i) => (

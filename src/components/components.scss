@@ -28,6 +28,11 @@
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
 }
 
+.scrollbar{
+  scrollbar-color: darken(white, 80%) darken(white, 50%) !important;
+  scrollbar-width: thin !important;
+}
+
 //ROUTES
 
 .about-route{
@@ -56,9 +61,10 @@
     h1, p{width: 100%;}
     h1{font-weight: 400;}
     ul{
-      text-indent: 30px;
+      text-indent: 10px;
       li{
         list-style: circle;
+        list-style-position: inside;
         p{font-weight: 500;}
       }
     }
@@ -167,9 +173,8 @@
     margin-bottom: 20px;
   }
   .body{
-    width: 1000px;
+    width: 100%;
     margin-top:30px;
-    max-width: 1000px;
     padding: 40px 20px;
     text-align: left;
     color: black;
@@ -191,11 +196,14 @@
     li{
       font-family: Montserrat;
       list-style: circle;
+      list-style-position: inside;
     }
   }
   .modal{
-    max-height: 400px;
-    overflow: scroll;
+    // max-height: 400px;
+    // overflow-y: scroll;
+    scrollbar-color: darken(white, 80%) darken(white, 50%) !important;
+    scrollbar-width: thin !important;
   }
     p:first-child{
       padding-bottom: 10px;
@@ -244,6 +252,7 @@
     span, p{
       font-size: 1.05em;
     }
+    
 }
 
 //TAGS
@@ -285,23 +294,27 @@
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 500;
 }
-.project-modal{
+.master-modal{
   *{color:white;}
-  display: flex;
-  flex-direction: column;
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 80vw;
-  min-width: 400px;
-  max-width: 1000px;
-  overflow: hidden;
-  padding: 20px 0px;
   border-radius: 10px;
   z-index: 501;
-  box-shadow: -3px 3px 10px -3px black;
+  width: 100%;
+  max-width: 1000px;
+  min-width:400px;
   background-color: rgb(218, 218, 218);
+  .project-modal{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-width: 400px;
+    max-height: 80vh;
+    padding: 20px 0px;
+  }
 }
 
 // NAVBAR

@@ -13,6 +13,7 @@ import projectsBanner from './gallery/projects.svg'
 import "../src/components/components.scss";
 import "./index.scss";
 import { darkTheme as dark } from './theme'
+import Modal from 'godspeed/build/Modal'
 
 export default function App() {
   const [{ darkState, theTheme, projects }, dispatch] = useStateValue()
@@ -43,7 +44,7 @@ export default function App() {
 
   return (
     <>
-      <div className="main" style={theTheme.main}>
+      <div className="main scrollbar" style={theTheme.main}>
         <Router>
           <Navbar />
           {/* <BaseNavbar /> */}
@@ -51,8 +52,10 @@ export default function App() {
           {modalOpen &&
             <>
               <div className="modal-clickout" onClick={() => openModal(false)} />
-              <div className="project-modal" style={theTheme.main}>
-                <ProjectDisplay item={modalContent} modalOpen={modalOpen} />
+              <div className="master-modal" style={theTheme.main}>
+                <div className="project-modal scrollbar">
+                  <ProjectDisplay item={modalContent} modalOpen={modalOpen} />
+                </div>
               </div>
             </>
           }
