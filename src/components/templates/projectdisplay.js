@@ -4,7 +4,7 @@ import Slider from '../image-slides/image-slides'
 import useLockBodyScroll from '../hooks/uselockbodyscroll'
 
 export const ProjectDisplay = ({ modalOpen, item }) => {
-  useLockBodyScroll()
+  // useLockBodyScroll()
   const [{ theTheme },] = useStateValue()
   return (
     <div className="lone-project-template" style={modalOpen ? {} : { width: '100vw' }}>
@@ -23,6 +23,20 @@ export const ProjectDisplay = ({ modalOpen, item }) => {
         }
         {item.writing.conclusion.map((item, i) => (
           <li key={i} className="indent">{item}</li>
+        ))}
+        <br />
+        {item.resources.length > 0 &&
+          <>
+            <br /><p className="writing-title">Recourses</p>
+          </>
+        }
+        {item.resources.map((link, i) => (
+          <li className="indent">
+            <a className="resource" key={i}
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer">{link}</a>
+          </li>
         ))}
         <br />
         <div className="tags"><span><a href={item.demo}>Demo App</a></span></div>

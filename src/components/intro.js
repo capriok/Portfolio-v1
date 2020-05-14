@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import { useStateValue } from '../state'
 import { Button, ButtonGroup, makeStyles } from '@material-ui/core';
 import github from '../gallery/github.png'
@@ -50,6 +51,11 @@ export default function Intro() {
                   <div className="button-text">
                     Projects
                   </div>
+                </Button>
+                <Button className={classes.navigation}>
+                  <Link className="button-text" to="/about">
+                    About
+                  </Link>
                 </Button>
               </ButtonGroup>
             </div>

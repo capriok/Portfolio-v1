@@ -72,6 +72,7 @@ export function Index() {
         slides: [SNEKKEL_UI, SNEKKEL_FEAT, SNEKKEL_1, SNEKKEL_2],
         link: 'https://github.com/capriok/Snekkel',
         demo: 'https://snekkel.kylecaprio.dev',
+        resources: [],
         route: '/snekkel'
       },
       {
@@ -99,6 +100,7 @@ export function Index() {
         slides: [GODSPEED_1, GODSPEED_2, GODSPEED_3, GODSPEED_4],
         link: 'https://github.com/capriok/Godspeed-Docs',
         demo: 'https://godspeed.netlify.com',
+        resources: ['https://www.styled-components.com', 'https://www.npmjs.com'],
         route: '/godspeed-docs'
       },
       {
@@ -123,6 +125,7 @@ export function Index() {
         slides: [DISARRAY_1, DISARRAY_UI, DISARRAY_2],
         link: 'https://github.com/capriok/DisArray',
         demo: 'https://disarray.kylecaprio.dev',
+        resources: [],
         route: '/disarray'
       },
       {
@@ -141,12 +144,12 @@ export function Index() {
         slides: [PORTFOLIO_1, PORTFOLIO_2, PORTFOLIO_3],
         link: 'https://github.com/capriok/Portfolio',
         demo: 'https://kylecaprio.dev',
+        resources: [],
         route: '/portfolio'
       },
       {
         title: 'NeetChat',
-        snippet: `Harnessing the power of socket.io to create a chatroom application. Fully functional with induvidual rooms, 
-        private messages and plenty more`,
+        snippet: `Harnessing the power of socket.io to create a chatroom application. Fully functional with induvidual rooms, typing alerts and private messages.`,
         writing: {
           process: `This was one of the first complex collaborative projects I have done, two main contributors being 
           Jordan Riley and Hunter Foulk. We had a vision in mind to make a modern remake of an old school styled chat 
@@ -167,6 +170,7 @@ export function Index() {
         slides: [NEETCHAT_1, NEETCHAT_2, NULL],
         link: 'https://github.com/hunterfoulk/Neet-Chat',
         demo: 'https://github.com/hunterfoulk/Neet-Chat',
+        resources: ['https://socket.io'],
         route: '/neet-chat'
       },
       {
@@ -193,6 +197,7 @@ export function Index() {
         slides: [YTM_LOGIN, YTM_SEARCH, YTM_QUEUE],
         link: 'https://github.com/capriok/MyTube',
         demo: 'https://mytube-music.kylecaprio.dev',
+        resources: ['https://developers.google.com/youtube/v3'],
         route: '/mytube-music'
       },
       {
@@ -217,6 +222,7 @@ export function Index() {
         slides: [ARTE_BELLA_1, NULL, NULL],
         link: 'https://github.com/capriok/Arte-Bella',
         demo: 'https://artebellaengraving.com',
+        resources: [],
         route: '/arte-bella-engraving'
       },
       {
@@ -239,6 +245,7 @@ export function Index() {
         slides: [TF_FILTERS, TF_PROFILE, TF_ACC_DELETE],
         link: 'https://github.com/capriok/TookFeed',
         demo: 'https://tookfeed.kylecaprio.dev',
+        resources: ['https://newsapi.org', 'https://www.electronjs.org'],
         route: '/tookfeed'
       },
       {
@@ -262,6 +269,7 @@ export function Index() {
         slides: [TFK_1, TFK_2],
         link: 'https://themesfromkyle.tumblr.com',
         demo: 'https://themesfromkyle.tumblr.com',
+        resources: ['https://www.jquery.com'],
         route: '/theme-template-distribution'
       }
     ]

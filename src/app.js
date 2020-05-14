@@ -9,6 +9,7 @@ import Intro from './components/intro';
 import Tech from './components/tech';
 import ProjectCards from './components/templates/projectcards';
 import Footer from "./components/footer";
+import Resume from "./components/resume";
 import projectsBanner from './gallery/projects.svg'
 import "../src/components/components.scss";
 import "./index.scss";
@@ -68,7 +69,7 @@ export default function App() {
                 <ProjectCards openModal={openModal} setContent={setContent} />
               </div>
               <Button className={classes.btn} onClick={() => { window.scrollTo(0, 0) }}>
-                <h1 className="button-text">Get in touch</h1>
+                <h1 className="get-in-touch-foot">Get in touch</h1>
               </Button>
             </>
           )}></Route>
@@ -84,6 +85,9 @@ export default function App() {
           {/* ------------------------- ABOUT ROUTE */}
           <Route path="/about" render={() => (
             <About />
+          )}></Route>
+          <Route path="/resume" render={() => (
+            <Resume />
           )}></Route>
           {/* ------------------------- PROJECTS LIST ROUTE */}
           <Route path="/projects" render={() => (

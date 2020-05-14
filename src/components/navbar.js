@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="buttons">
           <Link to='/about'><p>Introduction</p></Link>
           <Link to='/projects'><p>Projects</p></Link>
-          <Link to='#'><p>Resume</p></Link>
+          <Link to="resume"><p>Resume</p></Link>
         </div>
         <ThemeSwitch onClick={handleChange} checked={darkState} />
         <div className="hamburger" onClick={() => setDrop(!navDrop)}><p>☰</p></div>
