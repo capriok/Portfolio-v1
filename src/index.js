@@ -3,37 +3,43 @@ import ReactDOM from "react-dom";
 import { StateProvider } from "./state";
 import App from "./app";
 import NULL from './gallery/projects/404.png'
-import SNEKKEL_UI from './gallery/projects/SNEKKEL-UI.gif'
-import SNEKKEL_FEAT from './gallery/projects/SNEKKEL-FEAT.gif'
-import SNEKKEL_1 from './gallery/projects/SNEKKEL-1.PNG'
-import SNEKKEL_2 from './gallery/projects/SNEKKEL-2.PNG'
-import GODSPEED_1 from './gallery/projects/GODSPEED-1.PNG'
-import GODSPEED_2 from './gallery/projects/GODSPEED-2.PNG'
-import GODSPEED_3 from './gallery/projects/GODSPEED-3.PNG'
-import GODSPEED_4 from './gallery/projects/GODSPEED-4.PNG'
-import DISARRAY_UI from './gallery/projects/DISARRAY-UI.gif'
-import DISARRAY_1 from './gallery/projects/DISARRAY-1.PNG'
-import DISARRAY_2 from './gallery/projects/DISARRAY-2.PNG'
-import PORTFOLIO_UI from './gallery/projects/PORTFOLIOV1-UI.gif'
-import PORTFOLIO_1 from './gallery/projects/PORTFOLIOV1-1.PNG'
-import PORTFOLIO_2 from './gallery/projects/PORTFOLIOV1-2.PNG'
-import PORTFOLIO_3 from './gallery/projects/PORTFOLIOV1-3.PNG'
-import NEETCHAT_1 from './gallery/projects/NEETCHAT-1.PNG'
-import NEETCHAT_2 from './gallery/projects/NEETCHAT-2.PNG'
-import YTM_LOGIN from './gallery/projects/YTM-LOGIN.gif'
-import YTM_UI from './gallery/projects/YTM-UI.gif'
-import YTM_SEARCH from './gallery/projects/YTM-SEARCH.gif'
-import YTM_QUEUE from './gallery/projects/YTM-QUEUE.gif'
-import ARTE_BELLA_UI from './gallery/projects/ARTE-BELLA-UI.gif'
-import ARTE_BELLA_1 from './gallery/projects/ARTE-BELLA-1.PNG'
-import TF_UI from './gallery/projects/TF-UI.gif'
-import TF_FILTERS from './gallery/projects/TF-FILTERS.gif'
-import TF_PROFILE from './gallery/projects/TF-PROFILE.gif'
-import TF_ACC_DELETE from './gallery/projects/TF-ACC-DELETE.gif'
-import TFK_UI from './gallery/projects/TFK-UI.gif'
-import TFK_1 from './gallery/projects/TFK-1.PNG'
-import TFK_2 from './gallery/projects/TFK-2.PNG'
 import './index.scss'
+import SNEKKEL_GREETING from './gallery/projects/SNEKKEL-GREETING.PNG'
+import SNEKKEL_SPRITE from './gallery/projects/SNEKKEL-SPRITE.PNG'
+import SNEKKEL_DIFFICULTY from './gallery/projects/SNEKKEL-DIFFICULTY.PNG'
+import GODSPEED_HOME from './gallery/projects/GODSPEED-HOME.PNG'
+import GODSPEED_BUTTON from './gallery/projects/GODSPEED-BUTTON.PNG'
+import GODSPEED_INPUT from './gallery/projects/GODSPEED-INPUT.PNG'
+import GODSPEED_MODAL from './gallery/projects/GODSPEED-MODAL.PNG'
+import DISARRAY_GREETING from './gallery/projects/DISARRAY-GREETING.PNG'
+import DISARRAY_START from './gallery/projects/DISARRAY-START.PNG'
+import DISARRAY_SOLVED from './gallery/projects/DISARRAY-SOLVED.PNG'
+import DISARRAY_LOGIC from './gallery/projects/DISARRAY-LOGIC.PNG'
+import DISARRAY_LEADERBOARD from './gallery/projects/DISARRAY-LEADERBOARD.PNG'
+import PORTFOLIO_HOME from './gallery/projects/PORTFOLIO-HOME.PNG'
+import PORTFOLIO_ABOUT from './gallery/projects/PORTFOLIO-ABOUT.PNG'
+import PORTFOLIO_PROJECTS from './gallery/projects/PORTFOLIO-PROJECTS.PNG'
+import PORTFOLIO_PROJECT from './gallery/projects/PORTFOLIO-PROJECT.PNG'
+import PORTFOLIO_RESUME from './gallery/projects/PORTFOLIO-RESUME.PNG'
+import MTMUSIC_GOOGLE from './gallery/projects/MTM-GOOGLE.PNG'
+import MTMUSIC_INIT from './gallery/projects/MTM-INIT.PNG'
+import MTMUSIC_PLAYER from './gallery/projects/MTM-PLAYER.PNG'
+import MTMUSIC_PLAYLISTS from './gallery/projects/MTM-PLAYLISTS.PNG'
+import NEETCHAT_HOME from './gallery/projects/NEETCHAT-HOME.PNG'
+import NEETCHAT_CHAT from './gallery/projects/NEETCHAT-CHAT.PNG'
+import ARTEBELLA_HOME from './gallery/projects/ARTE-BELLA-HOME.PNG'
+import TOOKFEED_HOME from './gallery/projects/TOOKFEED-HOME.PNG'
+import TOOKFEED_REGISTER from './gallery/projects/TOOKFEED-REGISTER.PNG'
+import TOOKFEED_PROFILE from './gallery/projects/TOOKFEED-PROFILE.PNG'
+import TOOKFEED_OPTIONS from './gallery/projects/TOOKFEED-OPTIONS.PNG'
+import TOOKFEED_SERVER from './gallery/projects/TOOKFEED-SERVER.PNG'
+import THEMESFK_HOME from './gallery/projects/TFK-HOME.PNG'
+import THEMESFK_CODE from './gallery/projects/TFK-CODE.PNG'
+import THEMESFK_PREV1 from './gallery/projects/TFK-PREV1.PNG'
+import THEMESFK_PREV2 from './gallery/projects/TFK-PREV2.PNG'
+import THEMESFK_PREV3 from './gallery/projects/TFK-PREV3.PNG'
+import _NULL from './gallery/projects/404.png'
+
 
 export function Index() {
   const trueDarkState = localStorage.getItem('theme') === 'true'
@@ -68,8 +74,8 @@ export function Index() {
           ],
         },
         tags: ['Javascript', 'React', '2020'],
-        thumb: SNEKKEL_UI,
-        slides: [SNEKKEL_UI, SNEKKEL_FEAT, SNEKKEL_1, SNEKKEL_2],
+        thumb: SNEKKEL_GREETING,
+        slides: [SNEKKEL_GREETING, SNEKKEL_SPRITE, SNEKKEL_DIFFICULTY],
         link: 'https://github.com/capriok/Snekkel',
         demo: 'https://snekkel.kylecaprio.dev',
         resources: [],
@@ -96,8 +102,8 @@ export function Index() {
           ],
         },
         tags: ['Gatsby', 'React', 'Javascript', '2020'],
-        thumb: GODSPEED_1,
-        slides: [GODSPEED_1, GODSPEED_2, GODSPEED_3, GODSPEED_4],
+        thumb: GODSPEED_HOME,
+        slides: [GODSPEED_HOME, GODSPEED_BUTTON, GODSPEED_INPUT, GODSPEED_MODAL,],
         link: 'https://github.com/capriok/Godspeed-Docs',
         demo: 'https://godspeed.netlify.com',
         resources: ['https://www.styled-components.com', 'https://www.npmjs.com'],
@@ -121,8 +127,8 @@ export function Index() {
           ],
         },
         tags: ['Javascript', 'React', 'SASS', '2020'],
-        thumb: DISARRAY_UI,
-        slides: [DISARRAY_1, DISARRAY_UI, DISARRAY_2],
+        thumb: DISARRAY_GREETING,
+        slides: [DISARRAY_GREETING, DISARRAY_START, DISARRAY_SOLVED, DISARRAY_LEADERBOARD, DISARRAY_LOGIC],
         link: 'https://github.com/capriok/DisArray',
         demo: 'https://disarray.kylecaprio.dev',
         resources: [],
@@ -140,9 +146,8 @@ export function Index() {
           conclusion: [],
         },
         tags: ['Javascript', 'React', 'SASS', '2020'],
-        thumb: PORTFOLIO_UI,
-        slides: [PORTFOLIO_1, PORTFOLIO_2, PORTFOLIO_3],
-        link: 'https://github.com/capriok/Portfolio',
+        thumb: PORTFOLIO_HOME,
+        slides: [PORTFOLIO_HOME, PORTFOLIO_ABOUT, PORTFOLIO_PROJECTS, PORTFOLIO_PROJECT, PORTFOLIO_RESUME],
         demo: 'https://kylecaprio.dev',
         resources: [],
         route: '/portfolio'
@@ -166,8 +171,8 @@ export function Index() {
           ],
         },
         tags: ['Javascript', 'Socket.io', 'React', 'SASS', '2019'],
-        thumb: NEETCHAT_1,
-        slides: [NEETCHAT_1, NEETCHAT_2, NULL],
+        thumb: NEETCHAT_HOME,
+        slides: [NEETCHAT_HOME, NEETCHAT_CHAT],
         link: 'https://github.com/hunterfoulk/Neet-Chat',
         demo: 'https://github.com/hunterfoulk/Neet-Chat',
         resources: ['https://socket.io'],
@@ -193,8 +198,8 @@ export function Index() {
           ],
         },
         tags: ['Javascript', 'React', 'Electron', 'CSS', '2019'],
-        thumb: YTM_UI,
-        slides: [YTM_LOGIN, YTM_SEARCH, YTM_QUEUE],
+        thumb: MTMUSIC_INIT,
+        slides: [MTMUSIC_INIT, MTMUSIC_GOOGLE, MTMUSIC_INIT, MTMUSIC_PLAYER, MTMUSIC_PLAYLISTS],
         link: 'https://github.com/capriok/MyTube',
         demo: 'https://mytube-music.kylecaprio.dev',
         resources: ['https://developers.google.com/youtube/v3'],
@@ -218,8 +223,8 @@ export function Index() {
           ],
         },
         tags: ['Javascript', 'React', 'SASS', '2019'],
-        thumb: ARTE_BELLA_UI,
-        slides: [ARTE_BELLA_1, NULL, NULL],
+        thumb: ARTEBELLA_HOME,
+        slides: [ARTEBELLA_HOME],
         link: 'https://github.com/capriok/Arte-Bella',
         demo: 'https://artebellaengraving.com',
         resources: [],
@@ -241,8 +246,8 @@ export function Index() {
           ],
         },
         tags: ['Javascript', 'React', 'Electron', 'CSS', '2018'],
-        thumb: TF_UI,
-        slides: [TF_FILTERS, TF_PROFILE, TF_ACC_DELETE],
+        thumb: TOOKFEED_HOME,
+        slides: [TOOKFEED_HOME, TOOKFEED_REGISTER, TOOKFEED_OPTIONS, TOOKFEED_PROFILE, TOOKFEED_SERVER],
         link: 'https://github.com/capriok/TookFeed',
         demo: 'https://tookfeed.kylecaprio.dev',
         resources: ['https://newsapi.org', 'https://www.electronjs.org'],
@@ -265,8 +270,8 @@ export function Index() {
           ],
         },
         tags: ['HTML', 'CSS', 'Jquery', '2014'],
-        thumb: TFK_UI,
-        slides: [TFK_1, TFK_2],
+        thumb: THEMESFK_HOME,
+        slides: [THEMESFK_HOME, THEMESFK_PREV1, THEMESFK_PREV2, THEMESFK_PREV3, THEMESFK_CODE],
         link: 'https://themesfromkyle.tumblr.com',
         demo: 'https://themesfromkyle.tumblr.com',
         resources: ['https://www.jquery.com'],
