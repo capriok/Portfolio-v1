@@ -199,7 +199,7 @@ export function Index() {
         },
         tags: ['Javascript', 'React', 'Electron', 'CSS', '2019'],
         thumb: MTMUSIC_INIT,
-        slides: [MTMUSIC_INIT, MTMUSIC_GOOGLE, MTMUSIC_INIT, MTMUSIC_PLAYER, MTMUSIC_PLAYLISTS],
+        slides: [MTMUSIC_GOOGLE, MTMUSIC_INIT, MTMUSIC_PLAYER, MTMUSIC_PLAYLISTS],
         link: 'https://github.com/capriok/MyTube',
         demo: 'https://mytube-music.kylecaprio.dev',
         resources: ['https://developers.google.com/youtube/v3'],

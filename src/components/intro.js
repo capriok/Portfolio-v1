@@ -42,6 +42,11 @@ export default function Intro() {
               <div className="border" style={darkState ? { borderBottom: '1px solid white' } : {}}></div>
               <h1>Explore Further</h1>
               <ButtonGroup size="small" aria-label="small outlined button group">
+                <Button className={classes.navigation}>
+                  <Link className="button-text" to="/about">
+                    About
+                  </Link>
+                </Button>
                 <Button className={classes.navigation} href="#tech-section">
                   <div className="button-text">
                     Technologies
@@ -51,11 +56,6 @@ export default function Intro() {
                   <div className="button-text">
                     Projects
                   </div>
-                </Button>
-                <Button className={classes.navigation}>
-                  <Link className="button-text" to="/about">
-                    About
-                  </Link>
                 </Button>
               </ButtonGroup>
             </div>
