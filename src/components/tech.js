@@ -11,11 +11,11 @@ export default function Tech() {
     },
     {
       type: 'Frameworks',
-      list: ['Node', 'React', 'Express', 'Gatsby']
+      list: ['React', 'Gatsby', 'Express', 'Koa.js']
     },
     {
       type: 'Storage',
-      list: ['MongoDB', 'Postgres', 'SQL', 'MySQL']
+      list: ['MongoDB', 'SQL', 'NoSQL', 'AWS']
     },
     {
       type: 'Tools',
@@ -30,11 +30,13 @@ export default function Tech() {
           {technologies.map((tech, i) => (
             <div key={i} className="card">
               <h1 style={theTheme.accent}>{tech.type}</h1>
-              {tech.list.map((item, i) => (
-                <div key={i}>
-                  <p>{item}</p>
-                </div>
-              ))}
+              <div className="card-items">
+                {tech.list.map((item, i) => (
+                  <div key={i} className="item">
+                    <p>{item}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>

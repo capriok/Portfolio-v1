@@ -24,19 +24,23 @@ export default function AboutRoute() {
               In free my time, I immerse myself in learning new programming technologies and how to better myself as a programmer
               but also find joy with meditaion, music, hiking, and spending time under the sun.
             </p>
-            <h1>— Technical Skills —</h1>
+            <h1>— Skills —</h1>
             <ul>
-              <li><span className="type">Javascript:</span><span> React.js, Node.js, Express</span></li>
-              <li><span className="type">Front End:</span><span> HTML, CSS, SASS</span></li>
-              <li><span className="type">Relational databases:</span><span> SQL, GraphQL</span></li>
+              <li><span className="type">Programming Languages:</span><span> JavaScript, HTML5, SASS, CSS</span></li>
+              <li><span className="type">Fron-End Technologies:</span><span> React.js, Material-UI, Styled-Components, Formik</span></li>
+              <li><span className="type">Back-End Frameworks:</span><span> Express, Koa.js, Socket.io</span></li>
+              {/* <li><span className="type">Runtimes:</span><span> Node.js, Deno.js</span></li> */}
+              <li><span className="type">Relational databases:</span><span> SQL(Postgres), GraphQL</span></li>
               <li><span className="type">Non-Relational databases:</span><span> MongoDB, NoSQL</span></li>
-              <li><span className="type">Library use:</span><span> Gatsby, NEXT.js, Material-UI, Formik</span></li>
-              <li><span className="type">Miscellaneous:</span><span> Git, NPM, AWS ( RDS, EC2 ), Webpack, Babel</span></li>
+              <li><span className="type">Cloud Platforms:</span><span> AWS, Netlify, Heroku</span></li>
+              <li><span className="type">Library use:</span><span> Gatsby, Next.js, Axios, Lodash, Formik</span></li>
+              <li><span className="type">UI Development:</span><span> Figma, Adobe XD</span></li>
+              <li><span className="type">Tools:</span><span> Git, NPM, Webpack, Babel, JWT, CORS, Serverless-http, Postman/Insomnia</span></li>
             </ul>
             <h1>— Proffesional Experience —</h1>
             <ul>
-              <li><span className="pe">Freelance website design and deployment projects for 2 small business clients</span></li>
-              <li><span className="pe">&lt; 1 year consulting on an open source user authentication application</span></li>
+              <li><span>Freelance website design and deployment projects for 2 small business clients</span></li>
+              <li><span>&lt; 1 year consulting on an open source user authentication application</span></li>
             </ul>
           </div>
         </div>
