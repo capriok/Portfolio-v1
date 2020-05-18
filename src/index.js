@@ -2,8 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { StateProvider } from "./state";
 import App from "./app";
-import NULL from './gallery/projects/404.png'
 import './index.scss'
+
+import NULL from './gallery/projects/404.png'
+
+import SQLIFTING_GREETING from './gallery/projects/SQLIFTING-GREETING.PNG'
+import SQLIFTING_MANAGER from './gallery/projects/SQLIFTING-MANAGER.PNG'
+import SQLIFTING_EXBUILDER from './gallery/projects/SQLIFTING-EXBUILDER.PNG'
+import SQLIFTING_WOBUILDER from './gallery/projects/SQLIFTING-WOBUILDER.PNG'
+import SQLIFTING_INPROGRESS from './gallery/projects/SQLIFTING-INPROGRESS.PNG'
 import SNEKKEL_GREETING from './gallery/projects/SNEKKEL-GREETING.PNG'
 import SNEKKEL_SPRITE from './gallery/projects/SNEKKEL-SPRITE.PNG'
 import SNEKKEL_DIFFICULTY from './gallery/projects/SNEKKEL-DIFFICULTY.PNG'
@@ -38,7 +45,6 @@ import THEMESFK_CODE from './gallery/projects/TFK-CODE.PNG'
 import THEMESFK_PREV1 from './gallery/projects/TFK-PREV1.PNG'
 import THEMESFK_PREV2 from './gallery/projects/TFK-PREV2.PNG'
 import THEMESFK_PREV3 from './gallery/projects/TFK-PREV3.PNG'
-import _NULL from './gallery/projects/404.png'
 
 
 export function Index() {
@@ -48,6 +54,25 @@ export function Index() {
     darkState: trueDarkState,
     theTheme: {},
     projects: [
+      {
+        title: 'SQLifting',
+        snippet: 'Personalized workout building application with SQL backend',
+        writing: {
+          process: `...`,
+          conclusion: [
+            'Developed skills working with a structured database',
+            'Improved skills writing dynamic functions that do more with less code',
+            'Became mroe fluent with data manipulation and working with complex objects',
+          ],
+        },
+        tags: ['Javascript', 'React', 'SQL', '2020'],
+        thumb: SQLIFTING_MANAGER,
+        slides: [SQLIFTING_GREETING, SQLIFTING_MANAGER, SQLIFTING_EXBUILDER, SQLIFTING_WOBUILDER, SQLIFTING_INPROGRESS],
+        link: 'https://github.com/capriok/SQLifting',
+        demo: 'https://sqlifting.kylecaprio.dev',
+        resources: ['https://www.postgresql.org', 'https://aws.amazon.com/rds'],
+        route: '/sqlifting'
+      },
       {
         title: 'Snekkel',
         snippet: 'Grid based snake game featuring directional sprites and difficulty settings',
@@ -148,6 +173,7 @@ export function Index() {
         tags: ['Javascript', 'React', 'SASS', '2020'],
         thumb: PORTFOLIO_HOME,
         slides: [PORTFOLIO_HOME, PORTFOLIO_ABOUT, PORTFOLIO_PROJECTS, PORTFOLIO_PROJECT, PORTFOLIO_RESUME],
+        link: 'https://github.com/capriok/DisArray',
         demo: 'https://kylecaprio.dev',
         resources: [],
         route: '/portfolio'

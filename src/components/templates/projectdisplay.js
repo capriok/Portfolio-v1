@@ -33,6 +33,7 @@ export const ProjectDisplay = ({ modalOpen, item }) => {
         {item.resources.map((link, i) => (
           <li className="indent">
             <a className="resource" key={i}
+              style={theTheme.linkFont}
               href={link}
               target="_blank"
               rel="noopener noreferrer">{link}</a>

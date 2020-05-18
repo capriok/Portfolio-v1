@@ -25,4 +25,5 @@ export const darkTheme = {
   },
   title: { backgroundColor: 'rgba($color: $accent, $alpha: .3)' },
   whiteFont: { color: 'white' },
+  linkFont: { color: 'rgb(93, 157, 216)' },
 }
