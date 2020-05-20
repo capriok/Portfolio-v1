@@ -58,7 +58,7 @@ export function Index() {
         title: 'SQLifting',
         snippet: 'Personalized workout building application with SQL backend',
         writing: {
-          process: `...`,
+          process: `Working on it..`,
           conclusion: [
             'Developed skills working with a structured database',
             'Improved skills writing dynamic functions that do more with less code',
@@ -70,6 +70,7 @@ export function Index() {
         slides: [SQLIFTING_GREETING, SQLIFTING_MANAGER, SQLIFTING_EXBUILDER, SQLIFTING_WOBUILDER, SQLIFTING_INPROGRESS],
         link: 'https://github.com/capriok/SQLifting',
         demo: 'https://sqlifting.kylecaprio.dev',
+        demoAcc: 'Username: demo | Password: admin',
         resources: ['https://www.postgresql.org', 'https://aws.amazon.com/rds'],
         route: '/sqlifting'
       },
@@ -161,7 +162,7 @@ export function Index() {
       },
       {
         title: 'Portfolio',
-        snippet: 'Version One of my Sofware developer portfolio',
+        snippet: 'Version One of my sofware developer portfolio',
         writing: {
           process: `The main goal was to create a space for people to visually see my skills and experience clearly. 
           I strongly believe showcasing personal projects and professional endeavors is key for any software developer. 
