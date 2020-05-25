@@ -276,7 +276,7 @@ export function Index() {
         },
         tags: ['Javascript', 'React', 'SASS', '2019'],
         thumb: ARTEBELLA_HOME,
-        slides: [ARTEBELLA_HOME],
+        slides: [ARTEBELLA_HOME, ARTEBELLA_HOME, ARTEBELLA_HOME],
         link: 'https://github.com/capriok/Arte-Bella',
         demo: 'https://artebellaengraving.com',
         resources: [],
