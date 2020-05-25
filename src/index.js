@@ -6,6 +6,12 @@ import './index.scss'
 
 import NULL from './gallery/projects/404.png'
 
+import KPCON_INTRO from './gallery/projects/KPCON-INTRO.PNG'
+import KPCON_DETAIL from './gallery/projects/KPCON-DETAIL.PNG'
+import KPCON_GALLERY from './gallery/projects/KPCON-GALLERY.PNG'
+import KPCON_EMAIL from './gallery/projects/KPCON-EMAIL.PNG'
+import KPCON_HTML from './gallery/projects/KPCON-HTML.PNG'
+import KPCON_SERVER from './gallery/projects/KPCON-SERVER.PNG'
 import SQLIFTING_GREETING from './gallery/projects/SQLIFTING-GREETING.PNG'
 import SQLIFTING_MANAGER from './gallery/projects/SQLIFTING-MANAGER.PNG'
 import SQLIFTING_EXBUILDER from './gallery/projects/SQLIFTING-EXBUILDER.PNG'
@@ -55,6 +61,26 @@ export function Index() {
     theTheme: {},
     projects: [
       {
+        title: 'Keith Phillingane Construction',
+        snippet: 'Single page self marketing portfolio for small business client',
+        writing: {
+          process: `Working on it..`,
+          conclusion: [
+            'Improved UI/UX design skills',
+            'Learned and Implemented an Email server with express',
+            'Acquired more possibility of word of mouth outreach',
+          ],
+        },
+        tags: ['Javascript', 'React', 'SASS', '2020'],
+        thumb: KPCON_INTRO,
+        slides: [KPCON_INTRO, KPCON_DETAIL, KPCON_GALLERY, KPCON_EMAIL, KPCON_HTML, KPCON_SERVER],
+        link: 'https://github.com/capriok/KPCon-Client',
+        demo: 'https://www.keithphillingane.com/',
+        demoAcc: 'Username: demo | Password: admin',
+        resources: ['https://nodemailer.com/about/'],
+        route: '/kpcon'
+      },
+      {
         title: 'SQLifting',
         snippet: 'Personalized workout building application with SQL backend',
         writing: {
@@ -62,7 +88,7 @@ export function Index() {
           conclusion: [
             'Developed skills working with a structured database',
             'Improved skills writing dynamic functions that do more with less code',
-            'Became mroe fluent with data manipulation and working with complex objects',
+            'Became more fluent with data manipulation and working with complex objects',
           ],
         },
         tags: ['Javascript', 'React', 'SQL', '2020'],
@@ -99,7 +125,7 @@ export function Index() {
             'Realization of my adept abilities writing complex JavaScript without using references',
           ],
         },
-        tags: ['Javascript', 'React', '2020'],
+        tags: ['Javascript', 'React', 'SASS', '2020'],
         thumb: SNEKKEL_GREETING,
         slides: [SNEKKEL_GREETING, SNEKKEL_SPRITE, SNEKKEL_DIFFICULTY],
         link: 'https://github.com/capriok/Snekkel',
