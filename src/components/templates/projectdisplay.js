@@ -1,17 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useStateValue } from '../../state'
-import Slider from '../image-slides/image-slides'
-import useLockBodyScroll from '../hooks/uselockbodyscroll'
+import Carousel from '../carousel/carousel'
+import FullView from '../carousel/full-view'
 
 export const ProjectDisplay = ({ modalOpen, item }) => {
   const [{ theTheme },] = useStateValue()
+  const [viewState, setViewState] = useState({ open: false, img: '' })
+  const handleViewClose = () => setViewState({ open: false, img: '' })
+
   return (
     <>
-
+      {viewState.open && <FullView state={viewState} close={handleViewClose} />}
       <div className="lone-project-template" style={modalOpen ? {} : { width: '100vw' }}>
         <h6 style={theTheme.whiteFont}>{item.title}</h6>
         <div className="slideshow poly" style={theTheme.poly}>
-          <Slider heading="Project" slides={item.slides} />
+          <Carousel slides={item.slides} state={viewState} setState={setViewState} />
         </div>
         <div className={modalOpen ? "body modal" : "body"} style={theTheme.whiteFont}>
           <p>{item.snippet}</p>
@@ -32,8 +35,8 @@ export const ProjectDisplay = ({ modalOpen, item }) => {
             </>
           }
           {item.resources.map((link, i) => (
-            <li className="indent">
-              <a className="resource" key={i}
+            <li className="indent" key={i}>
+              <a className="resource"
                 style={theTheme.linkFont}
                 href={link}
                 target="_blank"

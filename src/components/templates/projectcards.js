@@ -6,7 +6,7 @@ import "animate.css/animate.min.css";
 
 export default function Projects({ openModal, setContent }) {
   const [{ theTheme, projects },] = useStateValue()
-  let isMobile = window.innerWidth <= 700
+  let isMobile = window.innerWidth <= 650
 
   const useStyles = makeStyles({
     btn: {
