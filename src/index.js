@@ -76,7 +76,6 @@ export function Index() {
         slides: [KPCON_INTRO, KPCON_DETAIL, KPCON_GALLERY, KPCON_EMAIL, KPCON_HTML, KPCON_SERVER],
         link: 'https://github.com/capriok/KPCon-Client',
         demo: 'https://www.keithphillingane.com/',
-        demoAcc: 'Username: demo | Password: admin',
         resources: ['https://nodemailer.com/about/'],
         route: '/kpcon'
       },
