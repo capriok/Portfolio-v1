@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useStateValue } from '../../state'
-import useLockBodyScroll from '../hooks/uselockbodyscroll'
 
 import Carousel from '../carousel/carousel'
 import FullView from '../carousel/full-view'
@@ -9,8 +8,6 @@ export const ProjectDisplay = ({ modalOpen, item }) => {
   const [{ theTheme },] = useStateValue()
   const [viewState, setViewState] = useState({ open: false, img: '' })
   const handleViewClose = () => setViewState({ open: false, img: '' })
-  useLockBodyScroll()
-
   return (
     <>
       {viewState.open && <FullView state={viewState} close={handleViewClose} />}

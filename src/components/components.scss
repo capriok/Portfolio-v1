@@ -75,8 +75,8 @@ $light-grey: rgb(148, 148, 148);
     max-width: 90%;
     .img-cont {
       @include flex;
-      height: 400px;
-      margin: 0 10px;
+      min-height: 250px;
+      margin: 50px 10px;
       .carousel-img {
         cursor: pointer;
         user-select: none;
@@ -283,8 +283,6 @@ $light-grey: rgb(148, 148, 148);
     }
   }
   .modal {
-    // max-height: 400px;
-    // overflow-y: scroll;
     scrollbar-color: darken(white, 80%) darken(white, 50%) !important;
     scrollbar-width: thin !important;
   }
@@ -640,6 +638,36 @@ $light-grey: rgb(148, 148, 148);
 // MEDIA
 
 @media (max-width: 700px) {
+  .view-clickout,
+  .full-view {
+    display: none;
+  }
+  .gallery-cont {
+    @include flex;
+    width: 100%;
+    max-width: 100vw;
+    padding: 0px;
+    border-radius: 10px;
+    .slide-btn {
+      display: none;
+    }
+    .alice-carousel {
+      width: 95%;
+      max-width: 90%;
+      .img-cont {
+        @include flex;
+        min-height: 200px;
+        margin: 0 10px;
+        .carousel-img {
+          cursor: pointer;
+          user-select: none;
+          width: 100%;
+          border-radius: 5px;
+          border: 1px solid black;
+        }
+      }
+    }
+  }
   .about-route {
     padding: 20px 0px;
     .banner {
@@ -792,6 +820,9 @@ $light-grey: rgb(148, 148, 148);
       * {
         font-size: 0.7rem;
       }
+    }
+    .slideshow {
+      padding: 30px 0;
     }
   }
   .tags {
