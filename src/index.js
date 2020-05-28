@@ -61,7 +61,6 @@ import THEMESFK_PREV1 from './gallery/projects/TFK-PREV1.PNG'
 import THEMESFK_PREV2 from './gallery/projects/TFK-PREV2.PNG'
 import THEMESFK_PREV3 from './gallery/projects/TFK-PREV3.PNG'
 
-
 export function Index() {
   const trueDarkState = localStorage.getItem('theme') === 'true'
 
