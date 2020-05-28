@@ -12,40 +12,49 @@ import KPCON_GALLERY from './gallery/projects/KPCON-GALLERY.PNG'
 import KPCON_EMAIL from './gallery/projects/KPCON-EMAIL.PNG'
 import KPCON_HTML from './gallery/projects/KPCON-HTML.PNG'
 import KPCON_SERVER from './gallery/projects/KPCON-SERVER.PNG'
+import KPCON_SHOWCASE from './gallery/projects/KPCON-SHOWCASE.PNG'
 import SQLIFTING_GREETING from './gallery/projects/SQLIFTING-GREETING.PNG'
 import SQLIFTING_MANAGER from './gallery/projects/SQLIFTING-MANAGER.PNG'
 import SQLIFTING_EXBUILDER from './gallery/projects/SQLIFTING-EXBUILDER.PNG'
 import SQLIFTING_WOBUILDER from './gallery/projects/SQLIFTING-WOBUILDER.PNG'
 import SQLIFTING_INPROGRESS from './gallery/projects/SQLIFTING-INPROGRESS.PNG'
+import SQLIFTING_SHOWCASE from './gallery/projects/SQLIFTING-SHOWCASE.PNG'
 import SNEKKEL_GREETING from './gallery/projects/SNEKKEL-GREETING.PNG'
 import SNEKKEL_SPRITE from './gallery/projects/SNEKKEL-SPRITE.PNG'
 import SNEKKEL_DIFFICULTY from './gallery/projects/SNEKKEL-DIFFICULTY.PNG'
+import SNEKKEL_SHOWCASE from './gallery/projects/SNEKKEL-SHOWCASE.PNG'
 import GODSPEED_HOME from './gallery/projects/GODSPEED-HOME.PNG'
 import GODSPEED_BUTTON from './gallery/projects/GODSPEED-BUTTON.PNG'
 import GODSPEED_INPUT from './gallery/projects/GODSPEED-INPUT.PNG'
 import GODSPEED_MODAL from './gallery/projects/GODSPEED-MODAL.PNG'
+import GODSPEED_SHOWCASE from './gallery/projects/GODSPEED-SHOWCASE.PNG'
 import DISARRAY_GREETING from './gallery/projects/DISARRAY-GREETING.PNG'
 import DISARRAY_START from './gallery/projects/DISARRAY-START.PNG'
 import DISARRAY_SOLVED from './gallery/projects/DISARRAY-SOLVED.PNG'
 import DISARRAY_LOGIC from './gallery/projects/DISARRAY-LOGIC.PNG'
 import DISARRAY_LEADERBOARD from './gallery/projects/DISARRAY-LEADERBOARD.PNG'
+import DISARRAY_SHOWCASE from './gallery/projects/DISARRAY-SHOWCASE.PNG'
 import PORTFOLIO_HOME from './gallery/projects/PORTFOLIO-HOME.PNG'
 import PORTFOLIO_ABOUT from './gallery/projects/PORTFOLIO-ABOUT.PNG'
 import PORTFOLIO_PROJECTS from './gallery/projects/PORTFOLIO-PROJECTS.PNG'
 import PORTFOLIO_PROJECT from './gallery/projects/PORTFOLIO-PROJECT.PNG'
 import PORTFOLIO_RESUME from './gallery/projects/PORTFOLIO-RESUME.PNG'
+import PORTFOLIO_SHOWCASE from './gallery/projects/PORTFOLIO-SHOWCASE.PNG'
 import MTMUSIC_GOOGLE from './gallery/projects/MTM-GOOGLE.PNG'
 import MTMUSIC_INIT from './gallery/projects/MTM-INIT.PNG'
 import MTMUSIC_PLAYER from './gallery/projects/MTM-PLAYER.PNG'
 import MTMUSIC_PLAYLISTS from './gallery/projects/MTM-PLAYLISTS.PNG'
+import MTMUSIC_SHOWCASE from './gallery/projects/MTM-SHOWCASE.PNG'
 import NEETCHAT_HOME from './gallery/projects/NEETCHAT-HOME.PNG'
 import NEETCHAT_CHAT from './gallery/projects/NEETCHAT-CHAT.PNG'
-import ARTEBELLA_HOME from './gallery/projects/ARTE-BELLA-HOME.PNG'
+import ARTE_BELLA_HOME from './gallery/projects/ARTE-BELLA-HOME.PNG'
+import ARTE_BELLA_SHOWCASE from './gallery/projects/ARTE-BELLA-SHOWCASE.PNG'
 import TOOKFEED_HOME from './gallery/projects/TOOKFEED-HOME.PNG'
 import TOOKFEED_REGISTER from './gallery/projects/TOOKFEED-REGISTER.PNG'
 import TOOKFEED_PROFILE from './gallery/projects/TOOKFEED-PROFILE.PNG'
 import TOOKFEED_OPTIONS from './gallery/projects/TOOKFEED-OPTIONS.PNG'
 import TOOKFEED_SERVER from './gallery/projects/TOOKFEED-SERVER.PNG'
+import TOOKFEED_SHOWCASE from './gallery/projects/TOOKFEED-SHOWCASE.PNG'
 import THEMESFK_HOME from './gallery/projects/TFK-HOME.PNG'
 import THEMESFK_CODE from './gallery/projects/TFK-CODE.PNG'
 import THEMESFK_PREV1 from './gallery/projects/TFK-PREV1.PNG'
@@ -73,7 +82,7 @@ export function Index() {
         },
         tags: ['Javascript', 'React', 'SASS', '2020'],
         thumb: KPCON_INTRO,
-        slides: [KPCON_INTRO, KPCON_DETAIL, KPCON_GALLERY, KPCON_EMAIL, KPCON_HTML, KPCON_SERVER],
+        slides: [KPCON_SHOWCASE, KPCON_INTRO, KPCON_DETAIL, KPCON_GALLERY, KPCON_EMAIL, KPCON_HTML, KPCON_SERVER],
         link: 'https://github.com/capriok/KPCon-Client',
         demo: 'https://www.keithphillingane.com/',
         resources: ['https://nodemailer.com/about/'],
@@ -92,7 +101,7 @@ export function Index() {
         },
         tags: ['Javascript', 'React', 'SQL', '2020'],
         thumb: SQLIFTING_MANAGER,
-        slides: [SQLIFTING_GREETING, SQLIFTING_MANAGER, SQLIFTING_EXBUILDER, SQLIFTING_WOBUILDER, SQLIFTING_INPROGRESS],
+        slides: [SQLIFTING_SHOWCASE, SQLIFTING_GREETING, SQLIFTING_MANAGER, SQLIFTING_EXBUILDER, SQLIFTING_WOBUILDER, SQLIFTING_INPROGRESS],
         link: 'https://github.com/capriok/SQLifting',
         demo: 'https://sqlifting.kylecaprio.dev',
         demoAcc: 'Username: demo | Password: admin',
@@ -126,7 +135,7 @@ export function Index() {
         },
         tags: ['Javascript', 'React', 'SASS', '2020'],
         thumb: SNEKKEL_GREETING,
-        slides: [SNEKKEL_GREETING, SNEKKEL_SPRITE, SNEKKEL_DIFFICULTY],
+        slides: [SNEKKEL_SHOWCASE, SNEKKEL_GREETING, SNEKKEL_SPRITE, SNEKKEL_DIFFICULTY],
         link: 'https://github.com/capriok/Snekkel',
         demo: 'https://snekkel.kylecaprio.dev',
         resources: [],
@@ -154,7 +163,7 @@ export function Index() {
         },
         tags: ['Gatsby', 'React', 'Javascript', '2020'],
         thumb: GODSPEED_HOME,
-        slides: [GODSPEED_HOME, GODSPEED_BUTTON, GODSPEED_INPUT, GODSPEED_MODAL,],
+        slides: [GODSPEED_SHOWCASE, GODSPEED_HOME, GODSPEED_BUTTON, GODSPEED_INPUT, GODSPEED_MODAL,],
         link: 'https://github.com/capriok/Godspeed-Docs',
         demo: 'https://godspeed.netlify.com',
         resources: ['https://www.styled-components.com', 'https://www.npmjs.com'],
@@ -179,7 +188,7 @@ export function Index() {
         },
         tags: ['Javascript', 'React', 'SASS', '2020'],
         thumb: DISARRAY_GREETING,
-        slides: [DISARRAY_GREETING, DISARRAY_START, DISARRAY_SOLVED, DISARRAY_LEADERBOARD, DISARRAY_LOGIC],
+        slides: [DISARRAY_SHOWCASE, DISARRAY_GREETING, DISARRAY_START, DISARRAY_SOLVED, DISARRAY_LEADERBOARD, DISARRAY_LOGIC],
         link: 'https://github.com/capriok/DisArray',
         demo: 'https://disarray.kylecaprio.dev',
         resources: [],
@@ -198,7 +207,7 @@ export function Index() {
         },
         tags: ['Javascript', 'React', 'SASS', '2020'],
         thumb: PORTFOLIO_HOME,
-        slides: [PORTFOLIO_HOME, PORTFOLIO_ABOUT, PORTFOLIO_PROJECTS, PORTFOLIO_PROJECT, PORTFOLIO_RESUME],
+        slides: [PORTFOLIO_SHOWCASE, PORTFOLIO_HOME, PORTFOLIO_ABOUT, PORTFOLIO_PROJECTS, PORTFOLIO_PROJECT, PORTFOLIO_RESUME],
         link: 'https://github.com/capriok/DisArray',
         demo: 'https://kylecaprio.dev',
         resources: [],
@@ -251,7 +260,7 @@ export function Index() {
         },
         tags: ['Javascript', 'React', 'Electron', 'CSS', '2019'],
         thumb: MTMUSIC_INIT,
-        slides: [MTMUSIC_GOOGLE, MTMUSIC_INIT, MTMUSIC_PLAYER, MTMUSIC_PLAYLISTS],
+        slides: [MTMUSIC_SHOWCASE, MTMUSIC_GOOGLE, MTMUSIC_INIT, MTMUSIC_PLAYER, MTMUSIC_PLAYLISTS],
         link: 'https://github.com/capriok/MyTube',
         demo: 'https://mytube-music.kylecaprio.dev',
         resources: ['https://developers.google.com/youtube/v3'],
@@ -275,8 +284,8 @@ export function Index() {
           ],
         },
         tags: ['Javascript', 'React', 'SASS', '2019'],
-        thumb: ARTEBELLA_HOME,
-        slides: [ARTEBELLA_HOME, ARTEBELLA_HOME, ARTEBELLA_HOME],
+        thumb: ARTE_BELLA_HOME,
+        slides: [ARTE_BELLA_SHOWCASE, ARTE_BELLA_HOME, ARTE_BELLA_HOME, ARTE_BELLA_HOME],
         link: 'https://github.com/capriok/Arte-Bella',
         demo: 'https://artebellaengraving.com',
         resources: [],
@@ -299,7 +308,7 @@ export function Index() {
         },
         tags: ['Javascript', 'React', 'Electron', 'CSS', '2018'],
         thumb: TOOKFEED_HOME,
-        slides: [TOOKFEED_HOME, TOOKFEED_REGISTER, TOOKFEED_OPTIONS, TOOKFEED_PROFILE, TOOKFEED_SERVER],
+        slides: [TOOKFEED_SHOWCASE, TOOKFEED_HOME, TOOKFEED_REGISTER, TOOKFEED_OPTIONS, TOOKFEED_PROFILE, TOOKFEED_SERVER],
         link: 'https://github.com/capriok/TookFeed',
         demo: 'https://tookfeed.kylecaprio.dev',
         resources: ['https://newsapi.org', 'https://www.electronjs.org'],
