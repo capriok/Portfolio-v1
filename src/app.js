@@ -4,7 +4,7 @@ import { useStateValue } from './state'
 import { Button, makeStyles } from '@material-ui/core';
 import { darkTheme as dark } from './theme'
 import About from './components/about';
-import { ProjectDisplay } from './components/templates/projectdisplay';
+import ProjectDisplay from './components/templates/projectdisplay';
 import Navbar from "./components/navbar";
 import Intro from './components/intro';
 import Tech from './components/tech';

@@ -4,7 +4,7 @@ import { useStateValue } from '../../state'
 import Carousel from '../carousel/carousel'
 import FullView from '../carousel/full-view'
 
-export const ProjectDisplay = ({ modalOpen, item }) => {
+const ProjectDisplay = ({ modalOpen, item }) => {
   const [{ theTheme },] = useStateValue()
   const [viewState, setViewState] = useState({ open: false, img: '' })
   const handleViewClose = () => setViewState({ open: false, img: '' })
@@ -58,3 +58,5 @@ export const ProjectDisplay = ({ modalOpen, item }) => {
     </>
   )
 }
+
+export default ProjectDisplay

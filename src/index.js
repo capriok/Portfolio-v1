@@ -253,7 +253,7 @@ export function Index() {
       },
       {
         title: 'MyTube Music',
-        snippet: 'Youtube Data API consumed to create a client sided music streaming application wrapped in Electron',
+        snippet: 'Youtube Data API consumed to create a client-sided music streaming application wrapped in Electron',
         writing: {
           process: `I had a vision to develop a music streaming application inspired by YouTube Music. This being 
           the most complex endeavor of mine I knew the importance of keeping a clean code base. The Youtube Data API 
