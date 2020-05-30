@@ -275,7 +275,7 @@ export function Index() {
         slides: [
           bank.MTMUSIC_SHOWCASE,
           bank.MTMUSIC_GOOGLE,
-          bank.MTMUSIC_INIT,
+          // bank.MTMUSIC_INIT,
           bank.MTMUSIC_PLAYER,
           bank.MTMUSIC_PLAYLISTS
         ],
