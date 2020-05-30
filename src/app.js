@@ -2,26 +2,69 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { useStateValue } from './state'
 import { Button, makeStyles } from '@material-ui/core';
+import { darkTheme as dark } from './theme'
 import About from './components/about';
 import { ProjectDisplay } from './components/templates/projectdisplay';
 import Navbar from "./components/navbar";
 import Intro from './components/intro';
 import Tech from './components/tech';
+import Projects from './components/projects';
 import ProjectCards from './components/templates/projectcards';
 import Footer from "./components/footer";
 import Resume from "./components/resume";
-import projectsBanner from './gallery/projects.svg'
+import InquiryTransition from './components/inquiry/inquiry-transition'
+import Inquiry from './components/inquiry/inquiry'
+import Clickout from './components/inquiry/clickout'
 import "../src/components/components.scss";
 import "./index.scss";
-import { darkTheme as dark } from './theme'
-import Modal from 'godspeed/build/Modal'
 
 export default function App() {
   const [{ darkState, theTheme, projects }, dispatch] = useStateValue()
+  const trueDarkState = localStorage.getItem('theme') === 'true'
+
   const [modalOpen, openModal] = useState(false)
   const [modalContent, setContent] = useState(projects[0])
+  const [inquiryState, setInquiryState] = useState({
+    open: false,
+    submitLoading: false,
+    submitSent: false,
+    statusTitleMessage: '',
+    statusSubMessage: ''
+  })
+  const [inquiryForm, setInquiryForm] = useState({
+    name: '',
+    email: '',
+    body: '',
+    referral: ''
+  })
 
-  const trueDarkState = localStorage.getItem('theme') === 'true'
+  const handleInquiryOpen = () => {
+    setInquiryState({
+      ...inquiryState,
+      open: true,
+    })
+  }
+
+  const handleInquiryClose = () => {
+    setInquiryState({
+      ...inquiryState,
+      open: false,
+    })
+    setTimeout(() => {
+      setInquiryState(() => ({
+        open: false,
+        submitLoading: false,
+        submitSent: false,
+        statusTitleMessage: '',
+        statusSubMessage: ''
+      }))
+      setInquiryForm({
+        name: '',
+        email: '',
+        body: ''
+      })
+    }, 500);
+  }
 
   const useStyles = makeStyles({
     btn: {
@@ -47,8 +90,21 @@ export default function App() {
     <>
       <div className="main scrollbar" style={theTheme.main}>
         <Router>
-          <Navbar />
-          {/* <BaseNavbar /> */}
+          <Navbar
+            handleInquiryOpen={handleInquiryOpen}
+          />
+          <InquiryTransition inquiryState={inquiryState}>
+            <Inquiry
+              handleInquiryClose={handleInquiryClose}
+              inquiryState={inquiryState}
+              setInquiryState={setInquiryState}
+              inquiryForm={inquiryForm}
+              setInquiryForm={setInquiryForm}
+            />
+          </InquiryTransition>
+          <Clickout
+            state={inquiryState}
+            close={handleInquiryClose} />
           {/* ------------------------- PROJECT MODAL */}
           {modalOpen &&
             <>
@@ -63,7 +119,7 @@ export default function App() {
           {/* ------------------------- SLASH ROUTE */}
           <Route exact path="/" render={() => (
             <>
-              <Intro />
+              <Intro inquiryState={inquiryState} setInquiryState={setInquiryState} />
               <Tech />
               <div id='projects-section' className="projects-section">
                 <ProjectCards openModal={openModal} setContent={setContent} />
@@ -91,15 +147,7 @@ export default function App() {
           )}></Route>
           {/* ------------------------- PROJECTS LIST ROUTE */}
           <Route path="/projects" render={() => (
-            <div className="projects-route">
-              <div className="banner poly">
-                <img src={projectsBanner} alt="" />
-              </div>
-              <div className="body">
-                <h1 className="title" style={theTheme.whiteFont}>—— Projects ——</h1>
-                <ProjectCards openModal={openModal} setContent={setContent} />
-              </div>
-            </div>
+            <Projects openModal={modalOpen} setContent={setContent} />
           )}></Route>
           <Footer />
         </Router>

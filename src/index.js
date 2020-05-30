@@ -4,62 +4,7 @@ import { StateProvider } from "./state";
 import App from "./app";
 import './index.scss'
 
-import NULL from './gallery/projects/404.png'
-
-import KPCON_INTRO from './gallery/projects/KPCON-INTRO.PNG'
-import KPCON_DETAIL from './gallery/projects/KPCON-DETAIL.PNG'
-import KPCON_GALLERY from './gallery/projects/KPCON-GALLERY.PNG'
-import KPCON_EMAIL from './gallery/projects/KPCON-EMAIL.PNG'
-import KPCON_HTML from './gallery/projects/KPCON-HTML.PNG'
-import KPCON_SERVER from './gallery/projects/KPCON-SERVER.PNG'
-import KPCON_SHOWCASE from './gallery/projects/KPCON-SHOWCASE.PNG'
-import SQLIFTING_GREETING from './gallery/projects/SQLIFTING-GREETING.PNG'
-import SQLIFTING_MANAGER from './gallery/projects/SQLIFTING-MANAGER.PNG'
-import SQLIFTING_EXBUILDER from './gallery/projects/SQLIFTING-EXBUILDER.PNG'
-import SQLIFTING_WOBUILDER from './gallery/projects/SQLIFTING-WOBUILDER.PNG'
-import SQLIFTING_INPROGRESS from './gallery/projects/SQLIFTING-INPROGRESS.PNG'
-import SQLIFTING_SHOWCASE from './gallery/projects/SQLIFTING-SHOWCASE.PNG'
-import SNEKKEL_GREETING from './gallery/projects/SNEKKEL-GREETING.PNG'
-import SNEKKEL_SPRITE from './gallery/projects/SNEKKEL-SPRITE.PNG'
-import SNEKKEL_DIFFICULTY from './gallery/projects/SNEKKEL-DIFFICULTY.PNG'
-import SNEKKEL_SHOWCASE from './gallery/projects/SNEKKEL-SHOWCASE.PNG'
-import GODSPEED_HOME from './gallery/projects/GODSPEED-HOME.PNG'
-import GODSPEED_BUTTON from './gallery/projects/GODSPEED-BUTTON.PNG'
-import GODSPEED_INPUT from './gallery/projects/GODSPEED-INPUT.PNG'
-import GODSPEED_MODAL from './gallery/projects/GODSPEED-MODAL.PNG'
-import GODSPEED_SHOWCASE from './gallery/projects/GODSPEED-SHOWCASE.PNG'
-import DISARRAY_GREETING from './gallery/projects/DISARRAY-GREETING.PNG'
-import DISARRAY_START from './gallery/projects/DISARRAY-START.PNG'
-import DISARRAY_SOLVED from './gallery/projects/DISARRAY-SOLVED.PNG'
-import DISARRAY_LOGIC from './gallery/projects/DISARRAY-LOGIC.PNG'
-import DISARRAY_LEADERBOARD from './gallery/projects/DISARRAY-LEADERBOARD.PNG'
-import DISARRAY_SHOWCASE from './gallery/projects/DISARRAY-SHOWCASE.PNG'
-import PORTFOLIO_HOME from './gallery/projects/PORTFOLIO-HOME.PNG'
-import PORTFOLIO_ABOUT from './gallery/projects/PORTFOLIO-ABOUT.PNG'
-import PORTFOLIO_PROJECTS from './gallery/projects/PORTFOLIO-PROJECTS.PNG'
-import PORTFOLIO_PROJECT from './gallery/projects/PORTFOLIO-PROJECT.PNG'
-import PORTFOLIO_RESUME from './gallery/projects/PORTFOLIO-RESUME.PNG'
-import PORTFOLIO_SHOWCASE from './gallery/projects/PORTFOLIO-SHOWCASE.PNG'
-import MTMUSIC_GOOGLE from './gallery/projects/MTM-GOOGLE.PNG'
-import MTMUSIC_INIT from './gallery/projects/MTM-INIT.PNG'
-import MTMUSIC_PLAYER from './gallery/projects/MTM-PLAYER.PNG'
-import MTMUSIC_PLAYLISTS from './gallery/projects/MTM-PLAYLISTS.PNG'
-import MTMUSIC_SHOWCASE from './gallery/projects/MTM-SHOWCASE.PNG'
-import NEETCHAT_HOME from './gallery/projects/NEETCHAT-HOME.PNG'
-import NEETCHAT_CHAT from './gallery/projects/NEETCHAT-CHAT.PNG'
-import ARTE_BELLA_HOME from './gallery/projects/ARTE-BELLA-HOME.PNG'
-import ARTE_BELLA_SHOWCASE from './gallery/projects/ARTE-BELLA-SHOWCASE.PNG'
-import TOOKFEED_HOME from './gallery/projects/TOOKFEED-HOME.PNG'
-import TOOKFEED_REGISTER from './gallery/projects/TOOKFEED-REGISTER.PNG'
-import TOOKFEED_PROFILE from './gallery/projects/TOOKFEED-PROFILE.PNG'
-import TOOKFEED_OPTIONS from './gallery/projects/TOOKFEED-OPTIONS.PNG'
-import TOOKFEED_SERVER from './gallery/projects/TOOKFEED-SERVER.PNG'
-import TOOKFEED_SHOWCASE from './gallery/projects/TOOKFEED-SHOWCASE.PNG'
-import THEMESFK_HOME from './gallery/projects/TFK-HOME.PNG'
-import THEMESFK_CODE from './gallery/projects/TFK-CODE.PNG'
-import THEMESFK_PREV1 from './gallery/projects/TFK-PREV1.PNG'
-import THEMESFK_PREV2 from './gallery/projects/TFK-PREV2.PNG'
-import THEMESFK_PREV3 from './gallery/projects/TFK-PREV3.PNG'
+import * as bank from './bank'
 
 export function Index() {
   const trueDarkState = localStorage.getItem('theme') === 'true'
@@ -68,6 +13,31 @@ export function Index() {
     darkState: trueDarkState,
     theTheme: {},
     projects: [
+      {
+        title: 'Cash Flow',
+        snippet: `Mobile budgeting application with many personalization features, built with TypeScript`,
+        writing: {
+          process: `Working on it..`,
+          conclusion: [
+            'Learned TypeScript fundementals and why it is becoming so popular',
+            'Progressed experience with debugging and error handling',
+            'Improved skills working with and manipulating deeply nested object properties',
+            'Became more confident in writing code without reference',
+          ],
+        },
+        tags: ['TypeScript', 'React', 'SASS', '2020'],
+        thumb: bank.CASHFLOW_DATASHEET,
+        slides: [
+          bank.CASHFLOW_GREETING,
+          bank.CASHFLOW_DATASHEET,
+          bank.CASHFLOW_NEWBUDGET,
+          bank.CASHFLOW_DELETE
+        ],
+        link: 'https://github.com/capriok/CashFlow',
+        demo: 'https://cashflow.kylecaprio.dev',
+        resources: ['https://www.typescriptlang.org/docs/home.html'],
+        route: '/cashflow'
+      },
       {
         title: 'Keith Phillingane Construction',
         snippet: 'Single page self marketing portfolio for small business client',
@@ -79,9 +49,17 @@ export function Index() {
             'Acquired more possibility of word of mouth outreach',
           ],
         },
-        tags: ['Javascript', 'React', 'SASS', '2020'],
-        thumb: KPCON_INTRO,
-        slides: [KPCON_SHOWCASE, KPCON_INTRO, KPCON_DETAIL, KPCON_GALLERY, KPCON_EMAIL, KPCON_HTML, KPCON_SERVER],
+        tags: ['JavaScript', 'React', 'SASS', '2020'],
+        thumb: bank.KPCON_INTRO,
+        slides: [
+          bank.KPCON_SHOWCASE,
+          bank.KPCON_INTRO,
+          bank.KPCON_DETAIL,
+          bank.KPCON_GALLERY,
+          bank.KPCON_EMAIL,
+          bank.KPCON_HTML,
+          bank.KPCON_SERVER
+        ],
         link: 'https://github.com/capriok/KPCon-Client',
         demo: 'https://www.keithphillingane.com/',
         resources: ['https://nodemailer.com/about/'],
@@ -98,9 +76,16 @@ export function Index() {
             'Became more fluent with data manipulation and working with complex objects',
           ],
         },
-        tags: ['Javascript', 'React', 'SQL', '2020'],
-        thumb: SQLIFTING_MANAGER,
-        slides: [SQLIFTING_SHOWCASE, SQLIFTING_GREETING, SQLIFTING_MANAGER, SQLIFTING_EXBUILDER, SQLIFTING_WOBUILDER, SQLIFTING_INPROGRESS],
+        tags: ['JavaScript', 'React', 'SQL', '2020'],
+        thumb: bank.SQLIFTING_MANAGER,
+        slides: [
+          bank.SQLIFTING_SHOWCASE,
+          bank.SQLIFTING_GREETING,
+          bank.SQLIFTING_MANAGER,
+          bank.SQLIFTING_EXBUILDER,
+          bank.SQLIFTING_WOBUILDER,
+          bank.SQLIFTING_INPROGRESS
+        ],
         link: 'https://github.com/capriok/SQLifting',
         demo: 'https://sqlifting.kylecaprio.dev',
         demoAcc: 'Username: demo | Password: admin',
@@ -132,9 +117,14 @@ export function Index() {
             'Realization of my adept abilities writing complex JavaScript without using references',
           ],
         },
-        tags: ['Javascript', 'React', 'SASS', '2020'],
-        thumb: SNEKKEL_GREETING,
-        slides: [SNEKKEL_SHOWCASE, SNEKKEL_GREETING, SNEKKEL_SPRITE, SNEKKEL_DIFFICULTY],
+        tags: ['JavaScript', 'React', 'SASS', '2020'],
+        thumb: bank.SNEKKEL_GREETING,
+        slides: [
+          bank.SNEKKEL_SHOWCASE,
+          bank.SNEKKEL_GREETING,
+          bank.SNEKKEL_SPRITE,
+          bank.SNEKKEL_DIFFICULTY
+        ],
         link: 'https://github.com/capriok/Snekkel',
         demo: 'https://snekkel.kylecaprio.dev',
         resources: [],
@@ -160,9 +150,15 @@ export function Index() {
             'Learned Gatsby.js to make the documention website'
           ],
         },
-        tags: ['Gatsby', 'React', 'Javascript', '2020'],
-        thumb: GODSPEED_HOME,
-        slides: [GODSPEED_SHOWCASE, GODSPEED_HOME, GODSPEED_BUTTON, GODSPEED_INPUT, GODSPEED_MODAL,],
+        tags: ['Gatsby', 'React', 'JavaScript', '2020'],
+        thumb: bank.GODSPEED_HOME,
+        slides: [
+          bank.GODSPEED_SHOWCASE,
+          bank.GODSPEED_HOME,
+          bank.GODSPEED_BUTTON,
+          bank.GODSPEED_INPUT,
+          bank.GODSPEED_MODAL,
+        ],
         link: 'https://github.com/capriok/Godspeed-Docs',
         demo: 'https://godspeed.netlify.com',
         resources: ['https://www.styled-components.com', 'https://www.npmjs.com'],
@@ -185,9 +181,16 @@ export function Index() {
             'Familiarized myself with serverless HTTP API use',
           ],
         },
-        tags: ['Javascript', 'React', 'SASS', '2020'],
-        thumb: DISARRAY_GREETING,
-        slides: [DISARRAY_SHOWCASE, DISARRAY_GREETING, DISARRAY_START, DISARRAY_SOLVED, DISARRAY_LEADERBOARD, DISARRAY_LOGIC],
+        tags: ['JavaScript', 'React', 'SASS', 'MongoDB', '2020'],
+        thumb: bank.DISARRAY_GREETING,
+        slides: [
+          bank.DISARRAY_SHOWCASE,
+          bank.DISARRAY_GREETING,
+          bank.DISARRAY_START,
+          bank.DISARRAY_SOLVED,
+          bank.DISARRAY_LEADERBOARD,
+          bank.DISARRAY_LOGIC
+        ],
         link: 'https://github.com/capriok/DisArray',
         demo: 'https://disarray.kylecaprio.dev',
         resources: [],
@@ -204,9 +207,16 @@ export function Index() {
           my first job as a developer and change my life forever. This is who I am and what I love doing, take a look.`,
           conclusion: [],
         },
-        tags: ['Javascript', 'React', 'SASS', '2020'],
-        thumb: PORTFOLIO_HOME,
-        slides: [PORTFOLIO_SHOWCASE, PORTFOLIO_HOME, PORTFOLIO_ABOUT, PORTFOLIO_PROJECTS, PORTFOLIO_PROJECT, PORTFOLIO_RESUME],
+        tags: ['JavaScript', 'React', 'SASS', '2020'],
+        thumb: bank.PORTFOLIO_HOME,
+        slides: [
+          bank.PORTFOLIO_SHOWCASE,
+          bank.PORTFOLIO_HOME,
+          bank.PORTFOLIO_ABOUT,
+          bank.PORTFOLIO_PROJECTS,
+          bank.PORTFOLIO_PROJECT,
+          bank.PORTFOLIO_RESUME
+        ],
         link: 'https://github.com/capriok/DisArray',
         demo: 'https://kylecaprio.dev',
         resources: [],
@@ -230,9 +240,12 @@ export function Index() {
             'Stronger comprehension of server code and advanced web applications',
           ],
         },
-        tags: ['Javascript', 'Socket.io', 'React', 'SASS', '2019'],
-        thumb: NEETCHAT_HOME,
-        slides: [NEETCHAT_HOME, NEETCHAT_CHAT],
+        tags: ['JavaScript', 'Socket.io', 'React', 'SASS', '2019'],
+        thumb: bank.NEETCHAT_HOME,
+        slides: [
+          bank.NEETCHAT_HOME,
+          bank.NEETCHAT_CHAT
+        ],
         link: 'https://github.com/hunterfoulk/Neet-Chat',
         demo: 'https://github.com/hunterfoulk/Neet-Chat',
         resources: ['https://socket.io'],
@@ -257,9 +270,15 @@ export function Index() {
             'Management of complex core application and component structure',
           ],
         },
-        tags: ['Javascript', 'React', 'Electron', 'CSS', '2019'],
-        thumb: MTMUSIC_INIT,
-        slides: [MTMUSIC_SHOWCASE, MTMUSIC_GOOGLE, MTMUSIC_INIT, MTMUSIC_PLAYER, MTMUSIC_PLAYLISTS],
+        tags: ['JavaScript', 'React', 'Electron', 'CSS', '2019'],
+        thumb: bank.MTMUSIC_INIT,
+        slides: [
+          bank.MTMUSIC_SHOWCASE,
+          bank.MTMUSIC_GOOGLE,
+          bank.MTMUSIC_INIT,
+          bank.MTMUSIC_PLAYER,
+          bank.MTMUSIC_PLAYLISTS
+        ],
         link: 'https://github.com/capriok/MyTube',
         demo: 'https://mytube-music.kylecaprio.dev',
         resources: ['https://developers.google.com/youtube/v3'],
@@ -282,9 +301,14 @@ export function Index() {
             'Improved React conditional component rendering',
           ],
         },
-        tags: ['Javascript', 'React', 'SASS', '2019'],
-        thumb: ARTE_BELLA_HOME,
-        slides: [ARTE_BELLA_SHOWCASE, ARTE_BELLA_HOME, ARTE_BELLA_HOME, ARTE_BELLA_HOME],
+        tags: ['JavaScript', 'React', 'SASS', '2019'],
+        thumb: bank.ARTE_BELLA_HOME,
+        slides: [
+          bank.ARTE_BELLA_SHOWCASE,
+          bank.ARTE_BELLA_HOME,
+          bank.ARTE_BELLA_HOME,
+          bank.ARTE_BELLA_HOME
+        ],
         link: 'https://github.com/capriok/Arte-Bella',
         demo: 'https://artebellaengraving.com',
         resources: [],
@@ -295,7 +319,7 @@ export function Index() {
         snippet: 'Harnessing the power of News API to stay up to date on global or local news',
         writing: {
           process: `My goal of this project was to create a newsfeed application I could tailor to my own interests. 
-          During the development process, I greatly improved my Javascript and Web Development skills. Teaching 
+          During the development process, I greatly improved my JavaScript and Web Development skills. Teaching 
           myself React was the big challenge of this project. My lack of knowledge about state management and 
           lifecycles quickly changed as I devoted myself to this learning framework. I fell in love with React and 
           have been using it exclusively ever since.`,
@@ -305,9 +329,16 @@ export function Index() {
             'Improved my skills in dealing with HTTP request methods',
           ],
         },
-        tags: ['Javascript', 'React', 'Electron', 'CSS', '2018'],
-        thumb: TOOKFEED_HOME,
-        slides: [TOOKFEED_SHOWCASE, TOOKFEED_HOME, TOOKFEED_REGISTER, TOOKFEED_OPTIONS, TOOKFEED_PROFILE, TOOKFEED_SERVER],
+        tags: ['JavaScript', 'React', 'Electron', 'CSS', '2018'],
+        thumb: bank.TOOKFEED_HOME,
+        slides: [
+          bank.TOOKFEED_SHOWCASE,
+          bank.TOOKFEED_HOME,
+          bank.TOOKFEED_REGISTER,
+          bank.TOOKFEED_OPTIONS,
+          bank.TOOKFEED_PROFILE,
+          bank.TOOKFEED_SERVER
+        ],
         link: 'https://github.com/capriok/TookFeed',
         demo: 'https://tookfeed.kylecaprio.dev',
         resources: ['https://newsapi.org', 'https://www.electronjs.org'],
@@ -330,8 +361,14 @@ export function Index() {
           ],
         },
         tags: ['HTML', 'CSS', 'Jquery', '2014'],
-        thumb: THEMESFK_HOME,
-        slides: [THEMESFK_HOME, THEMESFK_PREV1, THEMESFK_PREV2, THEMESFK_PREV3, THEMESFK_CODE],
+        thumb: bank.THEMESFK_HOME,
+        slides: [
+          bank.THEMESFK_HOME,
+          bank.THEMESFK_PREV1,
+          bank.THEMESFK_PREV2,
+          bank.THEMESFK_PREV3,
+          bank.THEMESFK_CODE
+        ],
         link: 'https://themesfromkyle.tumblr.com',
         demo: 'https://themesfromkyle.tumblr.com',
         resources: ['https://www.jquery.com'],

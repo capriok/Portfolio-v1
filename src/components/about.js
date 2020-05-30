@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useStateValue } from '../state'
 import about from '../gallery/about.svg'
 
 export default function AboutRoute() {
   const [{ theTheme },] = useStateValue()
+  useEffect(() => { document.title = `Portfolio | About me` }, [])
   return (
     <>
       <div className="about-route">

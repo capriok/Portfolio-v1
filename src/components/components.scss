@@ -184,6 +184,7 @@ $light-grey: rgb(148, 148, 148);
   border-radius: 5px;
   overflow: hidden;
   border: 3px solid $dark-grey;
+  background-color: $dark-grey;
   .body {
     flex: 2;
     display: flex;
@@ -191,6 +192,7 @@ $light-grey: rgb(148, 148, 148);
     align-items: flex-start;
     justify-content: flex-start;
     min-width: 600px;
+    background-color: $dark-grey;
     .head {
       width: 100%;
       padding: 10px;
@@ -487,6 +489,7 @@ $light-grey: rgb(148, 148, 148);
     width: 100%;
     border: 3px solid $dark-grey;
     border-radius: 5px;
+    background-color: $dark-grey;
     .float {
       flex: 1.2;
       display: flex;
@@ -558,6 +561,7 @@ $light-grey: rgb(148, 148, 148);
       min-width: 200px;
       border: 3px solid $dark-grey;
       border-radius: 5px;
+      background-color: $dark-grey;
       h1 {
         width: 100%;
         padding: 15px;
@@ -809,7 +813,7 @@ $light-grey: rgb(148, 148, 148);
       font-size: 0.9rem;
     }
     .tags {
-      text-align: center;
+      text-align: left;
       padding: 0px;
       span {
         font-size: 0.7rem;

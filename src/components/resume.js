@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import resume from '../documents/resume.pdf'
 
 const Resume = () => {
+
+  useEffect(() => { document.title = `Portfolio | Resume` }, [])
   return (
     <>
       <div className="resume">
