@@ -863,6 +863,7 @@ $light-grey: rgb(148, 148, 148);
       flex-direction: column;
       align-content: flex-start;
       border: 0px solid $dark-grey;
+      background-color: transparent;
       .float {
         padding-bottom: 20px;
         background-color: transparent;
