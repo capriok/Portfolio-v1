@@ -3,15 +3,15 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { useStateValue } from './state'
 import { Button, makeStyles } from '@material-ui/core';
 import { darkTheme as dark } from './theme'
-import About from './components/about';
+import About from './components/routes/about';
 import ProjectDisplay from './components/templates/projectdisplay';
 import Navbar from "./components/navbar";
 import Intro from './components/intro';
 import Tech from './components/tech';
-import Projects from './components/projects';
+import Projects from './components/routes/projects';
 import ProjectCards from './components/templates/projectcards';
 import Footer from "./components/footer";
-import Resume from "./components/resume";
+import Resume from "./components/routes/resume";
 import InquiryTransition from './components/inquiry/inquiry-transition'
 import Inquiry from './components/inquiry/inquiry'
 import Clickout from './components/inquiry/clickout'

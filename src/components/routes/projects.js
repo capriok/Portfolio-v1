@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import { useStateValue } from '../state'
-import ProjectCards from './templates/projectcards';
-import projectsBanner from '../gallery/projects.svg'
+import { useStateValue } from '../../state'
+import ProjectCards from '../templates/projectcards';
+import projectsBanner from '../../gallery/projects.svg'
 
 const Projects = ({ openModal, setContent }) => {
   const [{ theTheme },] = useStateValue()

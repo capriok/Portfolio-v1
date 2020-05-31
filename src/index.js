@@ -15,7 +15,8 @@ export function Index() {
     projects: [
       {
         title: 'Cash Flow',
-        snippet: `Mobile budgeting application with many personalization features, built with TypeScript`,
+        snippet: `Mobile budgeting application featuring induvidual user accounts with 
+        multiple budget sheets, graphical customizability and more. Built with TypeScript`,
         writing: {
           process: `Working on it..`,
           conclusion: [
@@ -40,7 +41,8 @@ export function Index() {
       },
       {
         title: 'Keith Phillingane Construction',
-        snippet: 'Single page self marketing portfolio for small business client',
+        snippet: `Small business client’s business portfolio showcasing services offered, 
+        area of expertise and highlighting past endeavors`,
         writing: {
           process: `Working on it..`,
           conclusion: [
@@ -67,7 +69,7 @@ export function Index() {
       },
       {
         title: 'SQLifting',
-        snippet: 'Personalized workout building application with SQL backend',
+        snippet: 'Personalized exercise and workout plan application with PostgreSQL backend',
         writing: {
           process: `Working on it..`,
           conclusion: [
@@ -118,7 +120,7 @@ export function Index() {
           ],
         },
         tags: ['JavaScript', 'React', 'SASS', '2020'],
-        thumb: bank.SNEKKEL_GREETING,
+        thumb: bank.SNEKKEL_SPRITE,
         slides: [
           bank.SNEKKEL_SHOWCASE,
           bank.SNEKKEL_GREETING,
@@ -182,7 +184,7 @@ export function Index() {
           ],
         },
         tags: ['JavaScript', 'React', 'SASS', 'MongoDB', '2020'],
-        thumb: bank.DISARRAY_GREETING,
+        thumb: bank.DISARRAY_START,
         slides: [
           bank.DISARRAY_SHOWCASE,
           bank.DISARRAY_GREETING,
@@ -271,11 +273,10 @@ export function Index() {
           ],
         },
         tags: ['JavaScript', 'React', 'Electron', 'CSS', '2019'],
-        thumb: bank.MTMUSIC_INIT,
+        thumb: bank.MTMUSIC_PLAYER,
         slides: [
           bank.MTMUSIC_SHOWCASE,
           bank.MTMUSIC_GOOGLE,
-          // bank.MTMUSIC_INIT,
           bank.MTMUSIC_PLAYER,
           bank.MTMUSIC_PLAYLISTS
         ],
@@ -286,14 +287,15 @@ export function Index() {
       },
       {
         title: 'Arte Bella Engraving',
-        snippet: 'Small business client, single page website',
+        snippet: `Small business client’s single page website to showcase the company mission statement, services 
+        offered and previous work.`,
         writing: {
           process: `The client's desires consisted of two main objectives: simplicity and accessibility. First, I 
-          created the foundation, a simple single page website that is easily navigable. The next process was to optimize the website 
-          to be fully responsive for any device and or screen size. I found that using React was perfect for 
-          this application. Designing the skeleton with only filler content to work with, until the client provided 
-          their own, allowed me to create a structure that was extremely dynamic and versatile. When the content was 
-          supplied, I thanked myself for creating such an adaptable architecture.`,
+          created the foundation, a simple single page website that is easily navigable. The next process was to 
+          optimize the website to be fully responsive for any device and or screen size. I found that using React 
+          was perfect for this application. Designing the skeleton with only filler content to work with, until 
+          the client provided their own, allowed me to create a structure that was extremely dynamic and versatile.
+           When the content was supplied, I thanked myself for creating such an adaptable architecture.`,
           conclusion: [
             'Built time management, self-assurance and negotiation skills',
             'Learned about domain management, web hosting and application deployment',

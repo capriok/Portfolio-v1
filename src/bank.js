@@ -38,7 +38,6 @@ module.exports = {
   PORTFOLIO_RESUME: require('./gallery/projects/PORTFOLIO-RESUME.jpg'),
   PORTFOLIO_SHOWCASE: require('./gallery/projects/PORTFOLIO-SHOWCASE.jpg'),
   MTMUSIC_GOOGLE: require('./gallery/projects/MTM-GOOGLE.jpg'),
-  MTMUSIC_INIT: require('./gallery/projects/MTM-INIT.jpg'),
   MTMUSIC_PLAYER: require('./gallery/projects/MTM-PLAYER.jpg'),
   MTMUSIC_PLAYLISTS: require('./gallery/projects/MTM-PLAYLISTS.jpg'),
   MTMUSIC_SHOWCASE: require('./gallery/projects/MTM-SHOWCASE.jpg'),

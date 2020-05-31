@@ -24,7 +24,7 @@ export default function Footer() {
     name: 'LinkedIn'
   },
   {
-    href: '/#',
+    href: '/resume',
     name: 'Resume'
   }]
 

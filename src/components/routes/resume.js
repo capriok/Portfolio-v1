@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import resume from '../documents/Kyle-Caprio-Resume.pdf'
-import ResumeJPG from '../gallery/resume.jpg'
+import resume from '../../documents/Kyle-Caprio-Resume.pdf'
+import ResumeJPG from '../../gallery/resume.jpg'
 const Resume = () => {
   const isMobile = window.innerWidth > 500
   useEffect(() => { document.title = `Portfolio | Resume` }, [])
