@@ -14,7 +14,7 @@ export default function AboutRoute() {
           </div>
           <div className="body" style={theTheme.whiteFont}>
             <h1>— About Me —</h1>
-            <p className="indent">
+            <p className="indent para">
               My name is Kyle Caprio. I'm a self taught software developer based in Tempe, Arizona.
               I found my passion for learning computer sciences at the age of 16 and have been programming ever since.
               Despite not attending college, I've dedicated countless hours to learning and expanding my passion.
