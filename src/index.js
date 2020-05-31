@@ -15,25 +15,26 @@ export function Index() {
     projects: [
       {
         title: 'Cash Flow',
-        snippet: `Mobile budgeting application featuring induvidual user accounts with 
-        multiple budget sheets, graphical customizability and more. Built with TypeScript`,
+        snippet: `Mobile budgeting application featuring induvidual user accounts with multiple budget sheets, interface 
+        customization and more`,
         writing: {
           process: `Building many web applications with JavaScript has brought me to love the language. I have also come 
           to understand the quirks and shortcomings of the language. With this application, I wanted to build something 
           I could use in my daily life. Using TypeScript, I had the perfect opportunity to dive into something that would 
           also challenge my skills along the way. Learning about why it has become so popular so quickly inspired me to 
-          learn everything about it. As programmers, we strive to write better structured and organized code with less 
-          bugs. I think React and TypeScript are a match made in heaven for that purpose. In very little time, I realized 
-          how TypeScript expedites the building process and maintains a better structured code base. I also learned 
-          a lot about how React works under the hood when learning about type assertions and generics. This is something I 
-          feel is very important to know while developing in the React framework Building. This app has fueled my passion 
-          to keep learning and progressing my programmatic skills.`,
+          learn everything about it.`,
+          processSub: `As programmers, we strive to write better structured and organized code with less 
+          bugs. React and TypeScript are a match made in heaven for that purpose, in my opinion. In very little time, 
+          I realized how TypeScript expedites the building process and maintains a better structured code base. I also 
+          learned a lot about how React works under the hood when learning about type assertions and generics. This is 
+          something I feel is very important to know while developing in the React framework Building. This app has 
+          fueled my passion to keep learning and progressing my programmatic skills.`,
           conclusion: [
             'Learned TypeScript fundementals ( Interfaces, Type Assertion, Generics, Unions and Intersections )',
             'Expanded knowledge about how React works under the hood',
             'Progressed experience with debugging and error handling',
             'Improved skills working with and manipulating deeply nested object properties',
-            'Became more confident in writing code without reference',
+            'Became far more confident in writing code without reference',
           ],
         },
         tags: ['TypeScript', 'React', 'SASS', '2020'],
@@ -51,19 +52,19 @@ export function Index() {
       },
       {
         title: 'Keith Phillingane Construction',
-        snippet: `Small business client’s business portfolio showcasing services offered, 
+        snippet: `Small business client’s contractor portfolio showcasing services offered, 
         area of expertise and highlighting past endeavors`,
         writing: {
           process: `Referred by a friend and previous client, a small contracting business owner reached out to me 
           to build his website. He previously used HomeAdvisor for marketing but wanted more customizability of the 
           content displayed to promote his business. He specified three must-have features: an eye-catching landing 
           page, list of services and a gallery to showcase previous work. He allowed me free-range creativity with 
-          the rest. The content from his previous marketing page was used to populate the website I built for him. 
-          Once I implemented features he requested, I started getting creative with the layout and user experience. 
-          Some features I added include a testimonial section showcasing positive reviews and an inquiry email server 
-          to allow clients the ability to reach out directly from within the site. I continue to honor any requests 
-          for alterations and additions to the website. His appreciation and excitement about the finished product 
-          motivated my drive to continue doing freelance work.`,
+          the rest. The content from his previous marketing page was used to populate the website I built for him.`,
+          processSub: `Once I implemented features he requested, I started getting creative with the layout and user 
+          experience. Some features I added include a testimonial section showcasing positive reviews and an inquiry 
+          email server to allow clients the ability to reach out directly from within the site. I continue to honor 
+          any requests for alterations and additions to the website. His appreciation and excitement about the 
+          finished product motivated my drive to continue doing freelance work.`,
           conclusion: [
             'Improved UI/UX design skills',
             'Acquired more possibility for referrals for new clients',
@@ -94,12 +95,13 @@ export function Index() {
           process: `When starting this project I had one goal in mind, to expand my abilities working with structured 
           databases. I chose PostgreSQL because of the tried and true user experience. Additionally, this project 
           allowed me to explore more services in the AWS cloud ecosystem. For this project, I utilized the Relational 
-          Database Service (RDS) service. To start, I designed a simple front-end interface to display the data 
-          I would be rendering. Next, I spun up my express server, connected the database and started writing my 
-          first queries. Hitting the server routes and seeing my queries run for the first time was empowering. I 
-          developed much more appreciation for backend development. Throughout my work, I realized how to optimize 
-          my queries and improve how I architect the database, which is the most important aspect to me. This app, 
-          originally meant to practice querying in SQL, became one I use daily.`,
+          Database Service (RDS) service.`,
+          processSub: `To start, I designed a simple front-end interface to display the data I would be rendering. 
+          Next, I spun up my express server, connected the database and started writing my first queries. Hitting 
+          the server routes and seeing my queries run for the first time was empowering. I developed much more 
+          appreciation for backend development. Throughout my work, I realized how to optimize my queries and 
+          improve how I architect the database, which is the most important aspect to me. This app, originally 
+          meant to practice querying with SQL, became one I use daily.`,
           conclusion: [
             'Developed skills working with a structured database',
             'Learned more about the AWS cloud ecosystem and services it offers',
@@ -131,17 +133,17 @@ export function Index() {
           games. I instantly thought of the classic game I grew up playing, Snake. I first thought of building this using 
           only vanilla JavaScript, which I knew would not be a problem for me, but I couldn't bring myself away from the 
           React ecosystem. It added such an elegant and modern factor to the game. So, I decided to use both while 
-          emphasizing vanilla JavaScript for-loops and array manipulation methods rather than React hook state setters. 
-          I began by forming the logic to create a game tick and draw the grid. Next, I randomly assigned the “food” and 
-          rendered the snake to the grid. This was fairly straight forward due to the amount of brainstorming and planning 
-          I did before writing any code. At first, the snake was merely a color-filled grid tile followed by other color-filled 
-          grid tiles acting as its tail. I knew this was not the end result, so I started planning how to implement sprites 
-          into my game. This was the most difficult code I've had to write while working with game-style code. But man, it 
-          was so fun and rewarding. It involved writing a function to check the snake’s head position and which direction 
-          it was facing on the grid. Another function checked the tail pieces’ previous and subsequent position and direction 
-          in order to render the correct sprite for a specific piece. The complexity of rendering corner pieces revealed to 
-          be pretty difficult. While I spend time finishing this feature, the game may look unfinished but continues to serve 
-          as a reminder of how far my skills have come.`,
+          emphasizing vanilla JavaScript for-loops and array manipulation methods rather than React hook state setters.`,
+          processSub: `I began by forming the logic to create a game tick and draw the grid. Next, I randomly assigned the 
+          “food” and rendered the snake to the grid. This was fairly straight forward due to the amount of brainstorming 
+          and planning I did before writing any code. At first, the snake was merely a color-filled grid tile followed by 
+          other color-filled grid tiles acting as its tail. I knew this was not the end result, so I started planning how 
+          to implement sprites into my game. This was the most difficult code I've had to write while working with 
+          game-style code. But man, it was so fun and rewarding. It involved writing a function to check the snake’s head 
+          position and which direction it was facing on the grid. Another function checked the tail pieces’ previous and 
+          subsequent position and direction in order to render the correct sprite for a specific piece. The complexity of 
+          rendering corner pieces revealed to be pretty difficult. While I spend time finishing this feature, the game may 
+          look unfinished but continues to serve as a reminder of how far my skills have come.`,
           conclusion: [
             'Improved skills in writing iterative functions with vanilla JavaScript',
             'Learned a lot about game loops and what goes on behind the scenes',
@@ -168,11 +170,12 @@ export function Index() {
           process: `With my earliest experiences working in React, I found component design to be the most intersting. 
           This led me to the utilization of Material-UI, which I love. Using the library accelerated the process of building 
           great looking components. However, when it came simple customization, which is important to me, the complexity 
-          and amount of code needed was detrimental to the process. Every developer knows styling components can be very 
+          and amount of code needed was detrimental to the process.`,
+          processSub: `Every developer knows styling components can be very 
           tedious, so I set out to make my own styled component library. I used Styled-Components as the foundation because 
           of how lightweight and functional the library is. After making my first buttons and inputs, I felt a very 
-          high level of satisfaction. Next, I started the process of cleaning up code and creating a more professional base for 
-          my soon to be NPM package. This quickly became, and remains to be, one of my favorite and most prized 
+          high level of satisfaction. Next, I started the process of cleaning up code and creating a more professional base 
+          for my soon to be NPM package. This quickly became, and remains to be, one of my favorite and most prized 
           endeavors to work on.`,
           conclusion: [
             'Expanded my knowledge about the inner workings of which NPM packages are made',
@@ -261,9 +264,9 @@ export function Index() {
           process: `This was one of the first complex collaborative projects I have done, two main contributors being 
           Jordan Riley and Hunter Foulk. We had a vision in mind to make a modern remake of an old school styled chat 
           room application. Socket.io and Express in Node were the foundation of this application. Learning about web 
-          sockets was extremely intriguing to me and taught me a lot about how countless other web applications work. 
-          The most difficult feature was the implementation of private messaging. After long sessions of brainstorming, 
-          discussing and planning we realized quite a few key foundations of code needed to be rewritten. 
+          sockets was extremely intriguing to me and taught me a lot about how countless other web applications work.`,
+          processSub: `The most difficult feature was the implementation of private messaging. After long sessions of 
+          brainstorming, discussing and planning we realized quite a few key foundations of code needed to be rewritten. 
           We pushed through, and were very thankful we did, because the end result of this project and the chemistry 
           built with eachother was something to be very proud of.`,
           conclusion: [
@@ -290,8 +293,7 @@ export function Index() {
           process: `I had a vision to develop a music streaming application inspired by YouTube Music. This being 
           the most complex endeavor of mine I knew the importance of keeping a clean code base. The Youtube Data API 
           is the foundation of the application. Core functionality consisted of user authentication, which led to 
-          managing complex user objects. The ability to access the scope of an authenticated user to read and write 
-          user data gave the application a personalized and familiar feel. The amount of user data started becoming 
+          managing complex user objects. The amount of user data started becoming 
           difficult to keep track of so I implemented global state management with the help of React hooks. Once 
           established this opened my eyes to how powerful React actually is. My love for this framework skyrocketed 
           during the development process of this app.`,

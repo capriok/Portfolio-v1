@@ -43,7 +43,7 @@ export default function Projects({ openModal, setContent }) {
                     </div>
                     <div className="buttons">
                       <ButtonGroup className="buttons" size="small" aria-label="small outlined button group">
-                        <Button className={classes.btn} onClick={async () => {
+                        <Button className={classes.btn} onClick={() => {
                           setContent(item)
                           if (isMobile) {
                             window.location.href = `${item.route}`

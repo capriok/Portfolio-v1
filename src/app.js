@@ -91,7 +91,9 @@ export default function App() {
       <div className="main scrollbar" style={theTheme.main}>
         <Router>
           <Navbar
+            openModal={openModal}
             handleInquiryOpen={handleInquiryOpen}
+            handleInquiryClose={handleInquiryClose}
           />
           <InquiryTransition inquiryState={inquiryState}>
             <Inquiry

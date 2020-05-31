@@ -58,11 +58,9 @@ const Inquiry = ({
       })
   }
 
-  const isValid = emailTest()
-
   return (
     <>
-      <div className="inquiry">
+      <div className="inquiry bg">
         <div className="close"><img src={close} alt="" onClick={() => { handleInquiryClose() }} /></div>
         <h1>Inquire</h1>
         {inquiryState.submitSent
@@ -71,7 +69,7 @@ const Inquiry = ({
             <h1 className="sub">{inquiryState.statusSubMessage}</h1>
           </div>
           : <form onSubmit={(e) => { submitEmail(e) }}>
-            <p>All Fields Required</p>
+            <p className="req">All Fields Required</p>
             <input type="text"
               placeholder="Name"
               value={inquiryForm.name}
