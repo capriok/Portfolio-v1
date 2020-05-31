@@ -181,7 +181,7 @@ $light-grey: rgb(148, 148, 148);
   display: flex;
   width: 100%;
   min-height: 160px;
-  margin: 10px;
+  margin: 10px 0;
   text-align: left;
   border-radius: 5px;
   overflow: hidden;
@@ -556,12 +556,14 @@ $light-grey: rgb(148, 148, 148);
     @include flex;
     align-items: stretch;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
+    .card:not(:last-child) {
+      margin-right: 1vw;
+    }
     .card {
       flex: 1;
       display: flex;
       flex-direction: column;
-      margin: 0px 1vw;
       min-width: 200px;
       border: 3px solid $dark-grey;
       border-radius: 5px;
@@ -738,7 +740,7 @@ $light-grey: rgb(148, 148, 148);
     }
     span,
     p {
-      font-size: 0.9em;
+      font-size: 0.9rem;
     }
   }
   .project-card-template {
@@ -913,7 +915,7 @@ $light-grey: rgb(148, 148, 148);
       .card {
         @include flex;
         min-width: 100%;
-        margin: 10px 2px;
+        margin: 10px 5px;
         border: 3px solid $dark-grey;
         border-radius: 0px;
         h1 {
@@ -922,7 +924,6 @@ $light-grey: rgb(148, 148, 148);
         }
         .card-items {
           @include flex;
-
           flex-direction: row;
           flex-wrap: wrap;
           background-color: rgba($color: $dark-grey, $alpha: 1);
