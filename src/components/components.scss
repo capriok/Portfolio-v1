@@ -811,6 +811,9 @@ $light-grey: rgb(148, 148, 148);
       .indent {
         text-indent: 0px;
       }
+      .para {
+        text-indent: 10px;
+      }
     }
     .poly {
       clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 97%);
