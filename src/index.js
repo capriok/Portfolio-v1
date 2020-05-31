@@ -18,9 +18,19 @@ export function Index() {
         snippet: `Mobile budgeting application featuring induvidual user accounts with 
         multiple budget sheets, graphical customizability and more. Built with TypeScript`,
         writing: {
-          process: `Working on it..`,
+          process: `Building many web applications with JavaScript has brought me to love the language. I have also come 
+          to understand the quirks and shortcomings of the language. With this application, I wanted to build something 
+          I could use in my daily life. Using TypeScript, I had the perfect opportunity to dive into something that would 
+          also challenge my skills along the way. Learning about why it has become so popular so quickly inspired me to 
+          learn everything about it. As programmers, we strive to write better structured and organized code with less 
+          bugs. I think React and TypeScript are a match made in heaven for that purpose. In very little time, I realized 
+          how TypeScript expedites the building process and maintains a better structured code base. I also learned 
+          a lot about how React works under the hood when learning about type assertions and generics. This is something I 
+          feel is very important to know while developing in the React framework Building. This app has fueled my passion 
+          to keep learning and progressing my programmatic skills.`,
           conclusion: [
-            'Learned TypeScript fundementals and why it is becoming so popular',
+            'Learned TypeScript fundementals ( Interfaces, Type Assertion, Generics, Unions and Intersections )',
+            'Expanded knowledge about how React works under the hood',
             'Progressed experience with debugging and error handling',
             'Improved skills working with and manipulating deeply nested object properties',
             'Became more confident in writing code without reference',
@@ -44,11 +54,21 @@ export function Index() {
         snippet: `Small business client’s business portfolio showcasing services offered, 
         area of expertise and highlighting past endeavors`,
         writing: {
-          process: `Working on it..`,
+          process: `Referred by a friend and previous client, a small contracting business owner reached out to me 
+          to build his website. He previously used HomeAdvisor for marketing but wanted more customizability of the 
+          content displayed to promote his business. He specified three must-have features: an eye-catching landing 
+          page, list of services and a gallery to showcase previous work. He allowed me free-range creativity with 
+          the rest. The content from his previous marketing page was used to populate the website I built for him. 
+          Once I implemented features he requested, I started getting creative with the layout and user experience. 
+          Some features I added include a testimonial section showcasing positive reviews and an inquiry email server 
+          to allow clients the ability to reach out directly from within the site. I continue to honor any requests 
+          for alterations and additions to the website. His appreciation and excitement about the finished product 
+          motivated my drive to continue doing freelance work.`,
           conclusion: [
             'Improved UI/UX design skills',
-            'Learned and Implemented an Email server with express',
-            'Acquired more possibility of word of mouth outreach',
+            'Acquired more possibility for referrals for new clients',
+            'Progressed customer service skills and ability to meet cuctomer expectations',
+            'Learned about and implemented a reusable email server with express',
           ],
         },
         tags: ['JavaScript', 'React', 'SASS', '2020'],
@@ -71,9 +91,18 @@ export function Index() {
         title: 'SQLifting',
         snippet: 'Personalized exercise and workout plan application with PostgreSQL backend',
         writing: {
-          process: `Working on it..`,
+          process: `When starting this project I had one goal in mind, to expand my abilities working with structured 
+          databases. I chose PostgreSQL because of the tried and true user experience. Additionally, this project 
+          allowed me to explore more services in the AWS cloud ecosystem. For this project, I utilized the Relational 
+          Database Service (RDS) service. To start, I designed a simple front-end interface to display the data 
+          I would be rendering. Next, I spun up my express server, connected the database and started writing my 
+          first queries. Hitting the server routes and seeing my queries run for the first time was empowering. I 
+          developed much more appreciation for backend development. Throughout my work, I realized how to optimize 
+          my queries and improve how I architect the database, which is the most important aspect to me. This app, 
+          originally meant to practice querying in SQL, became one I use daily.`,
           conclusion: [
             'Developed skills working with a structured database',
+            'Learned more about the AWS cloud ecosystem and services it offers',
             'Improved skills writing dynamic functions that do more with less code',
             'Became more fluent with data manipulation and working with complex objects',
           ],
@@ -226,7 +255,8 @@ export function Index() {
       },
       {
         title: 'NeetChat',
-        snippet: `Harnessing the power of socket.io to create a chatroom application. Fully functional with induvidual rooms, typing alerts and private messages.`,
+        snippet: `Harnessing the power of socket.io to create a chatroom application. Fully functional with 
+        induvidual rooms, typing alerts and private messages.`,
         writing: {
           process: `This was one of the first complex collaborative projects I have done, two main contributors being 
           Jordan Riley and Hunter Foulk. We had a vision in mind to make a modern remake of an old school styled chat 
