@@ -63,7 +63,7 @@ export function Index() {
         link: 'https://github.com/capriok/KPCon-Client',
         demo: 'https://www.keithphillingane.com/',
         resources: ['https://nodemailer.com/about/'],
-        route: '/kpcon'
+        route: '/kpconstruction'
       },
       {
         title: 'SQLifting',
@@ -162,7 +162,7 @@ export function Index() {
         link: 'https://github.com/capriok/Godspeed-Docs',
         demo: 'https://godspeed.netlify.com',
         resources: ['https://www.styled-components.com', 'https://www.npmjs.com'],
-        route: '/godspeed-docs'
+        route: '/godspeed'
       },
       {
         title: 'DisArray',

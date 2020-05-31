@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import resume from '../documents/resume.pdf'
+import resume from '../documents/Kyle-Caprio-Resume.pdf'
 
 const Resume = () => {
 
