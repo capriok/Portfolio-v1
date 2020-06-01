@@ -16,7 +16,7 @@
   background: linear-gradient(180deg, #112d47 0%, #0d2740 100%);
 }
 
-/* COLOR VARS */
+// COLOR VARS
 
 $dark-grey: rgb(17, 17, 17);
 $light-grey: rgb(148, 148, 148);
@@ -556,7 +556,8 @@ $light-grey: rgb(148, 148, 148);
     @include flex;
     align-items: stretch;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
+    padding: 0 3vw;
     .card:not(:last-child) {
       margin-right: 1vw;
     }
