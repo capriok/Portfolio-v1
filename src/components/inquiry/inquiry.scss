@@ -160,6 +160,10 @@ $blue: #17334e;
     form {
       flex: 0;
       width: 100%;
+      input,
+      textarea {
+        font-size: 16px;
+      }
     }
   }
 }
