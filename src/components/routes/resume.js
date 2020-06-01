@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
-import resume from '../../documents/Kyle-Caprio-Resume.pdf'
-import ResumeJPG from '../../gallery/resume.jpg'
+import Button from 'godspeed/build/Button'
 const Resume = () => {
   const isMobile = window.innerWidth > 500
   useEffect(() => { document.title = `Portfolio | Resume` }, [])
@@ -9,13 +8,16 @@ const Resume = () => {
       {isMobile
         ? <div className="resume">
           <object
-            data={resume}
+            data="https://files.kylecaprio.dev/Kyle-Caprio-Resume.pdf"
             type="application/pdf"
             width="100%"
             height="100%"
           />
         </div>
-        : <img className="resume-mobile" src={ResumeJPG} alt="" />
+        : <div className="resume-mobile">
+          <Button className="res-btn" text="View Resume" size="sm" shadow
+            onClick={() => window.open('https://files.kylecaprio.dev/Kyle-Caprio-Resume.pdf')} />
+        </div>
       }
     </>
   )

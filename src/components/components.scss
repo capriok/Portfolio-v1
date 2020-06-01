@@ -981,7 +981,16 @@ $light-grey: rgb(148, 148, 148);
     }
   }
   .resume-mobile {
+    @include flex;
     margin-top: 5px;
+    width: 100vw;
+    margin-top: 50px;
     max-width: 100vw;
+    .res-btn {
+      * {
+        font-weight: 400;
+      }
+      padding: 7px 15px;
+    }
   }
 }
