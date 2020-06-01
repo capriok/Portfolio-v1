@@ -549,7 +549,7 @@ $light-grey: rgb(148, 148, 148);
 
 .tech-section {
   @include flex;
-  padding: 200px 3vw;
+  padding: 200px 0;
   width: calc(100% + 1px);
   min-height: 30vh;
   .tech-max {
