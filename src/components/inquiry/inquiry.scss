@@ -83,7 +83,8 @@ $blue: #17334e;
     @include flex;
     justify-content: flex-start;
     flex-direction: column;
-    width: 400px;
+    width: 100%;
+    max-width: 90%;
     input:first-child {
       margin-top: 0px;
     }
