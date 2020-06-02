@@ -7,7 +7,7 @@ export default function Tech() {
   const technologies = [
     {
       type: 'Languages',
-      list: ['JavaScript', 'HTML5', 'SCSS', 'CSS']
+      list: ['JavaScript', 'TypeScript', 'HTML5', 'SCSS']
     },
     {
       type: 'Frameworks',
