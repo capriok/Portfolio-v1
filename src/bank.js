@@ -1,4 +1,7 @@
 module.exports = {
+  DRAGGABLE_GIT: require('./gallery/projects/DRAGGABLE-GIT.jpg'),
+  DRAGGABLE_NPM: require('./gallery/projects/DRAGGABLE-NPM.jpg'),
+  DRAGGABLE_VISUAL: require('./gallery/projects/DRAGGABLE-VISUAL.gif'),
   CASHFLOW_GREETING: require('./gallery/projects/CASHFLOW-GREETING.jpg'),
   CASHFLOW_DATASHEET: require('./gallery/projects/CASHFLOW-DATASHEET.jpg'),
   CASHFLOW_NEWBUDGET: require('./gallery/projects/CASHFLOW-NEWBUDGET.jpg'),

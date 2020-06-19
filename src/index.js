@@ -14,6 +14,36 @@ export function Index() {
     theTheme: {},
     projects: [
       {
+        title: 'React-Draggable-Array',
+        snippet: `(NPM Package) - Wrapper Component that utilizes the native browser drag API, giving endless functionality to its children`,
+        writing: {
+          process: `Workin on it..`,
+          processSub: ``,
+          conclusion: [
+            'Learned Reacts Top-Level API and how to render components with it',
+            'Developed better understanding of what JSX does under the hood',
+            'Progressed TypeScript skills and building professional code bases',
+          ],
+        },
+        stack: ['React with TypeScript', 'React Top Level API', 'Browser Drag API', 'NPM', 'SASS'],
+        tags: ['TypeScript', 'React', 'NPM', '2020'],
+        thumb: bank.DRAGGABLE_NPM,
+        slides: [
+          bank.DRAGGABLE_VISUAL,
+          bank.DRAGGABLE_GIT,
+          bank.DRAGGABLE_NPM
+        ],
+        link: 'https://github.com/capriok/react-draggable-array',
+        demo: 'https://codesandbox.io/s/react-draggable-array-2kdql',
+        resources: [
+          'https://reactjs.org/docs/react-api.html',
+          'https://www.typescriptlang.org/docs/home.html',
+          'https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API',
+          'https://www.npmjs.com/'
+        ],
+        route: '/react-draggable-array'
+      },
+      {
         title: 'Cash Flow',
         snippet: `Mobile budgeting application featuring induvidual user accounts with multiple budget sheets, interface 
         customization and more`,
@@ -37,6 +67,7 @@ export function Index() {
             'Became far more confident in writing code without reference',
           ],
         },
+        stack: ['React with TypeScript', 'SASS'],
         tags: ['TypeScript', 'React', 'SASS', '2020'],
         thumb: bank.CASHFLOW_DATASHEET,
         slides: [
@@ -47,7 +78,9 @@ export function Index() {
         ],
         link: 'https://github.com/capriok/CashFlow',
         demo: 'https://cashflow.kylecaprio.dev',
-        resources: ['https://www.typescriptlang.org/docs/home.html'],
+        resources: [
+          'https://www.typescriptlang.org/docs/home.html'
+        ],
         route: '/cashflow'
       },
       {
@@ -67,11 +100,12 @@ export function Index() {
           finished product motivated my drive to continue doing freelance work.`,
           conclusion: [
             'Improved UI/UX design skills',
-            'Acquired more possibility for referrals for new clients',
-            'Progressed customer service skills and ability to meet cuctomer expectations',
             'Learned about and implemented a reusable email server with express',
+            'Progressed customer service skills and ability to meet cuctomer expectations',
+            'Acquired more possibility for referrals for new clients',
           ],
         },
+        stack: ['React', 'SASS', 'Netlify Serveless Fucntions', 'Express.js', 'NodeMailer'],
         tags: ['JavaScript', 'React', 'SASS', '2020'],
         thumb: bank.KPCON_INTRO,
         slides: [
@@ -85,7 +119,9 @@ export function Index() {
         ],
         link: 'https://github.com/capriok/KPCon-Client',
         demo: 'https://www.keithphillingane.com/',
-        resources: ['https://nodemailer.com/about/'],
+        resources: [
+          'https://nodemailer.com/about/'
+        ],
         route: '/kpconstruction'
       },
       {
@@ -109,6 +145,7 @@ export function Index() {
             'Became more fluent with data manipulation and working with complex objects',
           ],
         },
+        stack: ['React', 'SASS', 'Netlify Serveless Fucntions', 'Express.js', 'AWS RDS', 'PostgreSQL'],
         tags: ['JavaScript', 'React', 'SQL', '2020'],
         thumb: bank.SQLIFTING_MANAGER,
         slides: [
@@ -122,7 +159,10 @@ export function Index() {
         link: 'https://github.com/capriok/SQLifting',
         demo: 'https://sqlifting.kylecaprio.dev',
         demoAcc: 'Username: demo | Password: admin',
-        resources: ['https://www.postgresql.org', 'https://aws.amazon.com/rds'],
+        resources: [
+          'https://www.postgresql.org',
+          'https://aws.amazon.com/rds'
+        ],
         route: '/sqlifting'
       },
       {
@@ -150,6 +190,7 @@ export function Index() {
             'Realization of my adept abilities writing complex JavaScript without using references',
           ],
         },
+        stack: ['React', 'JavaScript', 'SASS'],
         tags: ['JavaScript', 'React', 'SASS', '2020'],
         thumb: bank.SNEKKEL_SPRITE,
         slides: [
@@ -165,7 +206,7 @@ export function Index() {
       },
       {
         title: 'Godspeed',
-        snippet: 'React UI Component and toolkit library',
+        snippet: '(NPM Package) - React UI Component and toolkit library',
         writing: {
           process: `With my earliest experiences working in React, I found component design to be the most intersting. 
           This led me to the utilization of Material-UI, which I love. Using the library accelerated the process of building 
@@ -184,7 +225,8 @@ export function Index() {
             'Learned Gatsby.js to make the documention website'
           ],
         },
-        tags: ['Gatsby', 'React', 'JavaScript', '2020'],
+        stack: ['Styled-Components', 'React', 'JavaScript', 'NPM', 'Gatsby', 'SASS'],
+        tags: ['Gatsby', 'React', 'JavaScript', 'NPM', '2020'],
         thumb: bank.GODSPEED_HOME,
         slides: [
           bank.GODSPEED_SHOWCASE,
@@ -195,7 +237,10 @@ export function Index() {
         ],
         link: 'https://github.com/capriok/Godspeed-Docs',
         demo: 'https://godspeed.netlify.com',
-        resources: ['https://www.styled-components.com', 'https://www.npmjs.com'],
+        resources: [
+          'https://www.styled-components.com',
+          'https://www.npmjs.com'
+        ],
         route: '/godspeed'
       },
       {
@@ -215,6 +260,7 @@ export function Index() {
             'Familiarized myself with serverless HTTP API use',
           ],
         },
+        stack: ['React', 'SASS', 'Netlify Serverless Functions', 'Express.js', 'MongoDB'],
         tags: ['JavaScript', 'React', 'SASS', 'MongoDB', '2020'],
         thumb: bank.DISARRAY_START,
         slides: [
@@ -241,6 +287,7 @@ export function Index() {
           my first job as a developer and change my life forever. This is who I am and what I love doing, take a look.`,
           conclusion: [],
         },
+        stack: ['React', 'JavaScript', 'SASS', 'Netlify Serverless Functions', 'Express.js', 'NodeMailer'],
         tags: ['JavaScript', 'React', 'SASS', '2020'],
         thumb: bank.PORTFOLIO_HOME,
         slides: [
@@ -253,7 +300,7 @@ export function Index() {
         ],
         link: 'https://github.com/capriok/DisArray',
         demo: 'https://kylecaprio.dev',
-        resources: [],
+        resources: ['https://nodemailer.com/about/'],
         route: '/portfolio'
       },
       {
@@ -275,6 +322,7 @@ export function Index() {
             'Stronger comprehension of server code and advanced web applications',
           ],
         },
+        stack: ['React', 'JavaScript', 'SASS', 'Netlify Serverless Functions', 'Express.js', 'Socket.io'],
         tags: ['JavaScript', 'Socket.io', 'React', 'SASS', '2019'],
         thumb: bank.NEETCHAT_HOME,
         slides: [
@@ -283,7 +331,9 @@ export function Index() {
         ],
         link: 'https://github.com/hunterfoulk/Neet-Chat',
         demo: 'https://github.com/hunterfoulk/Neet-Chat',
-        resources: ['https://socket.io'],
+        resources: [
+          'https://socket.io'
+        ],
         route: '/neet-chat'
       },
       {
@@ -304,6 +354,7 @@ export function Index() {
             'Management of complex core application and component structure',
           ],
         },
+        stack: ['React', 'JavaScript', 'CSS', 'Electron', 'Netlify Serverless Functions', 'Express.js', 'Youtube Data API v3'],
         tags: ['JavaScript', 'React', 'Electron', 'CSS', '2019'],
         thumb: bank.MTMUSIC_PLAYER,
         slides: [
@@ -314,7 +365,9 @@ export function Index() {
         ],
         link: 'https://github.com/capriok/MyTube',
         demo: 'https://mytube-music.kylecaprio.dev',
-        resources: ['https://developers.google.com/youtube/v3'],
+        resources: [
+          'https://developers.google.com/youtube/v3'
+        ],
         route: '/mytube-music'
       },
       {
@@ -335,6 +388,7 @@ export function Index() {
             'Improved React conditional component rendering',
           ],
         },
+        stack: ['React', 'JavaScript', 'SASS', 'Netlify Serveless Fucntions', 'Express.js', 'NodeMailer'],
         tags: ['JavaScript', 'React', 'SASS', '2019'],
         thumb: bank.ARTE_BELLA_HOME,
         slides: [
@@ -363,6 +417,7 @@ export function Index() {
             'Improved my skills in dealing with HTTP request methods',
           ],
         },
+        stack: ['React', 'JavaScript', 'Electron', 'CSS', 'NewsAPI'],
         tags: ['JavaScript', 'React', 'Electron', 'CSS', '2018'],
         thumb: bank.TOOKFEED_HOME,
         slides: [
@@ -375,7 +430,10 @@ export function Index() {
         ],
         link: 'https://github.com/capriok/TookFeed',
         demo: 'https://tookfeed.kylecaprio.dev',
-        resources: ['https://newsapi.org', 'https://www.electronjs.org'],
+        resources: [
+          'https://newsapi.org',
+          'https://www.electronjs.org'
+        ],
         route: '/tookfeed'
       },
       {
@@ -394,6 +452,7 @@ export function Index() {
             'Developed a brand for myself',
           ],
         },
+        stack: ['HTML', 'CSS', 'Jquery', 'Tumblr Theme Editor'],
         tags: ['HTML', 'CSS', 'Jquery', '2014'],
         thumb: bank.THEMESFK_HOME,
         slides: [
@@ -405,7 +464,9 @@ export function Index() {
         ],
         link: 'https://themesfromkyle.tumblr.com',
         demo: 'https://themesfromkyle.tumblr.com',
-        resources: ['https://www.jquery.com'],
+        resources: [
+          'https://www.jquery.com'
+        ],
         route: '/theme-template-distribution'
       }
     ]
