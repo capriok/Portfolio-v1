@@ -16,7 +16,7 @@ export default function NavDrop({ navDrop, setDrop, handleInquiryOpen }) {
         <a href="/about"><p>About Me</p></a>
         <a href="/projects"><p>Projects</p></a>
         <a href="/resume"><p>Resume</p></a>
-        <a onClick={() => inquiryClick()} ><p>Contact</p></a>
+        <p onClick={() => inquiryClick()} >Contact</p>
       </div>
     </>
   );

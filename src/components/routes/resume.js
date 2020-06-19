@@ -12,7 +12,7 @@ const Resume = () => {
             type="application/pdf"
             width="100%"
             height="100%"
-          />
+          >Oops</object>
         </div>
         : <div className="resume-mobile">
           <Button className="res-btn" text="View Resume" size="sm" shadow

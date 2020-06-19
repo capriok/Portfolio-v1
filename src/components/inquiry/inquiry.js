@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react'
+import React, { useLayoutEffect } from 'react'
 import Axios from 'axios'
 import close from '../../gallery/close.png'
 import './inquiry.scss'
