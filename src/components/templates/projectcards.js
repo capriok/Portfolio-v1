@@ -35,6 +35,7 @@ export default function Projects({ openModal, setContent }) {
                 <div className="head" style={theTheme.accent}><h1>{item.title}</h1></div>
                 <div className="body">
                   <p>{item.snippet}</p>
+                  {item.subSnippet && <p className="sub-p">{item.subSnippet}</p>}
                   <div className="foot">
                     <div className="tags">
                       {item.tags.map((item, i) => (

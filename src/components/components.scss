@@ -198,6 +198,7 @@ $light-grey: rgb(148, 148, 148);
     .head {
       width: 100%;
       padding: 10px;
+      margin-bottom: 10px;
       text-align: left;
       @include accent();
     }
@@ -206,8 +207,10 @@ $light-grey: rgb(148, 148, 148);
       background-color: $dark-grey;
     }
     p {
-      padding: 10px;
+      padding: 0 10px;
       width: 100%;
+    }
+    .sub-p {
       flex: 1;
     }
     .foot {
@@ -270,6 +273,15 @@ $light-grey: rgb(148, 148, 148);
       margin-bottom: 10px;
       border-bottom: 1px solid grey;
     }
+    .snip-cont {
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid grey;
+      p {
+        font-weight: bold;
+        width: 100%;
+      }
+    }
     .writing-title {
       padding: 10px 0;
       font-weight: 600;
@@ -291,13 +303,7 @@ $light-grey: rgb(148, 148, 148);
     scrollbar-color: darken(white, 80%) darken(white, 50%) !important;
     scrollbar-width: thin !important;
   }
-  p:first-child {
-    padding-bottom: 10px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    width: 100%;
-    border-bottom: 1px solid grey;
-  }
+
   .tags {
     text-align: left;
     width: 100%;

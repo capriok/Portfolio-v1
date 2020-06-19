@@ -49,7 +49,7 @@ export default function Intro({ inquiryState, setInquiryState }) {
           <div className="float">
             <div className="greeting" style={theTheme.whiteFont}>
               <h1>I'm Kyle</h1>
-              <p>A software developer based in Tempe, AZ</p>
+              <p>A software developer based in Tucson, AZ</p>
               <div className="border" style={darkState ? { borderBottom: '1px solid white' } : {}}></div>
               <div className="mobile-explore">
                 <h1>Explore Further</h1>
