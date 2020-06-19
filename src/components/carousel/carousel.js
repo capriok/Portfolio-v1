@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef, useCallback } from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 
@@ -17,7 +17,7 @@ const Carousel = ({ slides, state, setState, handleClose }) => {
   let determine = window.location.pathname === '/' ? 2 : 3
   const responsive = { 0: { items: 1 }, 600: { items: 2 }, 1024: { items: determine } };
 
-  const createMap = (images) => {
+  const createMap = useCallback((images) => {
     const map = images.map((src, i) => (
       <div className="img-cont" key={i}>
         <img src={src} alt="" className="carousel-img"
@@ -26,11 +26,12 @@ const Carousel = ({ slides, state, setState, handleClose }) => {
       </div>
     ))
     return map
-  }
+  }, [isMobile, setState])
+
 
   useEffect(() => {
     setItems(createMap(slides))
-  }, [])
+  }, [createMap, slides])
 
   return (
     <>

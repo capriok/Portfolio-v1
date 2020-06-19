@@ -4,8 +4,8 @@ import close from '../../gallery/close.png'
 import './inquiry.scss'
 
 function useLockBodyScroll() {
-  const isMobile = window.innerWidth < 500
   useLayoutEffect(() => {
+    const isMobile = window.innerWidth < 500
     document.body.style.overflow = 'hidden';
     if (!isMobile) document.body.style.marginRight = '8px';
     return () => {

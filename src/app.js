@@ -84,7 +84,8 @@ export default function App() {
     trueDarkState
       ? dispatch({ type: 'theme', theTheme: dark })
       : dispatch({ type: 'theme', theTheme: {} })
-  }, [darkState])
+  }, [dispatch, trueDarkState, darkState])
+
 
   return (
     <>
