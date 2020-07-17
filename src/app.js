@@ -107,7 +107,8 @@ export default function App() {
           </InquiryTransition>
           <Clickout
             state={inquiryState}
-            close={handleInquiryClose} />
+            close={handleInquiryClose}
+          />
           {/* ------------------------- PROJECT MODAL */}
           {modalOpen &&
             <>
@@ -131,27 +132,26 @@ export default function App() {
                 <h1 className="get-in-touch-foot">Get in touch</h1>
               </Button>
             </>
-          )}></Route>
+          )} />
           {/* ------------------------- LONE PROJECT ROUTE */}
           {projects.map((item, i) => (
             <Route path={item.route} key={i} render={() => (
               <div className="lone-project-route">
                 <ProjectDisplay item={item} />
               </div>
-            )}>
-            </Route>
+            )} />
           ))}
           {/* ------------------------- ABOUT ROUTE */}
           <Route path="/about" render={() => (
             <About />
-          )}></Route>
+          )} />
           <Route path="/resume" render={() => (
             <Resume />
-          )}></Route>
+          )} />
           {/* ------------------------- PROJECTS LIST ROUTE */}
           <Route path="/projects" render={() => (
             <Projects openModal={modalOpen} setContent={setContent} />
-          )}></Route>
+          )} />
           <Footer />
         </Router>
       </div>
