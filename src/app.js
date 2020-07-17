@@ -4,6 +4,7 @@ import { useStateValue } from './state'
 import { Button, makeStyles } from '@material-ui/core';
 import { darkTheme as dark } from './theme'
 import About from './components/routes/about';
+import Blog from './components/routes/blog';
 import ProjectDisplay from './components/templates/projectdisplay';
 import Navbar from "./components/navbar";
 import Intro from './components/intro';
@@ -147,6 +148,9 @@ export default function App() {
           )} />
           <Route path="/resume" render={() => (
             <Resume />
+          )} />
+          <Route path="/blog" render={() => (
+            <Blog />
           )} />
           {/* ------------------------- PROJECTS LIST ROUTE */}
           <Route path="/projects" render={() => (
