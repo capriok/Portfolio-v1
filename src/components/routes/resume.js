@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Button from 'godspeed/build/Button'
+import { Button } from 'godspeed'
 const Resume = () => {
   const isMobile = window.innerWidth > 500
   useEffect(() => { document.title = `Portfolio | Resume` }, [])
