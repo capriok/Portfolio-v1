@@ -149,7 +149,7 @@ export default function App() {
           <Route path="/resume" render={() => (
             <Resume />
           )} />
-          <Route exact path="/blog" render={() => (
+          <Route exact path="/blogs" render={() => (
             <Blog />
           )} />
           {/* ------------------------- PROJECTS LIST ROUTE */}
