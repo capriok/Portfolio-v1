@@ -1,10 +1,30 @@
-import React from 'react'
-const ReactMarkdown = require('react-markdown')
+/*eslint no-lone-blocks: "off"*/
+{/* BLOG ONE /////////////////////////////////////////////////////////////////////////////*/ }
 
-const blogOne = '# This is a header for test 1\n\nAnd this is a paragraph'
-const blogTwo = '# This is a header for test 2\n\nAnd this is a paragraph'
+const blogOne = `
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsa hic cupiditate dolores eius?
+Itaque et totam ducimus. Commodi saepe, adipisci harum explicabo placeat molestias! Reiciendis
+voluptas delectus eaque id?
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsa hic cupiditate dolores eius?
+Itaque et totam ducimus. Commodi saepe, adipisci harum explicabo placeat molestias! Reiciendis
+voluptas delectus eaque id?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsa hic cupiditate dolores eius?
+Itaque et totam ducimus. Commodi saepe, adipisci harum explicabo placeat molestias! Reiciendis
+voluptas delectus eaque id?
+
+`
+
+{/* BLOG TWO /////////////////////////////////////////////////////////////////////////////*/ }
+
+const blogTwo = `
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsa hic cupiditate dolores eius?
+Itaque et totam ducimus. Commodi saepe, adipisci harum explicabo placeat molestias! Reiciendis
+voluptas delectus eaque id?
+`
+{/* EXPORTS /////////////////////////////////////////////////////////////////////////////*/ }
 
 module.exports = {
-  blogOne: () => <ReactMarkdown source={blogOne} />,
-  blogTwo: () => <ReactMarkdown source={blogTwo} />
+  blogOne: blogOne,
+  blogTwo: blogTwo
 }

@@ -1,16 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import ReactMarkdown from 'react-markdown'
 import { StateProvider } from "./state";
 import App from "./app";
 import './index.scss'
 
 import * as bank from './bank'
-import * as blogs from './components/routes/posts/blogposts'
-
+import * as blog from './components/routes/posts/blogposts'
 
 export function Index() {
   const trueDarkState = localStorage.getItem('theme') === 'true'
-
   let initialState = {
     darkState: trueDarkState,
     theTheme: {},
@@ -474,21 +473,22 @@ export function Index() {
     ],
     blogs: [
       {
-        title: 'test blog one',
+        title: 'Introduction to database relationships',
         date: '07-17-2020',
         category: 'React',
-        body: blogs.blogOne,
+        body: <ReactMarkdown className="blogmd" source={blog.blogOne} />,
         route: '/blogone',
       },
       {
-        title: 'test blog two',
+        title: 'Getting started with PostgreSQL',
         date: '07-14-2020',
         category: 'PostgreSQL',
-        body: blogs.blogTwo,
+        body: <ReactMarkdown className="blogmd" source={blog.blogTwo} />,
         route: '/blogtwo',
       },
     ]
   };
+
 
   const reducer = (state, action) => {
     switch (action.type) {
