@@ -5,6 +5,8 @@ import App from "./app";
 import './index.scss'
 
 import * as bank from './bank'
+import * as blogs from './components/routes/posts/blogposts'
+
 
 export function Index() {
   const trueDarkState = localStorage.getItem('theme') === 'true'
@@ -469,6 +471,22 @@ export function Index() {
         ],
         route: '/theme-template-distribution'
       }
+    ],
+    blogs: [
+      {
+        title: 'test blog one',
+        date: '07-17-2020',
+        category: 'React',
+        body: blogs.blogOne,
+        route: '/blogone',
+      },
+      {
+        title: 'test blog two',
+        date: '07-14-2020',
+        category: 'PostgreSQL',
+        body: blogs.blogTwo,
+        route: '/blogtwo',
+      },
     ]
   };
 

@@ -414,6 +414,21 @@ $light-grey: rgb(148, 148, 148);
     text-align: left;
   }
 }
+.blog-display {
+  width: 50%;
+  text-align: left;
+  background-color: cadetblue;
+  .title {
+    padding: 20px 0px;
+  }
+  .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .body {
+  }
+}
 
 /* GLOBAL END  */
 

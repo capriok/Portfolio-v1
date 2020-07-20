@@ -1,26 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { useStateValue } from './state'
-import { Button, makeStyles } from '@material-ui/core';
+import { Button, makeStyles } from '@material-ui/core'
 import { darkTheme as dark } from './theme'
-import About from './components/routes/about';
-import Blogs from './components/routes/blogs';
-import ProjectDisplay from './components/templates/projectdisplay';
-import Navbar from "./components/navbar";
-import Intro from './components/intro';
-import Tech from './components/tech';
-import Projects from './components/routes/projects';
-import ProjectCards from './components/templates/projectcards';
-import Footer from "./components/footer";
-import Resume from "./components/routes/resume";
+import About from './components/routes/about'
+import Blogs from './components/routes/blogs'
+import ProjectDisplay from './components/templates/projectdisplay'
+import Navbar from "./components/navbar"
+import Intro from './components/intro'
+import Tech from './components/tech'
+import Projects from './components/routes/projects'
+import ProjectCards from './components/templates/projectcards'
+import BlogDisplay from './components/templates/blogdisplay'
+import Footer from "./components/footer"
+import Resume from "./components/routes/resume"
 import InquiryTransition from './components/inquiry/inquiry-transition'
 import Inquiry from './components/inquiry/inquiry'
 import Clickout from './components/inquiry/clickout'
-import "../src/components/components.scss";
-import "./index.scss";
+import "../src/components/components.scss"
+import "./index.scss"
 
 export default function App() {
-  const [{ darkState, theTheme, projects }, dispatch] = useStateValue()
+  const [{ darkState, theTheme, projects, blogs }, dispatch] = useStateValue()
   const trueDarkState = localStorage.getItem('theme') === 'true'
 
   const [modalOpen, openModal] = useState(false)
@@ -92,11 +93,13 @@ export default function App() {
     <>
       <div className="main scrollbar" style={theTheme.main}>
         <Router>
+          {/* ------------------------- NAVBAR */}
           <Navbar
             openModal={openModal}
             handleInquiryOpen={handleInquiryOpen}
             handleInquiryClose={handleInquiryClose}
           />
+          {/* ------------------------- INQUIRY MODAL */}
           <InquiryTransition inquiryState={inquiryState}>
             <Inquiry
               handleInquiryClose={handleInquiryClose}
@@ -134,28 +137,34 @@ export default function App() {
               </Button>
             </>
           )} />
-          {/* ------------------------- LONE PROJECT ROUTE */}
-          {projects.map((item, i) => (
-            <Route path={item.route} key={i} render={() => (
-              <div className="lone-project-route">
-                <ProjectDisplay item={item} />
-              </div>
-            )} />
-          ))}
           {/* ------------------------- ABOUT ROUTE */}
           <Route path="/about" render={() => (
             <About />
           )} />
+          {/* ------------------------- RESUME ROUTE */}
           <Route path="/resume" render={() => (
             <Resume />
-          )} />
-          <Route exact path="/blogs" render={() => (
-            <Blogs />
           )} />
           {/* ------------------------- PROJECTS LIST ROUTE */}
           <Route path="/projects" render={() => (
             <Projects openModal={modalOpen} setContent={setContent} />
           )} />
+          {/* ------------------------- BLOGS LIST ROUTE */}
+          <Route exact path="/blogs" render={() => (
+            <Blogs />
+          )} />
+          {/* ------------------------- LONE PROJECT ROUTE */}
+          {projects.map((item, i) => (
+            <Route path={item.route} key={i} render={() => (
+              <ProjectDisplay item={item} />
+            )} />
+          ))}
+          {/* ------------------------- LONE BLOG ROUTES */}
+          {blogs.map((blog, i) => (
+            <Route path={blog.route} render={() => (
+              <BlogDisplay key={i} blog={blog} />
+            )} />
+          ))}
           <Footer />
         </Router>
       </div>

@@ -10,7 +10,7 @@ const ProjectDisplay = ({ modalOpen, item }) => {
   const handleViewClose = () => setViewState({ open: false, img: '' })
   const newTab = { target: "_blank", rel: "noopener noreferrer" }
   return (
-    <>
+    <div className="lone-project-route">
       {viewState.open && <FullView state={viewState} close={handleViewClose} />}
       <div className="lone-project-template" style={modalOpen ? {} : { width: '100vw' }}>
         <h6 style={theTheme.whiteFont}>{item.title}</h6>
@@ -54,7 +54,7 @@ const ProjectDisplay = ({ modalOpen, item }) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
