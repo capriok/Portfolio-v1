@@ -383,7 +383,7 @@ $light-grey: rgb(148, 148, 148);
   }
 }
 
-.blog-posts-layout {
+.blog-cards-layout {
   @include flex;
   flex-direction: column;
   width: 50%;
@@ -394,7 +394,7 @@ $light-grey: rgb(148, 148, 148);
     border-bottom: 1px solid steelblue;
   }
 }
-.blog-posts {
+.blog-card {
   * {
     color: black;
   }

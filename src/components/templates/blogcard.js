@@ -1,8 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const BlogPost = ({ blog: { category, title, date, route } }) => {
+const BlogCard = ({ blog: { category, title, date, route } }) => {
   return (
-    <div className="blog-posts" onClick={() => window.location.href = `/${route}`}>
+    <Link className="blog-card" to={`/${route}`}>
       <div className="head">
         <h1 className="title">{title}</h1>
       </div>
@@ -10,8 +11,8 @@ const BlogPost = ({ blog: { category, title, date, route } }) => {
         <p className="date">{date}</p>
         <p className="category">{category}</p>
       </div>
-    </div>
+    </Link>
   )
 }
 
-export default BlogPost 
+export default BlogCard 

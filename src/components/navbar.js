@@ -26,7 +26,7 @@ export default function Navbar({ openModal, handleInquiryOpen, handleInquiryClos
           <Link to='/about' onClick={() => closeOpenModals()}><p>About Me</p></Link>
           <Link to='/projects' onClick={() => closeOpenModals()}><p>Projects</p></Link>
           <Link onClick={() => { openModal(false); handleInquiryOpen() }}><p>Contact</p></Link>
-          <Link to="/blog"><p>Blog</p></Link>
+          <Link to="/blogs"><p>Blog</p></Link>
           <Link to="resume" onClick={() => closeOpenModals()}><p>Resume</p></Link>
         </div>
         <ThemeSwitch onClick={handleChange} checked={darkState} />
