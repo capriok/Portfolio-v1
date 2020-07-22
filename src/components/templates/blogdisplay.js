@@ -1,6 +1,7 @@
 import React from 'react'
 
 const BlogDisplay = ({ blog: { title, date, category, body } }) => {
+
   return (
     <div className="blog-display">
       <h1 className="title">
