@@ -672,11 +672,6 @@ $light-grey: rgb(148, 148, 148);
           width: 100%;
           padding: 17px;
           background-color: rgba($color: $dark-grey, $alpha: 1);
-          p {
-            position: relative;
-            top: 50%;
-            transform: translate(0%, -50%);
-          }
         }
       }
     }
