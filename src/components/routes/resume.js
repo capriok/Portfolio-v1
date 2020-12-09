@@ -1,14 +1,19 @@
 import React, { useEffect } from 'react'
 import { Button } from 'godspeed'
+
+const FILE = ''
 const Resume = () => {
   const isMobile = window.innerWidth > 500
   useEffect(() => { document.title = `Portfolio | Resume` }, [])
   return (
     <>
+      <br />
+      <br />
+      <a style={{ color: 'black' }} href="https://www.kylecaprio.dev">See new portfolio here</a>
       {isMobile
         ? <div className="resume">
           <object
-            data="https://files.kylecaprio.dev/Kyle-Caprio-Resume.pdf"
+            data={FILE}
             type="application/pdf"
             width="100%"
             height="100%"
@@ -16,7 +21,7 @@ const Resume = () => {
         </div>
         : <div className="resume-mobile">
           <Button className="res-btn" text="View Resume" size="sm" shadow
-            onClick={() => window.open('https://files.kylecaprio.dev/Kyle-Caprio-Resume.pdf')} />
+            onClick={() => window.open(FILE)} />
         </div>
       }
     </>
