@@ -3,7 +3,6 @@ import { useStateValue } from '../state'
 import { Button, ButtonGroup, makeStyles } from '@material-ui/core';
 import github from '../gallery/github.png'
 import linkedin from '../gallery/linkedin.png'
-import portrait from '../gallery/portrait.jpg'
 
 export default function Intro({ inquiryState, setInquiryState }) {
   const [{ darkState, theTheme },] = useStateValue()
@@ -78,7 +77,7 @@ export default function Intro({ inquiryState, setInquiryState }) {
           </div>
           <div className="card" style={theTheme.accent}>
             <div className="head">
-              <img src={portrait} alt="" />
+              <img src="" alt="" />
               <h1>Get in touch</h1>
             </div>
             <div className="two-body"></div>
